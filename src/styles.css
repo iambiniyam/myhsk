@@ -1541,3 +1541,32 @@ p { line-height: 1.6; }
   .studio-reader-footer > span { display: none; }
   .studio-reader-footer > button { min-width: 0; padding: 0 11px; font-size: 8px; }
 }
+
+/* Handwriting search */
+.curriculum-search-row { display: flex; gap: 8px; align-items: stretch; }
+.curriculum-search-row .curriculum-search { flex: 1; }
+.handwriting-toggle { display: inline-flex; align-items: center; gap: 6px; padding: 0 14px; border: 1px solid var(--line, #dedbd1); border-radius: 14px; background: var(--paper, #fffdf8); cursor: pointer; font: 700 11px inherit; color: var(--ink, #19221d); }
+.handwriting-toggle.active { border-color: var(--jade, #246a50); background: var(--jade-soft, #e7f1ec); color: var(--jade, #246a50); }
+.handwriting-search { margin-top: 10px; padding: 14px; border: 1px solid var(--line, #dedbd1); border-radius: 18px; background: var(--paper, #fffdf8); }
+.handwriting-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px; }
+.handwriting-toolbar > span { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 800; }
+.handwriting-toolbar > div { display: flex; align-items: center; gap: 8px; }
+.handwriting-toolbar button { display: inline-flex; align-items: center; gap: 5px; border: 0; background: transparent; color: var(--muted, #8a8f88); cursor: pointer; font-size: 10px; font-weight: 700; }
+.handwriting-toolbar button:hover { color: var(--ink, #19221d); }
+.handwriting-body { display: flex; gap: 12px; align-items: flex-start; }
+.handwriting-body canvas { width: min(200px, 44vw); height: min(200px, 44vw); border: 1px dashed #c9c4b8; border-radius: 14px; background: #fbfaf5; touch-action: none; cursor: crosshair; }
+.handwriting-side { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+.handwriting-hint { margin: 0; color: var(--muted, #8a8f88); font-size: 10px; line-height: 1.5; }
+.handwriting-matches { display: flex; flex-wrap: wrap; gap: 6px; min-height: 40px; }
+.handwriting-matches button { min-width: 44px; padding: 7px 9px; display: inline-flex; align-items: baseline; justify-content: center; gap: 5px; border: 1px solid var(--line, #dedbd1); border-radius: 11px; background: white; cursor: pointer; }
+.handwriting-matches button:hover { border-color: var(--jade, #246a50); }
+.handwriting-matches strong { font: 750 22px "PingFang SC", sans-serif; }
+.handwriting-matches small { color: var(--muted, #8a8f88); font-size: 8px; }
+.handwriting-find { align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 9px 13px; border: 1px solid var(--ink, #19221d); border-radius: 999px; background: var(--ink, #19221d); color: white; cursor: pointer; font-size: 10px; font-weight: 800; }
+.handwriting-find:disabled { opacity: .5; cursor: wait; }
+@media (max-width: 520px) {
+  .handwriting-body { flex-direction: column; }
+  .handwriting-body canvas { width: 100%; height: 200px; }
+  .handwriting-toggle span { display: none; }
+}
+

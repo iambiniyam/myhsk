@@ -725,6 +725,412 @@
     ]
   },
   {
+    "id": "hskreading-3186",
+    "hskLevel": 1,
+    "title": "I will go to Beijing Zoo",
+    "chineseTitle": "我会去北京动物园",
+    "description": "A Chinese reading article talking about going to the zoo (动物园)! 玩的开心 is heard all across China and means “to have a good time” or “have fun”",
+    "theme": "Travel",
+    "minutes": 2,
+    "audioUrl": "https://hskreading.com/wp-content/uploads/2018/08/I-will-go-to-Beijing-Zoo.mp3",
+    "source": {
+      "name": "HSK Reading",
+      "url": "https://hskreading.com/i-will-go-to-beijing-zoo/",
+      "license": "Source terms",
+      "sourceLevel": "HSK 1 Reading Practice",
+      "publisher": "HSK Reading",
+      "contributors": []
+    },
+    "sentences": [
+      {
+        "id": "hskreading-3186-1",
+        "chinese": "明天我会去北京动物园。我会玩的开心。",
+        "pinyin": "míng tiān wǒ huì qù běi jīng dòng wù yuán。 wǒ huì wán de kāi xīn。",
+        "english": "Tomorrow I will go to Beijing Zoo. I will have a very good time!",
+        "words": [
+          "明天",
+          "我",
+          "会",
+          "去",
+          "北京",
+          "动物园",
+          "我",
+          "会",
+          "玩",
+          "的",
+          "开心"
+        ]
+      },
+      {
+        "id": "hskreading-3186-2",
+        "chinese": "我会跟我妈妈和妹妹一起去。",
+        "pinyin": "wǒ huì gēn wǒ mā ma hé mèi mei yì qǐ qù。",
+        "english": "I will go with my mother and younger sister.",
+        "words": [
+          "我",
+          "会",
+          "跟",
+          "我",
+          "妈妈",
+          "和",
+          "妹妹",
+          "一起",
+          "去"
+        ]
+      },
+      {
+        "id": "hskreading-3186-3",
+        "chinese": "我想看狮子，我妈妈想看猴子。我们都想看大熊猫。大熊猫很可爱！",
+        "pinyin": "wǒ xiǎng kàn shī zǐ， wǒ mā ma xiǎng kàn hóu zi。 wǒ men dōu xiǎng kàn dà xióng māo。 dà xióng māo hěn kě ài！",
+        "english": "I want to see the lions, my mother wants to see the monkeys. We all want to see the giant pandas. Pandas are very cute!",
+        "words": [
+          "我",
+          "想",
+          "看",
+          "狮子",
+          "我",
+          "妈妈",
+          "想",
+          "看",
+          "猴子",
+          "我们",
+          "都",
+          "想",
+          "看",
+          "大熊猫",
+          "大熊猫",
+          "很",
+          "可爱"
+        ]
+      },
+      {
+        "id": "hskreading-3186-4",
+        "chinese": "你喜欢大熊猫吗？",
+        "pinyin": "nǐ xǐ huan dà xióng māo ma？",
+        "english": "Do you like pandas?",
+        "words": [
+          "你",
+          "喜欢",
+          "大熊猫",
+          "吗"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hskreading-3611",
+    "hskLevel": 1,
+    "title": "How is the weather today?",
+    "chineseTitle": "天气怎么样？",
+    "description": "A short Chinese dialogue introducing a very useful question: 今天天气怎么样 meaning” What’s the weather like today?”.",
+    "theme": "Weather",
+    "minutes": 2,
+    "audioUrl": "https://hskreading.com/wp-content/uploads/2018/11/How-is-the-weather-today.m4a",
+    "source": {
+      "name": "HSK Reading",
+      "url": "https://hskreading.com/how-is-the-weather-today/",
+      "license": "Source terms",
+      "sourceLevel": "HSK 1 Reading Practice",
+      "publisher": "HSK Reading",
+      "contributors": []
+    },
+    "sentences": [
+      {
+        "id": "hskreading-3611-1",
+        "chinese": "小明： 今天天气怎么样？",
+        "pinyin": "xiǎo míng： jīn tiān tiān qì zěn me yàng？",
+        "english": "小明：What’s the weather like today?",
+        "words": [
+          "小",
+          "明",
+          "今天",
+          "天气",
+          "怎么样"
+        ]
+      },
+      {
+        "id": "hskreading-3611-2",
+        "chinese": "小刚： 今天天气很好，阳光很好。",
+        "pinyin": "xiǎo gāng： jīn tiān tiān qì hěn hǎo， yáng guāng hěn hǎo。",
+        "english": "小刚：Today’s weather is fine and sunny.",
+        "words": [
+          "小",
+          "刚",
+          "今天",
+          "天气",
+          "很",
+          "好",
+          "阳光",
+          "很",
+          "好"
+        ]
+      },
+      {
+        "id": "hskreading-3611-3",
+        "chinese": "小明：我们一起去放风筝吧！",
+        "pinyin": "xiǎo míng： wǒ men yì qǐ qù fàng fēng zheng ba！",
+        "english": "小明：Let’s go fly kites.",
+        "words": [
+          "小",
+          "明",
+          "我们",
+          "一起",
+          "去",
+          "放风",
+          "筝",
+          "吧"
+        ]
+      },
+      {
+        "id": "hskreading-3611-4",
+        "chinese": "小刚： 太好了！",
+        "pinyin": "xiǎo gāng： tài hǎo le！",
+        "english": "王刚：Excellent!",
+        "words": [
+          "小",
+          "刚",
+          "太好了"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hskreading-6421",
+    "hskLevel": 1,
+    "title": "Favourite animals",
+    "chineseTitle": "最喜欢的动物",
+    "description": "Talking about favourite animals in this Chinese dialogue. Personally, I like cats (猫).",
+    "theme": "Animals",
+    "minutes": 2,
+    "audioUrl": "https://hskreading.com/wp-content/uploads/2019/05/新录音-20.m4a",
+    "source": {
+      "name": "HSK Reading",
+      "url": "https://hskreading.com/favourite-animals/",
+      "license": "Source terms",
+      "sourceLevel": "HSK 1 Reading Practice",
+      "publisher": "HSK Reading",
+      "contributors": []
+    },
+    "sentences": [
+      {
+        "id": "hskreading-6421-1",
+        "chinese": "小明：小红，你最喜欢什么动物？",
+        "pinyin": "xiǎo míng： xiǎo hóng， nǐ zuì xǐ huan shén me dòng wù？",
+        "english": "小明：Xiao Hong, what is your favourite animal?",
+        "words": [
+          "小",
+          "明",
+          "小",
+          "红",
+          "你",
+          "最",
+          "喜欢",
+          "什么",
+          "动物"
+        ]
+      },
+      {
+        "id": "hskreading-6421-2",
+        "chinese": "小红：最喜欢狗，你呢？",
+        "pinyin": "xiǎo hóng： zuì xǐ huan gǒu， nǐ ne？",
+        "english": "小红：I most like dogs, how about you?",
+        "words": [
+          "小",
+          "红",
+          "最",
+          "喜欢",
+          "狗",
+          "你",
+          "呢"
+        ]
+      },
+      {
+        "id": "hskreading-6421-3",
+        "chinese": "小明：猫，我想养一只猫。",
+        "pinyin": "xiǎo míng： māo， wǒ xiǎng yǎng yì zhī māo。",
+        "english": "小明：Cats. I really want to raise a cat.",
+        "words": [
+          "小",
+          "明",
+          "猫",
+          "我",
+          "想",
+          "养",
+          "一",
+          "只",
+          "猫"
+        ]
+      },
+      {
+        "id": "hskreading-6421-4",
+        "chinese": "小红：你可以养啊，你自己住吗？",
+        "pinyin": "xiǎo hóng： nǐ kě yǐ yǎng a， nǐ zì jǐ zhù ma？",
+        "english": "小红：You can. Do you live alone?",
+        "words": [
+          "小",
+          "红",
+          "你",
+          "可以",
+          "养",
+          "啊",
+          "你",
+          "自己",
+          "住",
+          "吗"
+        ]
+      },
+      {
+        "id": "hskreading-6421-5",
+        "chinese": "小明：是的，我自己住。你下午跟我一起去宠物店，可以吗？",
+        "pinyin": "xiǎo míng： shì de， wǒ zì jǐ zhù。 nǐ xià wǔ gēn wǒ yì qǐ qù chǒng wù diàn， kě yǐ ma？",
+        "english": "小明：Yes I live alone. Come to the pet store with me in the afternoon, ok?",
+        "words": [
+          "小",
+          "明",
+          "是的",
+          "我",
+          "自己",
+          "住",
+          "你",
+          "下午",
+          "跟",
+          "我",
+          "一起",
+          "去",
+          "宠物",
+          "店",
+          "可以",
+          "吗"
+        ]
+      },
+      {
+        "id": "hskreading-6421-6",
+        "chinese": "小红：好的！",
+        "pinyin": "xiǎo hóng： hǎo de！",
+        "english": "小红：Ok!",
+        "words": [
+          "小",
+          "红",
+          "好",
+          "的"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hskreading-6568",
+    "hskLevel": 1,
+    "title": "Let’s go to the park",
+    "chineseTitle": "我们去公园玩吧",
+    "description": "A Chinese dialogue about going to the park (公园). This conversation continues at a HSK 2 level .",
+    "theme": "Leisure",
+    "minutes": 2,
+    "audioUrl": "https://hskreading.com/wp-content/uploads/2019/05/lvl-1.m4a",
+    "source": {
+      "name": "HSK Reading",
+      "url": "https://hskreading.com/lets-go-to-the-park/",
+      "license": "Source terms",
+      "sourceLevel": "HSK 1 Reading Practice",
+      "publisher": "HSK Reading",
+      "contributors": []
+    },
+    "sentences": [
+      {
+        "id": "hskreading-6568-1",
+        "chinese": "小明：小红，你星期六想去玩儿吗？还是你想在学校学习？",
+        "pinyin": "xiǎo míng： xiǎo hóng， nǐ xīng qī liù xiǎng qù wán ér ma？ hái shì nǐ xiǎng zài xué xiào xué xí？",
+        "english": "小明：Xiao Hong, do you want to hang out this Saturday? Or do you want to study at school?",
+        "words": [
+          "小",
+          "明",
+          "小",
+          "红",
+          "你",
+          "星期六",
+          "想",
+          "去",
+          "玩儿",
+          "吗",
+          "还是",
+          "你",
+          "想",
+          "在",
+          "学校",
+          "学习"
+        ]
+      },
+      {
+        "id": "hskreading-6568-2",
+        "chinese": "小红：你想去哪里？",
+        "pinyin": "xiǎo hóng： nǐ xiǎng qù nǎ lǐ？",
+        "english": "小红：Where do you want to go?",
+        "words": [
+          "小",
+          "红",
+          "你",
+          "想",
+          "去",
+          "哪里"
+        ]
+      },
+      {
+        "id": "hskreading-6568-3",
+        "chinese": "小明：星期六我们去公园吧，夏天来了，我们可以去游泳。",
+        "pinyin": "xiǎo míng： xīng qī liù wǒ men qù gōng yuán ba， xià tiān lái le， wǒ men kě yǐ qù yóu yǒng。",
+        "english": "小明：Let’s go to the park on Saturday; summer is here. We can go swim.",
+        "words": [
+          "小",
+          "明",
+          "星期六",
+          "我们",
+          "去",
+          "公园",
+          "吧",
+          "夏天",
+          "来",
+          "了",
+          "我们",
+          "可以",
+          "去",
+          "游泳"
+        ]
+      },
+      {
+        "id": "hskreading-6568-4",
+        "chinese": "小红：好啊！",
+        "pinyin": "xiǎo hóng： hǎo a！",
+        "english": "小红：Ok!",
+        "words": [
+          "小",
+          "红",
+          "好",
+          "啊"
+        ]
+      },
+      {
+        "id": "hskreading-6568-5",
+        "chinese": "小明：那星期六早上九点，我在学校门口等你。",
+        "pinyin": "xiǎo míng： nà xīng qī liù zǎo shàng jiǔ diǎn， wǒ zài xué xiào mén kǒu děng nǐ。",
+        "english": "小明：Saturday morning nine o’clock. I’ll meet you by the school gate.",
+        "words": [
+          "小",
+          "明",
+          "那",
+          "星期六",
+          "早上",
+          "九",
+          "点",
+          "我",
+          "在",
+          "学校",
+          "门口",
+          "等",
+          "你"
+        ]
+      }
+    ]
+  },
+  {
     "id": "hskreading-4782",
     "hskLevel": 2,
     "title": "Your food delivery might be a little late",
@@ -1925,6 +2331,401 @@
           "小",
           "明",
           "太好了"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hskreading-5146",
+    "hskLevel": 2,
+    "title": "What school do you go to?",
+    "chineseTitle": "你在什么学校上学？",
+    "description": "Another beginner’s Mandarin dialogue. This time talking about schools (学校). Saying different types of school is easy in Chinese. Primary school (小学), Middle school (中学), and high school (高中).",
+    "theme": "School",
+    "minutes": 2,
+    "audioUrl": "https://hskreading.com/wp-content/uploads/2019/02/what-school-do-you-go-to.m4a",
+    "source": {
+      "name": "HSK Reading",
+      "url": "https://hskreading.com/what-school-do-you-go-to/",
+      "license": "Source terms",
+      "sourceLevel": "HSK 2 Reading Practice",
+      "publisher": "HSK Reading",
+      "contributors": []
+    },
+    "sentences": [
+      {
+        "id": "hskreading-5146-1",
+        "chinese": "艾玛：你在什么学校上学？",
+        "pinyin": "ài mǎ： nǐ zài shén me xué xiào shàng xué？",
+        "english": "Emma：What school do you go to?",
+        "words": [
+          "艾",
+          "玛",
+          "你",
+          "在",
+          "什么",
+          "学校",
+          "上学"
+        ]
+      },
+      {
+        "id": "hskreading-5146-2",
+        "chinese": "莉莉：我在阳光中学上学。",
+        "pinyin": "lì lì： wǒ zài yáng guāng zhōng xué shàng xué。",
+        "english": "Lily：I go to sunshine middle school.",
+        "words": [
+          "莉",
+          "莉",
+          "我",
+          "在",
+          "阳光",
+          "中学",
+          "上学"
+        ]
+      },
+      {
+        "id": "hskreading-5146-3",
+        "chinese": "艾玛：你喜欢你的学校吗？",
+        "pinyin": "ài mǎ： nǐ xǐ huan nǐ de xué xiào ma？",
+        "english": "Emma：Do you like your school?",
+        "words": [
+          "艾",
+          "玛",
+          "你",
+          "喜欢",
+          "你",
+          "的",
+          "学校",
+          "吗"
+        ]
+      },
+      {
+        "id": "hskreading-5146-4",
+        "chinese": "莉莉：我很喜欢。",
+        "pinyin": "lì lì： wǒ hěn xǐ huan。",
+        "english": "Lily：Yes, I like it a lot.",
+        "words": [
+          "莉",
+          "莉",
+          "我",
+          "很",
+          "喜欢"
+        ]
+      },
+      {
+        "id": "hskreading-5146-5",
+        "chinese": "艾玛：你为什么喜欢你的学校？",
+        "pinyin": "ài mǎ： nǐ wèi shén me xǐ huan nǐ de xué xiào？",
+        "english": "Emma：Why do you like your school?",
+        "words": [
+          "艾",
+          "玛",
+          "你",
+          "为什么",
+          "喜欢",
+          "你",
+          "的",
+          "学校"
+        ]
+      },
+      {
+        "id": "hskreading-5146-6",
+        "chinese": "莉莉：因为我的老师很善良。",
+        "pinyin": "lì lì： yīn wèi wǒ de lǎo shī hěn shàn liáng。",
+        "english": "Lily：Because my teachers are kind.",
+        "words": [
+          "莉",
+          "莉",
+          "因为",
+          "我",
+          "的",
+          "老师",
+          "很",
+          "善良"
+        ]
+      },
+      {
+        "id": "hskreading-5146-7",
+        "chinese": "艾玛：你最喜欢的科目是什么？",
+        "pinyin": "ài mǎ： nǐ zuì xǐ huan de kē mù shì shén me？",
+        "english": "Emma：What is your favourite subject?",
+        "words": [
+          "艾",
+          "玛",
+          "你",
+          "最",
+          "喜欢",
+          "的",
+          "科目",
+          "是",
+          "什么"
+        ]
+      },
+      {
+        "id": "hskreading-5146-8",
+        "chinese": "莉莉：我最喜欢的科目是地理。",
+        "pinyin": "lì lì： wǒ zuì xǐ huan de kē mù shì dì lǐ。",
+        "english": "Lily：My favourite subject is geography.",
+        "words": [
+          "莉",
+          "莉",
+          "我",
+          "最",
+          "喜欢",
+          "的",
+          "科目",
+          "是",
+          "地理"
+        ]
+      },
+      {
+        "id": "hskreading-5146-9",
+        "chinese": "艾玛：为什么？",
+        "pinyin": "ài mǎ： wèi shén me？",
+        "english": "Emma：Why?",
+        "words": [
+          "艾",
+          "玛",
+          "为什么"
+        ]
+      },
+      {
+        "id": "hskreading-5146-10",
+        "chinese": "莉莉：因为我觉得地理很有意思。我可以学习其他国家的文化。",
+        "pinyin": "lì lì： yīn wèi wǒ jué de dì lǐ hěn yǒu yì sī。 wǒ kě yǐ xué xí qí tā guó jiā de wén huà。",
+        "english": "Lily：Because I think geography is interesting. I can learn about the culture of other countries.",
+        "words": [
+          "莉",
+          "莉",
+          "因为",
+          "我",
+          "觉得",
+          "地理",
+          "很",
+          "有意思",
+          "我",
+          "可以",
+          "学习",
+          "其他",
+          "国家",
+          "的",
+          "文化"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hskreading-6334",
+    "hskLevel": 2,
+    "title": "Let’s build a snowman",
+    "chineseTitle": "我们堆雪人吧",
+    "description": "This Chinese dialogue is about making a snowman (雪人). Learn some colours and body parts at the same time!",
+    "theme": "Weather",
+    "minutes": 2,
+    "audioUrl": "https://hskreading.com/wp-content/uploads/2019/04/lets-make-a-snowman.m4a",
+    "source": {
+      "name": "HSK Reading",
+      "url": "https://hskreading.com/lets-build-a-snowman/",
+      "license": "Source terms",
+      "sourceLevel": "HSK 2 Reading Practice",
+      "publisher": "HSK Reading",
+      "contributors": []
+    },
+    "sentences": [
+      {
+        "id": "hskreading-6334-1",
+        "chinese": "小明：你看，下雪了！",
+        "pinyin": "xiǎo míng： nǐ kàn， xià xuě le！",
+        "english": "小明：Look, it’s snowing!",
+        "words": [
+          "小",
+          "明",
+          "你",
+          "看",
+          "下雪",
+          "了"
+        ]
+      },
+      {
+        "id": "hskreading-6334-2",
+        "chinese": "小红：我们一起去堆雪人吧。",
+        "pinyin": "xiǎo hóng： wǒ men yì qǐ qù duī xuě rén ba。",
+        "english": "小红：Let’s go make a snowman together.",
+        "words": [
+          "小",
+          "红",
+          "我们",
+          "一起",
+          "去",
+          "堆",
+          "雪人",
+          "吧"
+        ]
+      },
+      {
+        "id": "hskreading-6334-3",
+        "chinese": "小明：雪人想要什么颜色的眼睛呢？",
+        "pinyin": "xiǎo míng： xuě rén xiǎng yào shén me yán sè de yǎn jīng ne？",
+        "english": "小明：What color eyes do snowmen want?",
+        "words": [
+          "小",
+          "明",
+          "雪人",
+          "想要",
+          "什么",
+          "颜色",
+          "的",
+          "眼睛",
+          "呢"
+        ]
+      },
+      {
+        "id": "hskreading-6334-4",
+        "chinese": "小红：黑色！",
+        "pinyin": "xiǎo hóng： hēi sè！",
+        "english": "小红：Black!",
+        "words": [
+          "小",
+          "红",
+          "黑色"
+        ]
+      },
+      {
+        "id": "hskreading-6334-5",
+        "chinese": "小明：那鼻子呢？",
+        "pinyin": "xiǎo míng： nà bí zi ne？",
+        "english": "小明：What about the nose?",
+        "words": [
+          "小",
+          "明",
+          "那",
+          "鼻子",
+          "呢"
+        ]
+      },
+      {
+        "id": "hskreading-6334-6",
+        "chinese": "小红：红色！",
+        "pinyin": "xiǎo hóng： hóng sè！",
+        "english": "小红：Red!",
+        "words": [
+          "小",
+          "红",
+          "红色"
+        ]
+      },
+      {
+        "id": "hskreading-6334-7",
+        "chinese": "小明：好的，那我先回家给雪人找黑色的眼睛和红色的鼻子。",
+        "pinyin": "xiǎo míng： hǎo de， nà wǒ xiān huí jiā gěi xuě rén zhǎo hēi sè de yǎn jīng hé hóng sè de bí zi。",
+        "english": "小明：Ok, then I will go home and find black eyes and red nose for the snowman.",
+        "words": [
+          "小",
+          "明",
+          "好",
+          "的",
+          "那",
+          "我",
+          "先",
+          "回家",
+          "给",
+          "雪人",
+          "找",
+          "黑色",
+          "的",
+          "眼睛",
+          "和",
+          "红色",
+          "的",
+          "鼻子"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hskreading-6637",
+    "hskLevel": 2,
+    "title": "Dumplings",
+    "chineseTitle": "饺子",
+    "description": "Dumplings (饺子) are staple food in China. Dumpling restaurants (饺子馆) are very common.",
+    "theme": "Food",
+    "minutes": 2,
+    "audioUrl": "https://hskreading.com/wp-content/uploads/2019/06/dumplings.mp3",
+    "source": {
+      "name": "HSK Reading",
+      "url": "https://hskreading.com/dumplings/",
+      "license": "Source terms",
+      "sourceLevel": "HSK 2 Reading Practice",
+      "publisher": "HSK Reading",
+      "contributors": []
+    },
+    "sentences": [
+      {
+        "id": "hskreading-6637-1",
+        "chinese": "饺子是中国最重要的食物。",
+        "pinyin": "jiǎo zǐ shì zhōng guó zuì zhòng yào de shí wù。",
+        "english": "Dumplings are China’s most important food.",
+        "words": [
+          "饺子",
+          "是",
+          "中国",
+          "最",
+          "重要",
+          "的",
+          "食物"
+        ]
+      },
+      {
+        "id": "hskreading-6637-2",
+        "chinese": "中国人常常吃饺子，早饭、午饭或者晚饭；也会在重要的节日吃饺子，比如春节。",
+        "pinyin": "zhōng guó rén cháng cháng chī jiǎo zǐ， zǎo fàn 、 wǔ fàn huò zhě wǎn fàn； yě huì zài zhòng yào de jié rì chī jiǎo zǐ， bǐ rú chūn jié。",
+        "english": "Chinese people often eat dumplings for breakfast, lunch or dinner. They will also eat dumplings during important festivals such as Spring Festival.",
+        "words": [
+          "中国人",
+          "常常",
+          "吃",
+          "饺子",
+          "早饭",
+          "午饭",
+          "或者",
+          "晚饭",
+          "也",
+          "会",
+          "在",
+          "重要",
+          "的",
+          "节日",
+          "吃",
+          "饺子",
+          "比如",
+          "春节"
+        ]
+      },
+      {
+        "id": "hskreading-6637-3",
+        "chinese": "饺子的皮是用面粉做的，里面包着不同的食物，肉、菜什么的，很好吃。",
+        "pinyin": "jiǎo zǐ de pí shì yòng miàn fěn zuò de， lǐ miàn bāo zhe bù tóng de shí wù， ròu 、 cài shén me de， hěn hǎo chī。",
+        "english": "Dumpling wrappers are made using flour. Inside contains different food such as meat, vegetables, and so on. How delicious!",
+        "words": [
+          "饺子",
+          "的",
+          "皮",
+          "是",
+          "用",
+          "面粉",
+          "做",
+          "的",
+          "里面",
+          "包",
+          "着",
+          "不同",
+          "的",
+          "食物",
+          "肉",
+          "菜",
+          "什么的",
+          "很",
+          "好吃"
         ]
       }
     ]
@@ -3376,6 +4177,280 @@
     ]
   },
   {
+    "id": "hskreading-6327",
+    "hskLevel": 3,
+    "title": "How to study Chinese well",
+    "chineseTitle": "怎么学好汉语？",
+    "description": "This intermediate dialogue talks about how to improve your Mandarin! The best advice is to get over the fear of making mistakes: that’s when you will really start improving!",
+    "theme": "School",
+    "minutes": 2,
+    "audioUrl": "https://hskreading.com/wp-content/uploads/2019/04/how-to-study-chinese.mp3",
+    "source": {
+      "name": "HSK Reading",
+      "url": "https://hskreading.com/how-to-study-chinese-well/",
+      "license": "Source terms",
+      "sourceLevel": "HSK 3 Reading Practice",
+      "publisher": "HSK Reading",
+      "contributors": []
+    },
+    "sentences": [
+      {
+        "id": "hskreading-6327-1",
+        "chinese": "小明：小红，你的汉语真好，你能告诉我怎么学好汉语吗？",
+        "pinyin": "xiǎo míng： xiǎo hóng， nǐ de hàn yǔ zhēn hǎo， nǐ néng gào sù wǒ zěn me xué hǎo hàn yǔ ma？",
+        "english": "小明：Xiao Hong, your Chinese is very good. Can you tell me how to learn Chinese well?",
+        "words": [
+          "小",
+          "明",
+          "小",
+          "红",
+          "你",
+          "的",
+          "汉语",
+          "真",
+          "好",
+          "你",
+          "能",
+          "告诉",
+          "我",
+          "怎么",
+          "学好",
+          "汉语",
+          "吗"
+        ]
+      },
+      {
+        "id": "hskreading-6327-2",
+        "chinese": "小红：第一，最重要的是你要勇敢开口说汉语！",
+        "pinyin": "xiǎo hóng： dì yī， zuì zhòng yào de shì nǐ yào yǒng gǎn kāi kǒu shuō hàn yǔ！",
+        "english": "小红：First, the most important thing is that you have to be brave enough to open your mouth and speak Chinese!",
+        "words": [
+          "小",
+          "红",
+          "第一",
+          "最",
+          "重要",
+          "的",
+          "是",
+          "你",
+          "要",
+          "勇敢",
+          "开口",
+          "说",
+          "汉语"
+        ]
+      },
+      {
+        "id": "hskreading-6327-3",
+        "chinese": "小明：还有吗？",
+        "pinyin": "xiǎo míng： hái yǒu ma？",
+        "english": "小明：Anything else?",
+        "words": [
+          "小",
+          "明",
+          "还有",
+          "吗"
+        ]
+      },
+      {
+        "id": "hskreading-6327-4",
+        "chinese": "小红：上课的时候要认真听课。",
+        "pinyin": "xiǎo hóng： shàng kè de shí hòu yào rèn zhēn tīng kè。",
+        "english": "小红：Listen carefully during class.",
+        "words": [
+          "小",
+          "红",
+          "上课",
+          "的",
+          "时候",
+          "要",
+          "认真",
+          "听课"
+        ]
+      },
+      {
+        "id": "hskreading-6327-5",
+        "chinese": "小明：遇到不懂的单词怎么办？",
+        "pinyin": "xiǎo míng： yù dào bù dǒng de dān cí zěn me bàn？",
+        "english": "小明：What should I do if I come across words I don’t understand?",
+        "words": [
+          "小",
+          "明",
+          "遇到",
+          "不",
+          "懂",
+          "的",
+          "单词",
+          "怎么办"
+        ]
+      },
+      {
+        "id": "hskreading-6327-6",
+        "chinese": "小红：你可以查词典，然后写下来，有空的时候多看几次。",
+        "pinyin": "xiǎo hóng： nǐ kě yǐ chá cí diǎn， rán hòu xiě xià lái， yǒu kōng de shí hòu duō kàn jǐ cì。",
+        "english": "小红：You can look up the dictionary, then write it down and review it several times when you have free time.",
+        "words": [
+          "小",
+          "红",
+          "你",
+          "可以",
+          "查",
+          "词典",
+          "然后",
+          "写下",
+          "来",
+          "有空",
+          "的",
+          "时候",
+          "多",
+          "看",
+          "几次"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hskreading-6423",
+    "hskLevel": 3,
+    "title": "How to pay in China",
+    "chineseTitle": "在中国怎么给钱？",
+    "description": "This Chinese dialogue focuses upon the idea of “going cashless”. Using a phone to pay for items is a lot quicker than using cash (现金).",
+    "theme": "Modern life",
+    "minutes": 2,
+    "audioUrl": "https://hskreading.com/wp-content/uploads/2019/05/Level3.m4a",
+    "source": {
+      "name": "HSK Reading",
+      "url": "https://hskreading.com/how-to-pay-in-china/",
+      "license": "Source terms",
+      "sourceLevel": "HSK 3 Reading Practice",
+      "publisher": "HSK Reading",
+      "contributors": []
+    },
+    "sentences": [
+      {
+        "id": "hskreading-6423-1",
+        "chinese": "小明：在中国，给钱很少用现金了。",
+        "pinyin": "xiǎo míng： zài zhōng guó， gěi qián hěn shǎo yòng xiàn jīn le。",
+        "english": "小明：In China it is rare to use cash.",
+        "words": [
+          "小",
+          "明",
+          "在",
+          "中国",
+          "给",
+          "钱",
+          "很",
+          "少",
+          "用",
+          "现金",
+          "了"
+        ]
+      },
+      {
+        "id": "hskreading-6423-2",
+        "chinese": "小红：那去中国怎么买东西？",
+        "pinyin": "xiǎo hóng： nà qù zhōng guó zěn me mǎi dōng xī？",
+        "english": "小红：Then how do people in China buy things?",
+        "words": [
+          "小",
+          "红",
+          "那",
+          "去",
+          "中国",
+          "怎么",
+          "买东西"
+        ]
+      },
+      {
+        "id": "hskreading-6423-3",
+        "chinese": "小明：用一个手机软件，叫支付宝，从网上给钱。",
+        "pinyin": "xiǎo míng： yòng yí gè shǒu jī ruǎn jiàn， jiào zhī fù bǎo， cóng wǎng shàng gěi qián。",
+        "english": "小明：They use a phone app called Alipay, it uses the internet to pay.",
+        "words": [
+          "小",
+          "明",
+          "用",
+          "一个",
+          "手机",
+          "软件",
+          "叫",
+          "支付宝",
+          "从",
+          "网上",
+          "给",
+          "钱"
+        ]
+      },
+      {
+        "id": "hskreading-6423-4",
+        "chinese": "小红：很多人用这个软件吗？",
+        "pinyin": "xiǎo hóng： hěn duō rén yòng zhè ge ruǎn jiàn ma？",
+        "english": "小红：Is this software common?",
+        "words": [
+          "小",
+          "红",
+          "很",
+          "多",
+          "人",
+          "用",
+          "这个",
+          "软件",
+          "吗"
+        ]
+      },
+      {
+        "id": "hskreading-6423-5",
+        "chinese": "小明：是的！无论你是去商店还是菜市场，差不多所有地方都可以用支付宝给钱。",
+        "pinyin": "xiǎo míng： shì de！ wú lùn nǐ shì qù shāng diàn hái shì cài shì chǎng， chà bù duō suǒ yǒu dì fāng dōu kě yǐ yòng zhī fù bǎo gěi qián。",
+        "english": "小明：Yes! Whether you are in a shop or vegetable market, you can use Alipay in almost all places.",
+        "words": [
+          "小",
+          "明",
+          "是的",
+          "无论",
+          "你",
+          "是",
+          "去",
+          "商店",
+          "还是",
+          "菜市场",
+          "差不多",
+          "所有",
+          "地方",
+          "都",
+          "可以",
+          "用",
+          "支付宝",
+          "给",
+          "钱"
+        ]
+      },
+      {
+        "id": "hskreading-6423-6",
+        "chinese": "小红：那真是太方便了！出门只用带手机就可以了。",
+        "pinyin": "xiǎo hóng： nà zhēn shì tài fāng biàn le！ chū mén zhī yòng dài shǒu jī jiù kě yǐ le。",
+        "english": "小红：That’s really convenient! You only need to carry your phone outside.",
+        "words": [
+          "小",
+          "红",
+          "那",
+          "真是",
+          "太",
+          "方便",
+          "了",
+          "出门",
+          "只",
+          "用",
+          "带",
+          "手机",
+          "就",
+          "可以",
+          "了"
+        ]
+      }
+    ]
+  },
+  {
     "id": "hskreading-4997",
     "hskLevel": 4,
     "title": "Criticism at work",
@@ -4209,6 +5284,152 @@
           "里",
           "购买",
           "食物"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hskreading-4351",
+    "hskLevel": 4,
+    "title": "Time flies! Things I did in 2018",
+    "chineseTitle": "光阴似箭",
+    "description": "A look back at 2018. This Chinese passage shows how fast things can change in life.",
+    "theme": "Daily life",
+    "minutes": 2,
+    "audioUrl": "https://hskreading.com/wp-content/uploads/2019/01/time-flies.wav",
+    "source": {
+      "name": "HSK Reading",
+      "url": "https://hskreading.com/time-flies-things-i-did-in-2018/",
+      "license": "Source terms",
+      "sourceLevel": "HSK 4 Reading Practice",
+      "publisher": "HSK Reading",
+      "contributors": []
+    },
+    "sentences": [
+      {
+        "id": "hskreading-4351-1",
+        "chinese": "时间过的真快啊，转眼2018年就要过去了。",
+        "pinyin": "shí jiān guò de zhēn kuài a， zhuǎn yǎn 2 0 1 8 nián jiù yào guò qù le。",
+        "english": "Time flies, and in a flash 2018 will be over.",
+        "words": [
+          "时间",
+          "过",
+          "的",
+          "真",
+          "快",
+          "啊",
+          "转眼",
+          "年",
+          "就要",
+          "过去",
+          "了"
+        ]
+      },
+      {
+        "id": "hskreading-4351-2",
+        "chinese": "在这一年里，我实现了从学校毕业到参加工作的转变。在学校的时候可以见到很多亲切的老师和一起玩的同学。工作以后，遇见的是严厉的领导和忙碌的同事。",
+        "pinyin": "zài zhè yì nián lǐ， wǒ shí xiàn le cóng xué xiào bì yè dào cān jiā gōng zuò de zhuǎn biàn。 zài xué xiào de shí hòu kě yǐ jiàn dào hěn duō qīn qiè de lǎo shī hé yì qǐ wán de tóng xué。 gōng zuò yǐ hòu， yù jiàn de shì yán lì de lǐng dǎo hé máng lù de tóng shì。",
+        "english": "During the year, I graduated from school and started work. At school, I could see a lot of friendly teachers and classmates to hang out with. After I started work, I was met with stern leadership and busy colleagues.",
+        "words": [
+          "在",
+          "这",
+          "一",
+          "年",
+          "里",
+          "我",
+          "实现",
+          "了",
+          "从",
+          "学校",
+          "毕业",
+          "到",
+          "参加",
+          "工作",
+          "的",
+          "转变",
+          "在",
+          "学校",
+          "的",
+          "时候",
+          "可以",
+          "见到",
+          "很",
+          "多",
+          "亲切",
+          "的",
+          "老师",
+          "和",
+          "一起",
+          "玩",
+          "的",
+          "同学",
+          "工作",
+          "以后",
+          "遇见",
+          "的",
+          "是",
+          "严厉",
+          "的",
+          "领导",
+          "和",
+          "忙碌",
+          "的",
+          "同事"
+        ]
+      },
+      {
+        "id": "hskreading-4351-3",
+        "chinese": "我上大学的时候，住在宿舍，虽然有点拥挤，但是很温馨。",
+        "pinyin": "wǒ shàng dà xué de shí hòu， zhù zài sù shè， suī rán yǒu diǎn yōng jǐ， dàn shì hěn wēn xīn。",
+        "english": "When I was in college, I lived in a dormitory. Although it was a bit crowded, it was very warm.",
+        "words": [
+          "我",
+          "上",
+          "大学",
+          "的",
+          "时候",
+          "住",
+          "在",
+          "宿舍",
+          "虽然",
+          "有点",
+          "拥挤",
+          "但是",
+          "很",
+          "温馨"
+        ]
+      },
+      {
+        "id": "hskreading-4351-4",
+        "chinese": "现在住在自己租的房子里，很简单很贵。可是，人都要不断向前的，希望2019年，大家可以一起加油!",
+        "pinyin": "xiàn zài zhù zài zì jǐ zū de fáng zi lǐ， hěn jiǎn dān hěn guì。 kě shì， rén dōu yào bú duàn xiàng qián de， xī wàng 2 0 1 9 nián， dà jiā kě yǐ yì qǐ jiā yóu !",
+        "english": "Right now I live in a rented house. It is very plain and expensive. However, people must keep moving forward. I hope that in 2019, everyone can cheer each other on!",
+        "words": [
+          "现在",
+          "住",
+          "在",
+          "自己",
+          "租",
+          "的",
+          "房子",
+          "里",
+          "很",
+          "简单",
+          "很",
+          "贵",
+          "可是",
+          "人",
+          "都",
+          "要不",
+          "断",
+          "向前",
+          "的",
+          "希望",
+          "年",
+          "大家",
+          "可以",
+          "一起",
+          "加油"
         ]
       }
     ]

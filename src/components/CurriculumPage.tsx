@@ -10,6 +10,7 @@ import {
   ChevronDown,
   GitBranch,
   Languages,
+  PenLine,
   RotateCcw,
   Search,
   Target,
@@ -38,6 +39,7 @@ import {
 import { itemKey, setWordLearningStatus, updatePreferences } from "../lib/storage";
 import { readUiState, writeUiState } from "../lib/persistentUi";
 import { AudioButton } from "./AudioButton";
+import { HandwritingSearch } from "./HandwritingSearch";
 import { PinyinLine } from "./PinyinLine";
 import { useDialogFocus } from "../hooks/useDialogFocus";
 
@@ -89,6 +91,7 @@ export function CurriculumPage({ active, state, setState, record, onOpenGroup, f
   const [level, setLevel] = useState<LevelFilter>(savedUi.level ?? state.preferences.level);
   const [masteryFilter, setMasteryFilter] = useState<MasteryFilter>(savedUi.masteryFilter ?? "all");
   const [query, setQuery] = useState(savedUi.query ?? "");
+  const [handwritingOpen, setHandwritingOpen] = useState(false);
   const [visibleCount, setVisibleCount] = useState(savedUi.visibleCount ?? 80);
   const [selectedWord, setSelectedWord] = useState<string | undefined>(savedUi.selectedWord);
   const [selectedCulture, setSelectedCulture] = useState<string | undefined>(savedUi.selectedCulture);
@@ -241,6 +244,12 @@ export function CurriculumPage({ active, state, setState, record, onOpenGroup, f
     else { setSelectedCulture(item.id); setSelectedWord(undefined); setDetailOpen(true); }
   };
 
+  const pickHandwritten = (character: string) => {
+    setQuery(character);
+    setHandwritingOpen(false);
+    if (level !== "all") setLevel("all");
+  };
+
   const chooseLevel = (next: LevelFilter) => {
     setLevel(next);
     setSelectedCulture(undefined);
@@ -280,15 +289,19 @@ export function CurriculumPage({ active, state, setState, record, onOpenGroup, f
       </div>
     </section>
 
-    <label className="curriculum-search">
-      <Search size={22}/>
-      <input aria-label="Search all HSK vocabulary" value={query} onChange={(event) => {
-        const value = event.target.value;
-        setQuery(value);
-        if (value.trim() && level !== "all") chooseLevel("all");
-      }} placeholder="Try 学习, xuexi, or study…" autoComplete="off" enterKeyHint="search"/>
-      {query && <button onClick={() => setQuery("")} aria-label="Clear search">Clear</button>}
-    </label>
+    <div className="curriculum-search-row">
+      <label className="curriculum-search">
+        <Search size={22}/>
+        <input aria-label="Search all HSK vocabulary" value={query} onChange={(event) => {
+          const value = event.target.value;
+          setQuery(value);
+          if (value.trim() && level !== "all") chooseLevel("all");
+        }} placeholder="Try 学习, xuexi, or study…" autoComplete="off" enterKeyHint="search"/>
+        {query && <button onClick={() => setQuery("")} aria-label="Clear search">Clear</button>}
+      </label>
+      <button className={handwritingOpen ? "handwriting-toggle active" : "handwriting-toggle"} aria-pressed={handwritingOpen} onClick={() => setHandwritingOpen((open) => !open)} aria-label="Draw a character to search"><PenLine size={17}/><span>Draw</span></button>
+    </div>
+    {handwritingOpen && <HandwritingSearch onPick={pickHandwritten} onClose={() => setHandwritingOpen(false)}/>}
 
     <div className="level-strip" aria-label="HSK level filters">
       <LevelButton active={level === "all"} label="All" count={manifest?.uniqueHeadwords ?? headwords.length} onClick={() => chooseLevel("all")}/>

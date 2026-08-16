@@ -17,6 +17,7 @@ customPinyin({
 });
 
 const READING_MANIFEST = [
+  // HSK 1
   { id: 6355, level: 1, theme: "Kindness" },
   { id: 6962, level: 1, theme: "Family" },
   { id: 6315, level: 1, theme: "Daily life" },
@@ -24,6 +25,11 @@ const READING_MANIFEST = [
   { id: 5011, level: 1, theme: "Friendship" },
   { id: 4437, level: 1, theme: "Daily life" },
   { id: 4433, level: 1, theme: "Daily life" },
+  { id: 3186, level: 1, theme: "Travel" },
+  { id: 3611, level: 1, theme: "Weather" },
+  { id: 6421, level: 1, theme: "Animals" },
+  { id: 6568, level: 1, theme: "Leisure" },
+  // HSK 2
   { id: 4782, level: 2, theme: "Modern life" },
   { id: 5179, level: 2, theme: "Family" },
   { id: 6644, level: 2, theme: "Fable" },
@@ -33,6 +39,10 @@ const READING_MANIFEST = [
   { id: 5856, level: 2, theme: "Fable" },
   { id: 5758, level: 2, theme: "Shopping" },
   { id: 4760, level: 2, theme: "Dreams" },
+  { id: 5146, level: 2, theme: "School" },
+  { id: 6334, level: 2, theme: "Weather" },
+  { id: 6637, level: 2, theme: "Food" },
+  // HSK 3
   { id: 4755, level: 3, theme: "Growing up" },
   { id: 6541, level: 3, theme: "City life" },
   { id: 5985, level: 3, theme: "Daily life" },
@@ -45,12 +55,16 @@ const READING_MANIFEST = [
   { id: 5221, level: 3, theme: "Fable" },
   { id: 4421, level: 3, theme: "Daily life" },
   { id: 4361, level: 3, theme: "Daily life" },
+  { id: 6327, level: 3, theme: "School" },
+  { id: 6423, level: 3, theme: "Modern life" },
+  // HSK 4
   { id: 4997, level: 4, theme: "Work" },
   { id: 5048, level: 4, theme: "Family" },
   { id: 5082, level: 4, theme: "Holidays" },
   { id: 4119, level: 4, theme: "Family" },
   { id: 4218, level: 4, theme: "Modern life" },
   { id: 3302, level: 4, theme: "Health" },
+  { id: 4351, level: 4, theme: "Daily life" },
 ];
 
 async function fetchJson(url) {
