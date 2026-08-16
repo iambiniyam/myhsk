@@ -56,7 +56,7 @@ export function CharacterLearningCard({ character, data, words, state, onRecord 
 export function SentenceLearningCard({ sentence, state, onRecord }: { sentence: SentenceEntry; state: AppState; onRecord?: (score: 0 | 1 | 2 | 3) => void }) {
   const [translation, setTranslation] = useState(false);
   return <article className="sentence-card">
-    <div className="sentence-main"><p>{sentence.chinese}</p><AudioButton text={sentence.chinese} kind="sentence" speed={state.preferences.audioSpeed} label="Listen" /></div>
+    <div className="sentence-main"><p>{sentence.chinese}</p><AudioButton text={sentence.chinese} kind="sentence" speed={state.preferences.audioSpeed} label="Listen" prefetch/></div>
     <PinyinLine pinyin={sentence.pinyin} mode={state.preferences.showPinyin} />
     {translation ? <button className="translation" onClick={() => setTranslation(false)}>{sentence.english}</button> : <button className="reveal-line" onClick={() => setTranslation(true)}>Reveal meaning</button>}
     {sentence.grammarPoints.length > 0 && <div className="grammar-tags">{sentence.grammarPoints.slice(0, 3).map((point) => <span key={point}>{point}</span>)}</div>}

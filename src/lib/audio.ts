@@ -276,7 +276,7 @@ function playMedia(source: string, speed: AudioSpeed, onStart?: () => void, maxP
     let settled = false;
     let started = false;
     let playbackTimeout: number | undefined;
-    const startTimeout = window.setTimeout(() => finish(new Error("Audio took too long to start.")), 7_500);
+    const startTimeout = window.setTimeout(() => finish(new Error("Audio took too long to start.")), 5_000);
     const markStarted = () => {
       if (started || settled) return;
       started = true;
@@ -355,6 +355,16 @@ export async function speakChinese(
     }
   }
 
+  // High-quality neural audio comes before the device voice: the device voice is the
+  // least natural Mandarin option and was previously mispronouncing polyphonic characters.
+  try {
+    const source = await loadNeuralUrl(text, kind);
+    await playMedia(source, speed, () => options.onStart?.("neural"), playbackLimit);
+    return "neural";
+  } catch (error) {
+    if (error instanceof DOMException && error.name === "AbortError") throw error;
+  }
+
   try {
     await playDeviceVoice(text, kind, speed, gender, () => options.onStart?.("device"));
     return "device";
@@ -362,9 +372,7 @@ export async function speakChinese(
     if (error instanceof DOMException && error.name === "AbortError") throw error;
   }
 
-  const source = await loadNeuralUrl(text, kind);
-  await playMedia(source, speed, () => options.onStart?.("neural"), playbackLimit);
-  return "neural";
+  throw new Error("No Mandarin audio source could play.");
 }
 
 export function stopAudio(): void {
