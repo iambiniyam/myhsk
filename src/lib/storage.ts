@@ -83,10 +83,6 @@ function safeParse(raw: string | null, strict = false): AppState {
   }
 }
 
-export function normalizeState(value: unknown): AppState {
-  return safeParse(JSON.stringify(value), true);
-}
-
 export function loadState(): AppState {
   if (typeof window === "undefined") return structuredClone(defaultState);
   const current = localStorage.getItem(STORAGE_KEY);
@@ -292,6 +288,4 @@ export async function importState(file: File): Promise<AppState> {
   return parsed;
 }
 
-export function changeLevel(state: AppState, level: HskLevel): AppState {
-  return updatePreferences(state, { level });
-}
+

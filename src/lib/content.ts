@@ -1,20 +1,10 @@
-import type { CharacterCurriculumManifest, CharacterDetailData, CharacterEntry, CharacterFamiliesData, CharacterIndexEntry, CulturalTerm, FrequencyEntry, HskLevel, HskManifest, LexicalEvidenceData, NetworkData, PriorityFeatures, ReadingEntry, ReadingStory, SentenceEntry, SpokenSentenceData, SpokenSentenceEntry, WordDetailData, WordEntry, WordFrequencyData, WordInsightsData } from "../types";
+import type { CharacterCurriculumManifest, CharacterDetailData, CharacterEntry, CharacterFamiliesData, CharacterIndexEntry, CulturalTerm, HskLevel, HskManifest, NetworkData, PriorityFeatures, ReadingStory, SentenceEntry, SpokenSentenceEntry, WordDetailData, WordEntry } from "../types";
 
-let charactersPromise: Promise<Record<string, CharacterEntry>> | undefined;
-let frequencyPromise: Promise<Record<string, FrequencyEntry>> | undefined;
-let wordFrequencyPromise: Promise<WordFrequencyData> | undefined;
-let lexicalEvidencePromise: Promise<LexicalEvidenceData> | undefined;
-let sentencesPromise: Promise<SentenceEntry[]> | undefined;
-let spokenSentencesPromise: Promise<SpokenSentenceData> | undefined;
-let tatoebaPromise: Promise<SentenceEntry[]> | undefined;
-let readingsPromise: Promise<ReadingEntry[]> | undefined;
 let readingStoriesPromise: Promise<ReadingStory[]> | undefined;
 let networksPromise: Promise<NetworkData> | undefined;
 const wordPromises = new Map<HskLevel, Promise<WordEntry[]>>();
-let openDictionaryPromise: Promise<WordEntry[]> | undefined;
 let hskManifestPromise: Promise<HskManifest> | undefined;
 let culturalTermsPromise: Promise<CulturalTerm[]> | undefined;
-let wordInsightsPromise: Promise<WordInsightsData> | undefined;
 const wordDetailShardPromises = new Map<number, Promise<Record<string, WordDetailData>>>();
 const WORD_DETAIL_SHARDS = 64;
 let characterIndexPromise: Promise<CharacterIndexEntry[]> | undefined;
@@ -32,39 +22,6 @@ async function fetchJson<T>(path: string): Promise<T> {
   const response = await fetch(assetPath(path));
   if (!response.ok) throw new Error(`Could not load ${path}: ${response.status}`);
   return response.json() as Promise<T>;
-}
-
-export function loadCharacters(): Promise<Record<string, CharacterEntry>> {
-  charactersPromise ??= fetchJson<Record<string, CharacterEntry>>("content/characters.json");
-  return charactersPromise;
-}
-
-export function loadFrequency(): Promise<Record<string, FrequencyEntry>> {
-  frequencyPromise ??= fetchJson<Record<string, FrequencyEntry>>("content/frequency.json");
-  return frequencyPromise;
-}
-
-export function loadWordFrequency(): Promise<WordFrequencyData> {
-  wordFrequencyPromise ??= fetchJson<WordFrequencyData>("content/word-frequency.json").catch(() => ({
-    generatedAt: "",
-    source: "unavailable",
-    corpusWords: 0,
-    corpusCharacters: 0,
-    contextCount: 0,
-    words: {},
-  }));
-  return wordFrequencyPromise;
-}
-
-export function loadLexicalEvidence(): Promise<LexicalEvidenceData> {
-  lexicalEvidencePromise ??= fetchJson<LexicalEvidenceData>("content/lexical-evidence.json").catch(() => ({
-    generatedAt: "",
-    source: "unavailable",
-    sourceUrl: "",
-    fields: [],
-    words: {},
-  }));
-  return lexicalEvidencePromise;
 }
 
 export function loadWords(level: HskLevel): Promise<WordEntry[]> {
@@ -202,11 +159,6 @@ export async function loadOpenDictionaryWord(word: string): Promise<WordEntry | 
   return (await promise)[word];
 }
 
-export function loadOpenDictionary(): Promise<WordEntry[]> {
-  openDictionaryPromise ??= fetchJson<WordEntry[]>("content/open-dictionary.json").catch(() => []);
-  return openDictionaryPromise;
-}
-
 export function loadHskManifest(): Promise<HskManifest> {
   hskManifestPromise ??= fetchJson<HskManifest>("content/hsk/manifest.json");
   return hskManifestPromise;
@@ -215,11 +167,6 @@ export function loadHskManifest(): Promise<HskManifest> {
 export function loadCulturalTerms(): Promise<CulturalTerm[]> {
   culturalTermsPromise ??= fetchJson<CulturalTerm[]>("content/hsk/cultural-terms.json");
   return culturalTermsPromise;
-}
-
-export function loadWordInsights(): Promise<WordInsightsData> {
-  wordInsightsPromise ??= fetchJson<WordInsightsData>("content/word-insights.json");
-  return wordInsightsPromise;
 }
 
 function wordDetailShard(word: string): number {
@@ -273,32 +220,6 @@ export async function loadCharacterDetail(character: string): Promise<CharacterD
     characterDetailShardPromises.set(shard, promise);
   }
   return (await promise)[character];
-}
-
-export function loadSentences(): Promise<SentenceEntry[]> {
-  sentencesPromise ??= fetchJson<SentenceEntry[]>("content/sentences/hsk.json");
-  return sentencesPromise;
-}
-
-export function loadSpokenSentences(): Promise<SpokenSentenceData> {
-  spokenSentencesPromise ??= fetchJson<SpokenSentenceData>("content/spoken-sentences.json").catch(() => ({
-    generatedAt: "",
-    source: "unavailable",
-    sourceUrls: {},
-    candidateCount: 0,
-    sentences: [],
-  }));
-  return spokenSentencesPromise;
-}
-
-export function loadTatoebaSentences(): Promise<SentenceEntry[]> {
-  tatoebaPromise ??= fetchJson<SentenceEntry[]>("content/sentences/tatoeba.json").catch(() => []);
-  return tatoebaPromise;
-}
-
-export function loadReadings(): Promise<ReadingEntry[]> {
-  readingsPromise ??= fetchJson<ReadingEntry[]>("content/readings.json");
-  return readingsPromise;
 }
 
 export function loadReadingStories(): Promise<ReadingStory[]> {

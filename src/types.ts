@@ -61,12 +61,6 @@ export interface WordInsight {
   exampleIds: number[];
 }
 
-export interface WordInsightsData {
-  generatedAt: string;
-  sourceCounts: { hskWords: number; hskSentences: number; openSentences: number };
-  words: Record<string, WordInsight>;
-}
-
 export interface WordDetailConnection {
   engine: NetworkKind;
   id: string;
@@ -155,13 +149,6 @@ export interface CharacterCurriculumManifest {
   familyCounts: Record<"meaning" | "sound" | "visual", number>;
 }
 
-export interface FrequencyEntry {
-  rank: number;
-  frequency?: number;
-  perMillion?: number;
-  level?: string;
-}
-
 export interface PriorityFeatures {
   /** frequencyValue: 1 - min(1, average character rank / 9000) */
   f: number;
@@ -171,44 +158,6 @@ export interface PriorityFeatures {
   t: number;
   /** learnability: 1 - lexical-difficulty score from CLD evidence */
   l: number;
-}
-
-export interface WordFrequencyEntry {
-  rank: number;
-  count: number;
-  perMillion: number;
-  contextCount: number;
-  contextPercent: number;
-  logContextCount: number;
-}
-
-export interface WordFrequencyData {
-  generatedAt: string;
-  source: string;
-  sourceUrl?: string;
-  corpusWords: number;
-  corpusCharacters: number;
-  contextCount: number;
-  words: Record<string, WordFrequencyEntry>;
-}
-
-export interface LexicalEvidence {
-  characterFamilySize?: number;
-  phonologicalNeighbors?: number;
-  phonologicalDistance?: number;
-  strokes?: number;
-  phoneticRegularity?: number;
-  phoneticFriends?: number;
-  pointwiseMutualInformation?: number;
-  conditionalProbability?: number;
-}
-
-export interface LexicalEvidenceData {
-  generatedAt: string;
-  source: string;
-  sourceUrl: string;
-  fields: string[];
-  words: Record<string, LexicalEvidence>;
 }
 
 export interface SentenceEntry {
@@ -231,20 +180,6 @@ export interface SpokenSentenceEntry extends SentenceEntry {
   utilityScore: number;
 }
 
-export interface SpokenSentenceData {
-  generatedAt: string;
-  source: string;
-  sourceUrls: Record<string, string>;
-  candidateCount: number;
-  sentences: SpokenSentenceEntry[];
-}
-
-export interface ReadingEntry extends SentenceEntry {
-  title: string;
-  context?: string;
-  sourceTitle?: string;
-  sourceUrl?: string;
-}
 
 export interface ReadingStorySentence {
   id: string;

@@ -1,8 +1,26 @@
 const CACHE_PREFIX = "myhsk-";
 const LEGACY_CACHE_PREFIXES = ["mingbai-open-"];
-const VERSION = `${CACHE_PREFIX}v5`;
+const VERSION = `${CACHE_PREFIX}v6`;
 const shellUrl = new URL("./", self.registration.scope).toString();
 const SHELL = ["./", "./manifest.webmanifest", "./icon.svg"].map((path) => new URL(path, self.registration.scope).toString());
+
+// Core curriculum that makes the first open fast and the basic experience offline-ready:
+// HSK level 1 words, the syllabus manifest, character index + clue families, learning
+// networks, reading stories, and the shard indexes. Everything else is cached as visited.
+const CORE_CONTENT = [
+  "content/hsk/manifest.json",
+  "content/hsk/level-1.json",
+  "content/hsk/cultural-terms.json",
+  "content/priority-features/level-1.json",
+  "content/character-curriculum/index.json",
+  "content/character-curriculum/families.json",
+  "content/character-curriculum/manifest.json",
+  "content/networks.json",
+  "content/reading-stories.json",
+  "content/sentences/hsk-index.json",
+  "content/spoken-index.json",
+  "human-audio-v1.json",
+].map((path) => new URL(path, self.registration.scope).toString());
 
 function remember(event, request, response) {
   if (response.ok || response.type === "opaque") {
@@ -49,6 +67,19 @@ async function navigationWithFastFallback(event, request, fallback) {
   }
 }
 
+// Prefetch a fixed set of likely-next files quietly after activation. The app itself
+// already caches whatever the learner opens (stale-while-revalidate + cache-first).
+async function warmCore() {
+  const cache = await caches.open(VERSION);
+  await Promise.all([...SHELL, ...CORE_CONTENT].map(async (url) => {
+    try {
+      if (await cache.match(url)) return;
+      const response = await fetch(url, { cache: "no-cache" });
+      if (response.ok || response.type === "opaque") await cache.put(url, response);
+    } catch { /* offline or missing file is fine */ }
+  }));
+}
+
 self.addEventListener("install", (event) => {
   event.waitUntil(Promise.all([
     caches.open(VERSION).then((cache) => cache.addAll(SHELL)),
@@ -60,7 +91,15 @@ self.addEventListener("activate", (event) => {
   event.waitUntil(Promise.all([
     caches.keys().then((keys) => Promise.all(keys.filter((key) => (key.startsWith(CACHE_PREFIX) && key !== VERSION) || LEGACY_CACHE_PREFIXES.some((prefix) => key.startsWith(prefix))).map((key) => caches.delete(key)))),
     self.clients.claim(),
-  ]));
+  ]).then(() => {
+    // Warm the core curriculum when the browser is idle after activation.
+    const warm = () => void warmCore();
+    if ("scheduler" in self && self.scheduler.postTask) {
+      self.scheduler.postTask(warm, { priority: "background" }).catch(warm);
+    } else {
+      self.setTimeout(warm, 4_000);
+    }
+  }));
 });
 
 self.addEventListener("fetch", (event) => {
