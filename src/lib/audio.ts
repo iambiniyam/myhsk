@@ -16,6 +16,20 @@ const NEURAL_CACHE = "myhsk-neural-audio-v2";
 const NEURAL_ENDPOINT = assetPath("api/tts");
 const HUMAN_MANIFEST = assetPath("human-audio-v1.json");
 const STATIC_MANIFEST = assetPath("audio/manifest.json");
+// Remote hosts whose audio is proxied through the same origin so playback works in
+// regions where huggingface.co / tatoeba.org are unreachable without a VPN.
+const PROXY_ENDPOINT = assetPath("api/audio");
+function proxyMediaUrl(source: string): string {
+  if (source.includes("huggingface.co/datasets/no7z/hsk-sentences-audio")) {
+    const file = source.split("/").pop() ?? "";
+    if (/^hsk[1-6]-\d{4}(?:_slow)?\.mp3$/u.test(file)) return `${PROXY_ENDPOINT}?src=hf&file=${encodeURIComponent(file)}`;
+  }
+  const tatoebaMatch = source.match(/tatoeba\.org\/audio\/download\/(\d+)/u);
+  if (tatoebaMatch) return `${PROXY_ENDPOINT}?src=tatoeba&id=${tatoebaMatch[1]}`;
+  const storyMatch = source.match(/hskreading\.com\/wp-content\/uploads\/(\d{4}\/\d{2}\/[A-Za-z0-9._-]+\.(?:mp3|m4a|wav))/u);
+  if (storyMatch) return `${PROXY_ENDPOINT}?src=hsr&file=${encodeURIComponent(storyMatch[1])}`;
+  return source;
+}
 const MAX_OBJECT_URLS = 36;
 const MAX_MEDIA_PRELOADS = 8;
 const API_TIMEOUT_MS = 3_500;
@@ -70,7 +84,7 @@ async function loadStaticAudio(): Promise<StaticAudioManifest> {
 async function staticRecordingUrl(text: string, kind: AudioKind, speed: AudioSpeed): Promise<string | undefined> {
   const clip = (await loadStaticAudio()).clips?.[`${kind}:${text.trim()}`];
   const source = clip?.[speed] ?? clip?.normal;
-  return source ? assetPath(source) : undefined;
+  return source ? proxyMediaUrl(assetPath(source)) : undefined;
 }
 
 function neuralKey(kind: AudioKind, text: string): string {
@@ -312,8 +326,8 @@ function playMedia(source: string, speed: AudioSpeed, onStart?: () => void, maxP
 export async function prefetchChinese(text?: string, kind: AudioKind = "word", mediaUrl?: string, speed: AudioSpeed = "normal"): Promise<void> {
   await preloadAudioSystem();
   if (!text) return;
-  const preferredUrl = mediaUrl || await humanRecordingUrl(text, kind) || await staticRecordingUrl(text, kind, speed);
-  if (preferredUrl) preloadMedia(assetPath(preferredUrl));
+  const preferredUrl = mediaUrl ? proxyMediaUrl(assetPath(mediaUrl)) : (await humanRecordingUrl(text, kind)) ?? await staticRecordingUrl(text, kind, speed);
+  if (preferredUrl) preloadMedia(preferredUrl);
 }
 
 export async function speakChinese(
@@ -328,7 +342,7 @@ export async function speakChinese(
 
   if (options.mediaUrl) {
     try {
-      await playMedia(assetPath(options.mediaUrl), speed, () => options.onStart?.("human"), playbackLimit);
+      await playMedia(proxyMediaUrl(assetPath(options.mediaUrl)), speed, () => options.onStart?.("human"), playbackLimit);
       return "human";
     } catch (error) {
       if (error instanceof DOMException && error.name === "AbortError") throw error;
