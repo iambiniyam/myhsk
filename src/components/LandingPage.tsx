@@ -44,11 +44,11 @@ export function LandingPage({ session, onStart, onAccount }: {
       <section className="landing-numbers" aria-label="MyHSK coverage">
         <div><strong>11,000+</strong><span>official syllabus entries</span></div>
         <div><strong>7 levels</strong><span>HSK 1 through 7–9</span></div>
-        <div><strong>2 paths</strong><span>words and character reading</span></div>
+        <div><strong>3 tools</strong><span>words, characters, reading</span></div>
       </section>
 
       <section className="landing-method">
-        <div className="landing-section-heading"><span className="eyebrow">TWO FOCUSED TOOLS</span><h2>Everything needed.<br/>Nothing distracting.</h2><p>MyHSK separates vocabulary and character reading, then connects them exactly where the connection helps.</p></div>
+        <div className="landing-section-heading"><span className="eyebrow">THREE FOCUSED TOOLS</span><h2>Everything needed.<br/>Nothing distracting.</h2><p>MyHSK separates vocabulary, character reading, and graded reading, then connects them exactly where the connection helps.</p></div>
         <div className="landing-method-grid">
           <article className="landing-feature words-feature">
             <div><BookOpenText size={21}/><span>01</span></div>
