@@ -175,6 +175,8 @@ export default function App() {
           sessionTotals={sessionTotals}
           focusWord={focusedWord}
           onOpenCharacter={(character) => { setFocusedCharacter(character); openArea("characters", true, false); }}
+          onOpenReading={() => openArea("reading", true, false)}
+          onOpenCharacters={() => openArea("characters", true, false)}
         /></section>}
         {visitedAreas.has("characters") && <section hidden={learningArea !== "characters"}>
           <Suspense fallback={<div className="page-loading" role="status"><span className="skeleton"/><strong>Opening the character library…</strong></div>}>
