@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { LoaderCircle, Volume2 } from "lucide-react";
 import { prefetchChinese, speakChinese, type AudioKind } from "../lib/audio";
-import { trackAnalytics } from "../lib/analytics";
 
 interface AudioButtonProps {
   text: string;
@@ -32,7 +31,6 @@ export function AudioButton({ text, kind = "word", speed = "normal", gender = "f
         if (operation !== operationRef.current || reported) return;
         reported = true;
         setStatus("idle");
-        trackAnalytics("audio_play", { area: kind, detail: source });
         onPlayed?.();
       } });
       if (operation === operationRef.current) setStatus("idle");

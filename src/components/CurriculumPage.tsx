@@ -37,7 +37,6 @@ import {
 } from "../lib/content";
 import { itemKey, setWordLearningStatus, updatePreferences } from "../lib/storage";
 import { readUiState, writeUiState } from "../lib/persistentUi";
-import { trackAnalytics } from "../lib/analytics";
 import { AudioButton } from "./AudioButton";
 import { PinyinLine } from "./PinyinLine";
 import { useDialogFocus } from "../hooks/useDialogFocus";
@@ -100,7 +99,6 @@ export function CurriculumPage({ active, state, setState, record, onOpenGroup, f
   const filtersMounted = useRef(false);
   const loadedWordLevels = useRef(new Map<HskLevel, WordEntry[]>());
   const cultureLoaded = useRef(false);
-  const searchTracked = useRef(Boolean(savedUi.query?.trim()));
 
   useEffect(() => {
     writeUiState<CurriculumUiState>("word-library", { level, masteryFilter, query, visibleCount, selectedWord, selectedCulture, detailOpen });
@@ -220,8 +218,6 @@ export function CurriculumPage({ active, state, setState, record, onOpenGroup, f
     .slice(0, 8), [activeDetail?.semanticRelations, headwordMap]);
 
   const selectHeadword = (word: string) => {
-    const item = headwordMap.get(word);
-    trackAnalytics("word_detail_open", { area: "vocabulary", detail: item?.entries[0]?.level ? `hsk-${item.entries[0].level}` : "unknown" });
     setSelectedWord(word);
     setSelectedCulture(undefined);
     setDetailOpen(true);
@@ -246,7 +242,6 @@ export function CurriculumPage({ active, state, setState, record, onOpenGroup, f
   };
 
   const chooseLevel = (next: LevelFilter) => {
-    trackAnalytics("level_select", { area: "vocabulary", detail: next });
     setLevel(next);
     setSelectedCulture(undefined);
     setSelectedWord(undefined);
@@ -290,13 +285,9 @@ export function CurriculumPage({ active, state, setState, record, onOpenGroup, f
       <input aria-label="Search all HSK vocabulary" value={query} onChange={(event) => {
         const value = event.target.value;
         setQuery(value);
-        if (value.trim() && !searchTracked.current) {
-          searchTracked.current = true;
-          trackAnalytics("search_used", { area: "vocabulary", detail: "library" });
-        } else if (!value.trim()) searchTracked.current = false;
         if (value.trim() && level !== "all") chooseLevel("all");
       }} placeholder="Try 学习, xuexi, or study…" autoComplete="off" enterKeyHint="search"/>
-      {query && <button onClick={() => { setQuery(""); searchTracked.current = false; }} aria-label="Clear search">Clear</button>}
+      {query && <button onClick={() => setQuery("")} aria-label="Clear search">Clear</button>}
     </label>
 
     <div className="level-strip" aria-label="HSK level filters">

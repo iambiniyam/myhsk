@@ -1,10 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-import { ArrowLeft, ArrowRight, BookOpenText, Bot, Check, ChevronRight, Clock3, Languages, LoaderCircle, Sparkles, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpenText, Check, ChevronRight, Clock3, Languages, X } from "lucide-react";
 import type { AppState, ReadingStory, ReadingStorySentence, Skill, WordEntry } from "../types";
 import { levelNumber, loadAllWords, loadOpenDictionaryWord, loadReadingStories } from "../lib/content";
 import { itemKey } from "../lib/storage";
 import { readUiState, writeUiState } from "../lib/persistentUi";
-import { requestReadingHelp, type ReadingHelpMode, type ReadingHelpResponse } from "../lib/readingAssistant";
 import { useDialogFocus } from "../hooks/useDialogFocus";
 import { AudioButton } from "./AudioButton";
 
@@ -28,9 +27,6 @@ export function ReadingStudio({ active, state, record }: {
   const [selectedToken, setSelectedToken] = useState("");
   const [pinyinVisible, setPinyinVisible] = useState(state.preferences.showPinyin === "always");
   const [meaningVisible, setMeaningVisible] = useState(false);
-  const [help, setHelp] = useState<ReadingHelpResponse>();
-  const [helpMode, setHelpMode] = useState<ReadingHelpMode>();
-  const [helpError, setHelpError] = useState("");
   const readerRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
@@ -97,8 +93,6 @@ export function ReadingStudio({ active, state, record }: {
     setSelectedToken("");
     setPinyinVisible(state.preferences.showPinyin === "always");
     setMeaningVisible(false);
-    setHelp(undefined);
-    setHelpError("");
   };
 
   const moveTo = (index: number) => {
@@ -110,8 +104,6 @@ export function ReadingStudio({ active, state, record }: {
     setSentenceIndex(nextIndex);
     setSelectedToken("");
     setMeaningVisible(false);
-    setHelp(undefined);
-    setHelpError("");
   };
 
   const finishStory = () => {
@@ -122,25 +114,11 @@ export function ReadingStudio({ active, state, record }: {
     closeReader();
   };
 
-  const askForHelp = async (mode: ReadingHelpMode) => {
-    if (!story || !activeSentence) return;
-    setHelpMode(mode);
-    setHelp(undefined);
-    setHelpError("");
-    try {
-      setHelp(await requestReadingHelp({ mode, story, sentence: activeSentence, word: selectedWord, mastery: selectedMastery }));
-    } catch (error) {
-      setHelpError(error instanceof Error ? error.message : "Reading help is temporarily unavailable.");
-    } finally {
-      setHelpMode(undefined);
-    }
-  };
-
   if (!active && !stories.length) return null;
 
   return <div className="reading-studio-page">
     <section className="reading-studio-hero">
-      <div><span className="eyebrow">GRADED READING STUDIO</span><h1>Read the story.<br/>Understand the moment.</h1><p>Modern Chinese in short, deliberate scenes. Tap any word, hear every line, and ask for help without leaving the passage.</p></div>
+      <div><span className="eyebrow">GRADED READING STUDIO</span><h1>Read the story.<br/>Understand the moment.</h1><p>Modern Chinese in short, deliberate scenes. Tap any word, hear every line, and reveal the meaning without leaving the passage.</p></div>
       <div className="reading-studio-proof"><BookOpenText size={20}/><span>YOUR SHELF</span><strong>{completedCount}/{stories.length || 8}</strong><small>stories finished</small></div>
     </section>
 
@@ -186,7 +164,7 @@ export function ReadingStudio({ active, state, record }: {
                 {tokenize(activeSentence).map((token, index) => token.word ? <button
                   key={`${token.text}-${index}`}
                   className={`${selectedToken === token.text ? "selected " : ""}${wordStrength(state, token.text) >= .72 ? "known" : ""}`}
-                  onClick={() => { setSelectedToken(token.text); setHelp(undefined); setHelpError(""); }}
+                  onClick={() => setSelectedToken(token.text)}
                 >{token.text}</button> : <span key={`${token.text}-${index}`}>{token.text}</span>)}
               </div>
               {pinyinVisible && <p className="studio-reader-pinyin">{activeSentence.pinyin}</p>}
@@ -197,21 +175,9 @@ export function ReadingStudio({ active, state, record }: {
           </main>
 
           <aside className="studio-guide">
-            <div className="studio-guide-heading"><Sparkles size={18}/><div><span>PASSAGE GUIDE</span><strong>{selectedToken ? "Word in this sentence" : "Stay inside the context"}</strong></div></div>
-            {selectedToken ? <WordLens word={selectedWord} token={selectedToken} mastery={selectedMastery} resolving={resolvingWord} onRecord={(score) => selectedWord && record("word", selectedWord.word, "context", score)}/> : <div className="studio-guide-empty"><BookOpenText size={25}/><p>Choose a word in the sentence, or use a focused prompt below.</p></div>}
+            <div className="studio-guide-heading"><div><span>PASSAGE GUIDE</span><strong>{selectedToken ? "Word in this sentence" : "Stay inside the context"}</strong></div></div>
+            {selectedToken ? <WordLens word={selectedWord} token={selectedToken} mastery={selectedMastery} resolving={resolvingWord} onRecord={(score) => selectedWord && record("word", selectedWord.word, "context", score)}/> : <div className="studio-guide-empty"><BookOpenText size={25}/><p>Choose a word in the sentence to see its verified meaning.</p></div>}
             {activeSentence.grammar && <div className="studio-grammar-note"><span>BUILT-IN GRAMMAR NOTE</span><p>{activeSentence.grammar}</p></div>}
-            <div className="studio-ai-actions">
-              <span><Bot size={15}/> ASK ABOUT THIS EXACT LINE</span>
-              <div>
-                <button disabled={Boolean(helpMode)} onClick={() => void askForHelp("explain")}>Explain</button>
-                <button disabled={Boolean(helpMode)} onClick={() => void askForHelp("grammar")}>Grammar</button>
-                <button disabled={Boolean(helpMode)} onClick={() => void askForHelp("simplify")}>Simplify</button>
-                <button disabled={Boolean(helpMode)} onClick={() => void askForHelp("quiz")}>Quiz me</button>
-              </div>
-            </div>
-            {helpMode && <div className="studio-ai-loading"><LoaderCircle className="spin" size={18}/> Reading the line with your context…</div>}
-            {helpError && <div className="studio-ai-error"><strong>AI guide unavailable</strong><p>{helpError} Dictionary, audio, pinyin, and translations still work offline.</p></div>}
-            {help && <ReadingHelpCard help={help}/>} 
           </aside>
         </div>
 
@@ -261,11 +227,4 @@ function WordLens({ word, token, mastery, resolving, onRecord }: { word?: WordEn
   </div>;
 }
 
-function ReadingHelpCard({ help }: { help: ReadingHelpResponse }) {
-  return <div className="studio-ai-card">
-    <span>AI PASSAGE NOTE</span><strong>{help.title}</strong><p>{help.summary}</p>
-    {help.breakdown.length > 0 && <div>{help.breakdown.map((item, index) => <article key={`${item.chinese}-${index}`}><b>{item.chinese}</b>{item.pinyin && <small>{item.pinyin}</small>}<p>{item.meaning}</p></article>)}</div>}
-    {help.tip && <em>{help.tip}</em>}
-    {help.question && <blockquote>{help.question}</blockquote>}
-  </div>;
-}
+

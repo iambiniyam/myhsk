@@ -3,7 +3,6 @@ import { BookOpenText, GitBranch } from "lucide-react";
 import type { AppState, LearningBatch, Skill } from "../types";
 import { CurriculumPage } from "./CurriculumPage";
 import { readUiState, writeUiState } from "../lib/persistentUi";
-import { trackAnalytics } from "../lib/analytics";
 
 const LearnPage = lazy(() => import("./LearnPage").then((module) => ({ default: module.LearnPage })));
 
@@ -29,8 +28,7 @@ export function VocabularyPage({ active, state, setState, batch, loading, record
   useEffect(() => { if (focusWord) setMode("curriculum"); }, [focusWord]);
   useEffect(() => {
     writeUiState("vocabulary-mode", mode);
-    if (active) trackAnalytics("vocab_mode", { area: "vocabulary", detail: mode });
-  }, [active, mode]);
+  }, [mode]);
   useEffect(() => { onGroupModeChange(active && mode === "groups"); }, [active, mode, onGroupModeChange]);
 
   return <>

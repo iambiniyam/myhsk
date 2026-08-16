@@ -1,5 +1,9 @@
-const MODEL = "@cf/myshell-ai/melotts";
-const MODEL_VERSION = "melotts-zh-v2";
+// On-demand Mandarin neural audio. Prefers the most natural available model and falls
+// back automatically. Successful audio is cached immutably at the edge.
+const MODELS = [
+  { name: "@cf/deepgram/aura-1", input: (text) => ({ text }), version: "aura-1" },
+  { name: "@cf/myshell-ai/melotts", input: (text) => ({ prompt: text, lang: "zh" }), version: "melotts-zh-v2" },
+];
 const MAX_TEXT_LENGTH = 180;
 const MISS_LIMIT = 60;
 const WINDOW_MS = 60_000;
@@ -86,8 +90,8 @@ function optimizeWave(bytes) {
   return output;
 }
 
-async function cacheKey(request, text) {
-  const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(`${MODEL_VERSION}:${text}`));
+async function cacheKey(request, text, version) {
+  const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(`${version}:${text}`));
   const hash = Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, "0")).join("");
   return new Request(`${new URL(request.url).origin}/__myhsk_tts_edge_cache__/${hash}`, { method: "GET" });
 }
@@ -104,7 +108,7 @@ function allowMiss(request) {
   return current.count <= MISS_LIMIT;
 }
 
-async function audioResponse(result, startedAt) {
+async function audioResponse(result, startedAt, voice = "myhsk-neural") {
   let bytes;
   if (result instanceof Response) {
     bytes = new Uint8Array(await result.arrayBuffer());
@@ -127,13 +131,30 @@ async function audioResponse(result, startedAt) {
       "Cache-Control": "public, max-age=31536000, immutable",
       "Server-Timing": `tts;dur=${Date.now() - startedAt}`,
       "X-Content-Type-Options": "nosniff",
-      "X-MyHSK-Voice": MODEL_VERSION,
+      "X-MyHSK-Voice": voice,
     },
   });
 }
 
+async function synthesize(env, text, startedAt) {
+  let lastError;
+  for (const model of MODELS) {
+    try {
+      const key = await cacheKey(new Request("https://local"), text, model.version);
+      const cached = await caches.default.match(key);
+      if (cached) return { response: cached, hit: true };
+      const result = await env.AI.run(model.name, model.input(text));
+      const response = await audioResponse(result, startedAt, model.version);
+      return { response, model: model.version, hit: false };
+    } catch (error) {
+      lastError = error;
+    }
+  }
+  throw lastError ?? new Error("No speech model available.");
+}
+
 export async function onRequestGet() {
-  return Response.json({ ok: true, service: "Mandarin neural audio", voice: MODEL_VERSION }, {
+  return Response.json({ ok: true, service: "Mandarin neural audio", models: MODELS.map((model) => model.version) }, {
     headers: { "Cache-Control": "no-store", "X-Content-Type-Options": "nosniff" },
   });
 }
@@ -153,27 +174,16 @@ export async function onRequestPost(context) {
   if (!text || text.length > MAX_TEXT_LENGTH || !/\p{Script=Han}/u.test(text)) return jsonError("Enter valid Chinese text up to 180 characters.", 400);
   if (!env.AI?.run) return jsonError("Neural audio is not configured.", 503, 30);
 
-  const key = await cacheKey(request, text);
-  const cached = await caches.default.match(key);
-  if (cached) {
-    const response = new Response(cached.body, cached);
-    response.headers.set("X-MyHSK-Audio-Cache", "HIT");
-    return response;
-  }
   if (!allowMiss(request)) return jsonError("Please wait a moment before requesting more new audio.", 429, 60);
 
   const startedAt = Date.now();
   try {
-    let response;
-    try {
-      response = await audioResponse(await env.AI.run(MODEL, { prompt: text, lang: "zh" }), startedAt);
-    } catch {
-      await new Promise((resolve) => setTimeout(resolve, 120));
-      response = await audioResponse(await env.AI.run(MODEL, { prompt: text, lang: "zh" }), startedAt);
+    const { response, model, hit } = await synthesize(env, text, startedAt);
+    if (!hit) {
+      const cachedResponse = response.clone();
+      context.waitUntil(caches.default.put(await cacheKey(new Request("https://local"), text, model ?? "myhsk-neural"), cachedResponse));
     }
-    const cachedResponse = response.clone();
-    context.waitUntil(caches.default.put(key, cachedResponse));
-    response.headers.set("X-MyHSK-Audio-Cache", "MISS");
+    response.headers.set("X-MyHSK-Audio-Cache", hit ? "HIT" : "MISS");
     return response;
   } catch (error) {
     console.error("Mandarin TTS failed", error instanceof Error ? error.message : String(error));

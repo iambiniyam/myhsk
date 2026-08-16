@@ -4,14 +4,10 @@
   "description": "Master HSK vocabulary through connected groups and learn character reading through reusable clues.",
   "lang": "en",
   "categories": ["education"],
-  "start_url": "/learn",
-  "scope": ".",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#f4f0e7",
   "theme_color": "#f4f0e7",
-  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }],
-  "shortcuts": [
-    { "name": "Learn words", "short_name": "Words", "url": "/learn" },
-    { "name": "Read characters", "short_name": "Characters", "url": "/learn" }
-  ]
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
 }

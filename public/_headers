@@ -27,8 +27,5 @@
 /sw.js
   Cache-Control: no-cache
 
-/api/auth/*
-  Cache-Control: no-store
-
-/api/progress
+/api/*
   Cache-Control: no-store

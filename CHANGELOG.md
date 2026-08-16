@@ -1,5 +1,17 @@
 # Changelog
 
+## 2.0.0
+
+- Removed accounts, sign-in, and cross-device sync (Better Auth) entirely.
+- Removed the marketing landing page; the app opens directly into learning.
+- Removed analytics, the D1 databases, and all non-content Cloudflare functions.
+- Removed the AI reading assistant (cloud LLM); the reading studio is fully local.
+- Single Cloudflare function remains: on-demand Mandarin neural TTS, now preferring the
+  most natural model with automatic fallback.
+- Progress is purely local (browser storage) with export/import backup in Settings.
+- Privacy page rewritten: no accounts, no analytics, no tracking.
+- Simplified `wrangler.jsonc` to just the Workers AI binding; no secrets or databases.
+
 ## 1.4.0
 
 - Reduced primary navigation from four destinations to three: Learn, Library, Review.

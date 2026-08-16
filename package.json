@@ -21,11 +21,9 @@
     "data:spoken": "node scripts/sync-spoken-sentences.mjs",
     "data:reading": "node scripts/sync-reading-stories.mjs",
     "data:hownet": "python3 scripts/sync-hownet.py",
-    "data:hsk": "node scripts/sync-hsk-2025.mjs",
-    "analytics:report": "node scripts/analytics-report.mjs"
+    "data:hsk": "node scripts/sync-hsk-2025.mjs"
   },
   "dependencies": {
-    "better-auth": "^1.6.25",
     "hanzi-writer": "^3.7.3",
     "lucide-react": "^0.468.0",
     "pinyin-pro": "^3.28.2",

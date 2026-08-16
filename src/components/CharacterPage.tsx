@@ -34,7 +34,6 @@ import type {
 import { loadCharacterDetail, loadCharacterFamilies, loadCharacterIndex, loadCharacterManifest } from "../lib/content";
 import { itemKey } from "../lib/storage";
 import { readUiState, writeUiState } from "../lib/persistentUi";
-import { trackAnalytics } from "../lib/analytics";
 import { AudioButton } from "./AudioButton";
 import { HanziPractice } from "./HanziPractice";
 import { PinyinLine } from "./PinyinLine";
@@ -91,14 +90,10 @@ export function CharacterPage({ active, state, record, onOpenWord, focusCharacte
   const [loadError, setLoadError] = useState(false);
   const detailRef = useRef<HTMLElement>(null);
   const searchMounted = useRef(false);
-  const searchTracked = useRef(Boolean(savedUi.query?.trim()));
 
   useEffect(() => {
     writeUiState<CharacterUiState>("character-library", { mode, pathLevel, familyKind, query, visibleCount, selectedCharacter, detailOpen });
   }, [detailOpen, familyKind, mode, pathLevel, query, selectedCharacter, visibleCount]);
-  useEffect(() => {
-    if (active) trackAnalytics("character_mode", { area: "characters", detail: mode });
-  }, [active, mode]);
 
   useEffect(() => {
     let active = true;
@@ -174,14 +169,11 @@ export function CharacterPage({ active, state, record, onOpenWord, focusCharacte
   const selectedIndex = searchResults.findIndex((entry) => entry.char === selectedCharacter);
 
   const openCharacter = (character: string) => {
-    const entry = indexMap.get(character);
-    trackAnalytics("character_detail_open", { area: "characters", detail: entry?.level ? `hsk-${entry.level}` : "unknown" });
     setSelectedCharacter(character);
     setDetailOpen(true);
   };
 
   const startPack = (pack: CharacterPack) => {
-    trackAnalytics("group_start", { area: "characters", detail: pack.kind, value: pack.members.length });
     setActivePack(pack);
   };
 
@@ -225,11 +217,7 @@ export function CharacterPage({ active, state, record, onOpenWord, focusCharacte
       const value = event.target.value;
       setQuery(value);
       if (value) setMode("library");
-      if (value.trim() && !searchTracked.current) {
-        searchTracked.current = true;
-        trackAnalytics("search_used", { area: "characters", detail: "library" });
-      } else if (!value.trim()) searchTracked.current = false;
-    }} placeholder="Find a character by form, pinyin, meaning, or component…" autoComplete="off" enterKeyHint="search"/>{query && <button onClick={() => { setQuery(""); searchTracked.current = false; }} aria-label="Clear character search"><X size={16}/>Clear</button>}</label>
+    }} placeholder="Find a character by form, pinyin, meaning, or component…" autoComplete="off" enterKeyHint="search"/>{query && <button onClick={() => setQuery("")} aria-label="Clear character search"><X size={16}/>Clear</button>}</label>
 
     <nav className="character-mode-nav" aria-label="Character learning sections">
       <button aria-pressed={mode === "path"} className={mode === "path" ? "active" : ""} onClick={() => setMode("path")}><BookOpen size={17}/><span><strong>Reading path</strong><small>Every HSK character</small></span></button>
@@ -248,7 +236,7 @@ export function CharacterPage({ active, state, record, onOpenWord, focusCharacte
         <section className="reading-path-section">
           <div className="character-section-heading"><div><span className="eyebrow">COMPLETE READING LADDER</span><h2>Build recognition by level</h2></div><span>{pathCharacters.length.toLocaleString()} characters · {pathPacks.length} sets</span></div>
           <div className="character-level-strip" aria-label="Character HSK level">
-            {levels.map((level) => <button key={level} aria-pressed={pathLevel === level} className={pathLevel === level ? "active" : ""} onClick={() => { setPathLevel(level); trackAnalytics("level_select", { area: "characters", detail: level }); }}><strong>HSK {level}</strong><small>{manifest?.levelCounts[level] ?? 0}</small></button>)}
+            {levels.map((level) => <button key={level} aria-pressed={pathLevel === level} className={pathLevel === level ? "active" : ""} onClick={() => setPathLevel(level)}><strong>HSK {level}</strong><small>{manifest?.levelCounts[level] ?? 0}</small></button>)}
           </div>
           {nextPack && <button className="character-continue-card" onClick={() => startPack(nextPack)}><div><span>CONTINUE HSK {pathLevel}</span><strong>{nextPack.title}</strong><p>{nextPack.subtitle}</p></div><div className="character-continue-preview">{nextPack.members.map((member) => <b key={member.char}>{member.char}</b>)}</div><footer><span><i style={{ width: `${(nextPackKnown / nextPack.members.length) * 100}%` }}/></span><small>{nextPackKnown}/{nextPack.members.length} recognized</small><em>{nextPackKnown ? "Continue" : "Start"}<ArrowRight size={14}/></em></footer></button>}
           <div className="character-pack-grid">{pathPacks.map((pack) => <PackCard key={pack.id} pack={pack} state={state} onOpen={() => startPack(pack)}/>)}</div>
@@ -296,7 +284,7 @@ export function CharacterPage({ active, state, record, onOpenWord, focusCharacte
       /> : <CharacterDetailEmpty/>}
     </aside>
 
-    {activePack && <CharacterLesson active={!detailOpen} pack={activePack} state={state} record={record} onClose={() => setActivePack(undefined)} onComplete={() => trackAnalytics("group_complete", { area: "characters", detail: activePack.kind, value: activePack.members.length })} onCharacter={openCharacter} onWord={onOpenWord}/>} 
+    {activePack && <CharacterLesson active={!detailOpen} pack={activePack} state={state} record={record} onClose={() => setActivePack(undefined)} onCharacter={openCharacter} onWord={onOpenWord}/>} 
   </div>;
 }
 
@@ -309,13 +297,12 @@ function FamilyCard({ family, onOpen, onCharacter }: { family: CharacterFamily; 
   return <article className={`family-card ${family.kind}`}><div><span className="family-component">{family.component}</span><span><small>{family.kind === "meaning" ? "MEANING CLUE" : family.kind === "sound" ? "SOUND CLUE" : "SHAPE CONTRAST"}</small><strong>{family.title}</strong></span></div><p>{family.subtitle}</p><div className="family-member-row">{family.members.slice(0, 9).map((member) => <button key={member.char} onClick={() => onCharacter(member.char)}><strong>{member.char}</strong><span>{member.pinyin}</span><small>{member.english}</small></button>)}</div><button className="family-learn-button" onClick={onOpen}>Learn this family <ArrowRight size={15}/></button></article>;
 }
 
-function CharacterLesson({ active, pack, state, record, onClose, onComplete, onCharacter, onWord }: {
+function CharacterLesson({ active, pack, state, record, onClose, onCharacter, onWord }: {
   active: boolean;
   pack: CharacterPack;
   state: AppState;
   record: RecordAttempt;
   onClose: () => void;
-  onComplete: () => void;
   onCharacter: (character: string) => void;
   onWord: (word: string) => void;
 }) {
@@ -348,7 +335,6 @@ function CharacterLesson({ active, pack, state, record, onClose, onComplete, onC
   };
 
   const finishLesson = () => {
-    onComplete();
     setPhase("done");
   };
 

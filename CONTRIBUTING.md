@@ -7,7 +7,7 @@ deployment. Contributions that keep it minimal and learner-first are welcome.
 ## Project layout
 
 - `src/` — the app (React 19 + TypeScript + Vite). Local-first; no account needed.
-- `functions/` — Cloudflare Pages Functions (optional auth, TTS, reading help, analytics).
+- `functions/` — the single Cloudflare Pages Function: on-demand Mandarin neural TTS.
 - `scripts/` — data pipeline: sync open datasets, build curriculum artifacts, validate.
 - `public/content/` — the derived curriculum data the app ships (HSK syllabus, CC-CEDICT,
   graded sentences, character curriculum, learning networks, and the sharded artifacts).
@@ -39,5 +39,5 @@ conservative, verifiable-data approach and must not ship unverifiable generated 
 ## Style
 
 - Keep the UI minimal: one clear action per screen, no decorative clutter.
-- Prefer local-first behavior; cloud services are optional enhancements.
+- Everything must stay local-first and content-focused: no accounts, analytics, or databases.
 - Generated data must remain deterministic and reproducible from `scripts/`.
