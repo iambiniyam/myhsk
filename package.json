@@ -1,0 +1,45 @@
+{
+  "name": "myhsk",
+  "version": "1.4.0",
+  "description": "A mobile-first Chinese learning app for connected HSK vocabulary and clue-based character reading.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run content:build && tsc -b && vite build && node scripts/prune-production.mjs",
+    "preview": "vite preview",
+    "content:build": "node scripts/build-content.mjs && node scripts/build-networks.mjs && node scripts/build-word-insights.mjs && node scripts/build-character-curriculum.mjs && node scripts/build-priority-features.mjs && node scripts/build-sentence-shards.mjs && node scripts/build-open-dictionary-shards.mjs",
+    "content:validate": "node scripts/validate-content.mjs",
+    "verify:sharding": "node scripts/verify-sharding.mjs",
+    "audio:generate": "python scripts/generate_audio.py",
+    "audio:sync-human": "node scripts/sync-human-audio.mjs",
+    "check": "npm run content:build && npm run content:validate && tsc -b",
+    "audio:sentences": "python scripts/download_sentence_audio.py",
+    "data:sync": "node scripts/sync-open-data.mjs",
+    "data:subtlex": "node scripts/sync-subtlex.mjs",
+    "data:cld": "node scripts/sync-cld.mjs",
+    "data:spoken": "node scripts/sync-spoken-sentences.mjs",
+    "data:reading": "node scripts/sync-reading-stories.mjs",
+    "data:hownet": "python3 scripts/sync-hownet.py",
+    "data:hsk": "node scripts/sync-hsk-2025.mjs",
+    "analytics:report": "node scripts/analytics-report.mjs"
+  },
+  "dependencies": {
+    "better-auth": "^1.6.25",
+    "hanzi-writer": "^3.7.3",
+    "lucide-react": "^0.468.0",
+    "pinyin-pro": "^3.28.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "ts-fsrs": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "hanzi-writer-data": "^2.0.1",
+    "typescript": "^5.9.0",
+    "vite": "^7.2.0"
+  }
+}

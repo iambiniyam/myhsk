@@ -1,0 +1,14 @@
+MyHSK human Mandarin word recordings
+
+Source: Audio-cmn — https://github.com/hugolpz/audio-cmn
+Speaker: Yue Tan
+Curator and audio processing: Hugo Lopez, PLIDAM, INALCO
+License: Creative Commons Attribution-ShareAlike (CC BY-SA)
+
+MyHSK mirrors matching 64 kbps recordings without changing their audio content
+and maps them to the current HSK syllabus. The original project combines
+recordings and curation from the Shtooka/SWAC Mandarin collection. See the
+source repository for its complete attribution and history.
+
+MyHSK source code is MIT-licensed. These audio recordings remain available
+under their source license and are not relicensed under MIT.

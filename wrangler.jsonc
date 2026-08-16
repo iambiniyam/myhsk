@@ -1,0 +1,28 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "myhsk",
+	"pages_build_output_dir": "./dist",
+	"compatibility_date": "2026-08-01",
+	"compatibility_flags": ["nodejs_compat"],
+	"vars": {
+		"BETTER_AUTH_URL": "https://www.myhsk.cc",
+		"AUTH_EMAIL_FROM": "MyHSK <accounts@myhsk.cc>",
+		"GOOGLE_CLIENT_ID": "186642264182-50bsbauoji0vpc077rlm4afauaqqodsc.apps.googleusercontent.com"
+	},
+	"ai": {
+		"binding": "AI"
+	},
+	"d1_databases": [
+		{
+			"binding": "ANALYTICS_DB",
+			"database_name": "myhsk-analytics",
+			"database_id": "f2f75006-c245-4149-a9d0-7666072d9cb7"
+		},
+		{
+			"binding": "AUTH_DB",
+			"database_name": "myhsk-auth",
+			"database_id": "c9d3c5ca-9f96-483d-9e9c-b08029e09475",
+			"migrations_dir": "migrations/auth"
+		}
+	]
+}

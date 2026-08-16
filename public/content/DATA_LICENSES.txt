@@ -1,0 +1,52 @@
+MyHSK — curriculum data notices
+================================
+
+Official HSK syllabus
+Source: Chinese Tests Service Website, https://www.chinesetest.cn/syllabus
+The level assignments and official vocabulary/cultural-term lists originate from the published HSK examination syllabus. They are reproduced here for educational indexing. The official source remains authoritative.
+
+CC-CEDICT
+Source: https://www.mdbg.net/chinese/dictionary?page=cc-cedict
+License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+Used for Chinese readings and English dictionary senses. Changes include parsing, normalization, filtering, and joining entries to the HSK index.
+
+Chinese Open Wordnet 0.9
+Source: https://bond-lab.github.io/cow/
+Copyright (c) 2013 Francis Bond and Shan Wang.
+Used to connect HSK headwords that share a WordNet sense. The data's permissive license allows use, copying, modification, and distribution provided its copyright and permission notice are retained. The data is provided without warranty. Míngbai filters very broad synsets and labels the resulting words as meaning neighbors rather than interchangeable synonyms.
+
+OpenHowNet / HowNet
+Source: https://github.com/thunlp/OpenHowNet
+License: MIT
+HowNet core data, © Dong Zhendong & Dong Qiang, distributed by the OpenHowNet project (Tsinghua NLP). Used to derive conservative hypernym/hyponym links and additional meaning neighbors for HSK headwords from sense definitions and sense-level synonym scores. Only relations where both words are HSK headwords are kept, and synonym scores below 0.9 are discarded.
+
+Tatoeba
+Source: https://tatoeba.org/en/downloads
+License: sentence-specific Creative Commons terms; the downloaded sentence corpus is CC BY 2.0 FR, except sentences separately released as CC0. Contributor attribution is retained in generated example records when available.
+Used for supplemental example sentences. Changes include HSK-level estimation, text-quality filtering, token alignment, and selection by target word.
+
+Make Me a Hanzi / Hanzi Writer data
+Sources: https://github.com/skishore/makemeahanzi and https://github.com/chanind/hanzi-writer-data
+Licenses: repository components are distributed under their stated LGPL, Arphic Public License, and/or MIT terms.
+Used for character decomposition metadata and local stroke paths when available. The build can fall back to the installed hanzi-writer-data package.
+
+FSRS
+Source: https://github.com/open-spaced-repetition/ts-fsrs
+License: MIT
+Used as application code for local memory scheduling; it is not a curriculum dataset.
+
+SUBTLEX-CH
+Source: Cai, Q. & Brysbaert, M. (2010), https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0010729
+The article and supporting data are distributed under the source's stated open-access terms. MyHSK stores a filtered HSK subset with word frequency and contextual-diversity fields, and retains the original citation and source link.
+Used to prioritize words that occur frequently across many spoken contexts rather than relying on syllabus order alone.
+
+Chinese Lexical Database (CLD) 2.1
+Source: Sun, C. C., Hendrix, P., Ma, J. Q. & Baayen, R. H. (2018), https://chineselexicaldatabase.com/
+Citation: https://doi.org/10.3758/s13428-018-1038-3
+Míngbai stores only a filtered HSK-derived evidence table, not the original CLD CSV. The public CLD download page does not state a separate redistribution license; confirm permission with the database authors before treating this derived table as an approved production distribution. The source archive remains available through the `data:cld` sync command.
+Used for phonological-neighbor density, phonological distance, character family size, strokes, phonetic regularity, and lexical compositionality signals.
+
+CosyVoice
+Source: https://github.com/FunAudioLLM/CosyVoice
+License: Apache License 2.0
+Used to generate the natural Mandarin sentence-audio pack. Audio is generated ahead of time and delivered as ordinary static media so the learning app does not send learner text to a speech service.

@@ -1,0 +1,107 @@
+[
+  {
+    "id": -1247901,
+    "hskLevel": 9,
+    "topic": "Three Character Classic · opening",
+    "title": "Why education matters",
+    "chinese": "人之初，性本善。性相近，习相远。",
+    "traditional": "人之初，性本善。性相近，習相遠。",
+    "pinyin": "rén zhī chū, xìng běn shàn. xìng xiāng jìn, xí xiāng yuǎn.",
+    "english": "At the beginning of life, human nature is good. Our natures are close, but our habits carry us far apart.",
+    "words": ["人", "初", "性", "本", "善", "相近", "习", "远"],
+    "grammarPoints": ["Classical 之: linking or possessive particle", "Literary parallel structure"],
+    "source": "public-domain-classic",
+    "sourceTitle": "三字經",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/12479",
+    "context": "A compact literacy classic, probably composed in the 13th century. Read it as historical language and ideas—not as modern conversation."
+  },
+  {
+    "id": -2383901,
+    "hskLevel": 9,
+    "topic": "Analects · learning",
+    "title": "The pleasure of practice",
+    "chinese": "学而时习之，不亦说乎？",
+    "traditional": "學而時習之，不亦說乎？",
+    "pinyin": "xué ér shí xí zhī, bù yì yuè hū?",
+    "english": "To learn and regularly practice what you have learned—is that not a pleasure?",
+    "words": ["学", "时", "习", "不", "亦"],
+    "grammarPoints": ["Classical 而: links actions", "不亦…乎: is it not…?"],
+    "source": "public-domain-classic",
+    "sourceTitle": "論語",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/23839",
+    "context": "In this famous line, 說 is read yuè and means delight. The syntax is Classical Chinese, while the core words remain useful today."
+  },
+  {
+    "id": -2383902,
+    "hskLevel": 9,
+    "topic": "Analects · teachers",
+    "title": "Learn from everyone",
+    "chinese": "三人行，必有我师焉。择其善者而从之，其不善者而改之。",
+    "traditional": "三人行，必有我師焉。擇其善者而從之，其不善者而改之。",
+    "pinyin": "sān rén xíng, bì yǒu wǒ shī yān. zé qí shàn zhě ér cóng zhī, qí bù shàn zhě ér gǎi zhī.",
+    "english": "When three people walk together, I can surely find a teacher among them. I follow what is good in them and use what is not good to correct myself.",
+    "words": ["三", "人", "行", "有", "我", "师", "善", "从", "不", "改"],
+    "grammarPoints": ["Classical 者: the one or aspect that…", "Classical 焉 and 之 as pronouns"],
+    "source": "public-domain-classic",
+    "sourceTitle": "論語",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/23839",
+    "context": "A cultural bridge into the Analects. Focus first on recognizable modern words, then notice how Classical Chinese omits information modern prose would state."
+  },
+  {
+    "id": -2391201,
+    "hskLevel": 9,
+    "topic": "Thousand Character Classic · cosmos",
+    "title": "A universe in sixteen characters",
+    "chinese": "天地玄黄，宇宙洪荒。日月盈昃，辰宿列张。",
+    "traditional": "天地玄黃，宇宙洪荒。日月盈昃，辰宿列張。",
+    "pinyin": "tiān dì xuán huáng, yǔ zhòu hóng huāng. rì yuè yíng zè, chén xiù liè zhāng.",
+    "english": "The sky is dark and the earth yellow; the universe is vast and primordial. Sun and moon wax and decline; the constellations spread in ordered ranks.",
+    "words": ["天", "地", "宇宙", "日", "月", "列"],
+    "grammarPoints": [
+      "Four-character parallel lines",
+      "Classical clauses often omit linking verbs"
+    ],
+    "source": "public-domain-classic",
+    "sourceTitle": "千字文",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/23912",
+    "context": "A sixth-century character primer in which every character appears only once. Here 宿 is read xiù and refers to a constellation."
+  },
+  {
+    "id": -2382301,
+    "hskLevel": 9,
+    "topic": "Standards for Students · learning",
+    "title": "Conduct before scholarship",
+    "chinese": "弟子规，圣人训。首孝悌，次谨信。泛爱众，而亲仁。有余力，则学文。",
+    "traditional": "弟子規，聖人訓。首孝悌，次謹信。泛愛眾，而親仁。有餘力，則學文。",
+    "pinyin": "dì zǐ guī, shèng rén xùn. shǒu xiào tì, cì jǐn xìn. fàn ài zhòng, ér qīn rén. yǒu yú lì, zé xué wén.",
+    "english": "The standards for students transmit the sages’ teaching: begin with care for family, then act carefully and keep your word. Love people broadly and stay close to the humane; when energy remains, study literature.",
+    "words": ["弟子", "规", "圣人", "信", "爱", "有", "学"],
+    "grammarPoints": [
+      "首…次…: first…then…",
+      "有…则…: if there is…then…"
+    ],
+    "source": "public-domain-classic",
+    "sourceTitle": "弟子規",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/23823",
+    "context": "A Qing-dynasty conduct primer. Its social values are historical rather than neutral modern advice; use it to study rhythm, compact syntax, and cultural context."
+  },
+  {
+    "id": -733701,
+    "hskLevel": 9,
+    "topic": "Dao De Jing · self-knowledge",
+    "title": "Knowing yourself",
+    "chinese": "知人者智，自知者明。胜人者有力，自胜者强。",
+    "traditional": "知人者智，自知者明。勝人者有力，自勝者強。",
+    "pinyin": "zhī rén zhě zhì, zì zhī zhě míng. shèng rén zhě yǒu lì, zì shèng zhě qiáng.",
+    "english": "One who knows others is wise; one who knows oneself is discerning. One who overcomes others has strength; one who overcomes oneself is truly strong.",
+    "words": ["知", "人", "自", "明", "胜", "有力", "强"],
+    "grammarPoints": [
+      "者 turns a phrase into “the one who…”",
+      "Balanced contrast through repeated structure"
+    ],
+    "source": "public-domain-classic",
+    "sourceTitle": "道德經",
+    "sourceUrl": "https://www.gutenberg.org/ebooks/7337",
+    "context": "A line from chapter 33. The repeated structure makes the contrast memorable, but the grammar and meanings are Classical Chinese."
+  }
+]

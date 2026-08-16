@@ -1,0 +1,29 @@
+name: Build Mandarin audio pack
+on:
+  workflow_dispatch:
+    inputs:
+      levels:
+        description: "HSK levels, space separated"
+        required: false
+        default: "1"
+      word_limit:
+        required: false
+        default: "300"
+      sentence_limit:
+        required: false
+        default: "300"
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install edge-tts
+      - run: python scripts/generate_audio.py --levels ${{ inputs.levels }} --word-limit ${{ inputs.word_limit }} --sentence-limit ${{ inputs.sentence_limit }}
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "content: update Mandarin neural audio pack"
+          file_pattern: "public/audio/**"
