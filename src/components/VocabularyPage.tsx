@@ -34,11 +34,6 @@ export function VocabularyPage({ active, state, setState, batch, loading, record
   useEffect(() => { onGroupModeChange(active && mode === "groups"); }, [active, mode, onGroupModeChange]);
 
   return <>
-    <nav className="vocab-mode-nav" aria-label="Vocabulary sections">
-      <button aria-pressed={mode === "curriculum"} className={mode === "curriculum" ? "active" : ""} onClick={() => setMode("curriculum")}><BookOpenText size={17}/><span><strong>Word library</strong><small>Search every HSK word</small></span></button>
-      <button aria-pressed={mode === "groups"} className={mode === "groups" ? "active" : ""} onClick={() => setMode("groups")}><GitBranch size={17}/><span><strong>Learn a group</strong><small>Families, scenes, contrasts</small></span></button>
-    </nav>
-
     {mode === "curriculum" ? (
       <CurriculumPage active={active} state={state} setState={setState} record={record} onOpenGroup={() => setMode("groups")} focusWord={focusWord} onOpenCharacter={onOpenCharacter}/>
     ) : (
