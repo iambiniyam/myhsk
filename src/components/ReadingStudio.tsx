@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, BookOpenText, Check, ChevronRight, Clock3, Languages, X } from "lucide-react";
 import type { AppState, CharacterEntry, ReadingStory, ReadingStorySentence, Skill, WordEntry } from "../types";
-import { levelNumber, loadAllWords, loadCharacters, loadAllReadingStories, loadOpenDictionaryWord } from "../lib/content";
+import { levelNumber, loadAllWords, loadCharacterIndex, loadAllReadingStories, loadOpenDictionaryWord } from "../lib/content";
 import { itemKey } from "../lib/storage";
 import { readUiState, writeUiState } from "../lib/persistentUi";
 import { useDialogFocus } from "../hooks/useDialogFocus";
@@ -16,7 +16,7 @@ export function ReadingStudio({ active, state, record }: {
 }) {
   const [stories, setStories] = useState<ReadingStory[]>([]);
   const [dictionary, setDictionary] = useState<Map<string, WordEntry>>(new Map());
-  const [charBook, setCharBook] = useState<Record<string, CharacterEntry>>({});
+  const [charBook, setCharBook] = useState<Record<string, { etymology?: { hint?: string } }>>({});
   const [resolvedWord, setResolvedWord] = useState<WordEntry>();
   const [resolvingWord, setResolvingWord] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -32,13 +32,13 @@ export function ReadingStudio({ active, state, record }: {
 
   useEffect(() => {
     let cancelled = false;
-    void Promise.all([loadAllReadingStories(), loadAllWords(), loadCharacters()]).then(([loadedStories, hskWords, chars]) => {
+    void Promise.all([loadAllReadingStories(), loadAllWords(), loadCharacterIndex()]).then(([loadedStories, hskWords, charIndex]) => {
       if (cancelled) return;
       setStories(loadedStories);
       // HSK entries load eagerly; the 23MB open dictionary is fetched per-word from shards
       // only when the learner taps a token that HSK does not cover.
       setDictionary(new Map(hskWords.map((word: WordEntry) => [word.word, word])));
-      setCharBook(chars);
+      setCharBook(Object.fromEntries(charIndex.map((entry) => [entry.char, { etymology: { hint: `${entry.english} (${entry.radical} radical)` } }])));
       setLoading(false);
     }).catch(() => {
       if (cancelled) return;
