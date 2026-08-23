@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, BookOpenText, Check, ChevronRight, Clock3, Languages, X } from "lucide-react";
-import type { AppState, ReadingStory, ReadingStorySentence, Skill, WordEntry } from "../types";
-import { levelNumber, loadAllWords, loadAllReadingStories, loadOpenDictionaryWord } from "../lib/content";
+import type { AppState, CharacterEntry, ReadingStory, ReadingStorySentence, Skill, WordEntry } from "../types";
+import { levelNumber, loadAllWords, loadCharacters, loadAllReadingStories, loadOpenDictionaryWord } from "../lib/content";
 import { itemKey } from "../lib/storage";
 import { readUiState, writeUiState } from "../lib/persistentUi";
 import { useDialogFocus } from "../hooks/useDialogFocus";
@@ -16,6 +16,7 @@ export function ReadingStudio({ active, state, record }: {
 }) {
   const [stories, setStories] = useState<ReadingStory[]>([]);
   const [dictionary, setDictionary] = useState<Map<string, WordEntry>>(new Map());
+  const [charBook, setCharBook] = useState<Record<string, CharacterEntry>>({});
   const [resolvedWord, setResolvedWord] = useState<WordEntry>();
   const [resolvingWord, setResolvingWord] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -31,12 +32,13 @@ export function ReadingStudio({ active, state, record }: {
 
   useEffect(() => {
     let cancelled = false;
-    void Promise.all([loadAllReadingStories(), loadAllWords()]).then(([loadedStories, hskWords]) => {
+    void Promise.all([loadAllReadingStories(), loadAllWords(), loadCharacters()]).then(([loadedStories, hskWords, chars]) => {
       if (cancelled) return;
       setStories(loadedStories);
       // HSK entries load eagerly; the 23MB open dictionary is fetched per-word from shards
       // only when the learner taps a token that HSK does not cover.
-      setDictionary(new Map(hskWords.map((word) => [word.word, word])));
+      setDictionary(new Map(hskWords.map((word: WordEntry) => [word.word, word])));
+      setCharBook(chars);
       setLoading(false);
     }).catch(() => {
       if (cancelled) return;
@@ -176,7 +178,7 @@ export function ReadingStudio({ active, state, record }: {
 
           <aside className="studio-guide">
             <div className="studio-guide-heading"><div><span>PASSAGE GUIDE</span><strong>{selectedToken ? "Word in this sentence" : "Stay inside the context"}</strong></div></div>
-            {selectedToken ? <WordLens word={selectedWord} token={selectedToken} mastery={selectedMastery} resolving={resolvingWord} onRecord={(score) => selectedWord && record("word", selectedWord.word, "context", score)}/> : <div className="studio-guide-empty"><BookOpenText size={25}/><p>Choose a word in the sentence to see its verified meaning.</p></div>}
+            {selectedToken ? <WordLens word={selectedWord} token={selectedToken} mastery={selectedMastery} charHint={Array.from(selectedToken).length === 1 ? charBook[selectedToken]?.etymology?.hint : undefined} resolving={resolvingWord} onRecord={(score) => selectedWord && record("word", selectedWord.word, "context", score)}/> : <div className="studio-guide-empty"><BookOpenText size={25}/><p>Choose a word in the sentence to see its verified meaning.</p></div>}
             {activeSentence.grammar && <div className="studio-grammar-note"><span>BUILT-IN GRAMMAR NOTE</span><p>{activeSentence.grammar}</p></div>}
           </aside>
         </div>
@@ -215,9 +217,9 @@ function wordStrength(state: AppState, word: string): number {
   return Math.max(record?.skills.meaning ?? 0, record?.skills.context ?? 0, record?.skills.recognition ?? 0);
 }
 
-function WordLens({ word, token, mastery, resolving, onRecord }: { word?: WordEntry; token: string; mastery: number; resolving: boolean; onRecord: (score: 1 | 3) => void }) {
+function WordLens({ word, token, mastery, resolving, charHint, onRecord }: { word?: WordEntry; token: string; mastery: number; resolving: boolean; charHint?: string; onRecord: (score: 1 | 3) => void }) {
   if (resolving) return <div className="studio-word-lens"><div><strong>{token}</strong><AudioButton text={token}/></div><p className="studio-reference-missing">Looking up this word in the full dictionary…</p></div>;
-  if (!word) return <div className="studio-word-lens"><div><strong>{token}</strong><AudioButton text={token}/></div><p className="studio-reference-missing">This name or phrase has no verified local dictionary entry. Use the sentence explanation rather than guessing from an isolated definition.</p></div>;
+  if (!word) return <div className="studio-word-lens"><div><strong>{token}</strong><AudioButton text={token}/></div><p className="studio-reference-missing">{charHint && <span className="studio-char-hint">Memory hook · {token}: {charHint}</span>}This name or phrase has no verified local dictionary entry. Use the sentence explanation rather than guessing from an isolated definition.</p></div>;
   return <div className="studio-word-lens">
     <div><strong>{word.word}</strong><AudioButton text={word.word}/></div>
     <span>{word.pinyin}</span>

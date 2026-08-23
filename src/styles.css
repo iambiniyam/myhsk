@@ -1668,3 +1668,4 @@ img, svg, video { max-width: 100%; height: auto; }
 /* Sticky search stays usable; rows get full-width tap targets */
 .curriculum-search { backdrop-filter: blur(10px); }
 .study-badges .usage-band { border-color: rgba(36,106,80,.3); background: var(--jade-soft); color: var(--jade); }
+.studio-char-hint { display:block; margin-top:10px; padding:8px 10px; border-radius:9px; background:#f5f0e3; color:#6b5d3f; font-size:9px; line-height:1.5; }
