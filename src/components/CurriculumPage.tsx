@@ -415,7 +415,7 @@ function WordStudy({ item, state, characters, examples, connection, relatedWords
 
   return <div className="word-study">
     <div className="study-word-hero">
-      <div className="study-badges"><span>HSK {primary.level}</span>{primary.partOfSpeech && <span>{formatPos(primary.partOfSpeech)}</span>}</div>
+      <div className="study-badges"><span>HSK {primary.level}</span>{primary.partOfSpeech && <span>{formatPos(primary.partOfSpeech)}</span>}{insight && insight.usageBand !== "syllabus only" && <span className="usage-band">{insight.usageBand === "very common" ? "Top spoken" : insight.usageBand === "common" ? "Everyday word" : insight.usageBand === "useful" ? "Widely used" : "Specialized"}</span>}</div>
       <div className="study-word-line"><strong>{item.word}</strong><AudioButton text={item.word} speed={state.preferences.audioSpeed} gender={state.preferences.voiceGender} prefetch/></div>
       <PinyinLine pinyin={item.pinyin} mode="always"/>
       {primary.traditional && primary.traditional !== item.word && <small>Traditional · {primary.traditional}</small>}
@@ -433,7 +433,7 @@ function WordStudy({ item, state, characters, examples, connection, relatedWords
     </section>}
 
     {chars.length > 0 && <section className="study-section">
-      <span className="section-number">{item.entries.length > 1 ? "03" : "02"}</span><div><h3>Character building blocks</h3><div className="character-blocks">{chars.map((char) => <button key={char} onClick={() => onOpenCharacter(char)}><strong>{char}</strong><span>{characters[char]?.pinyin.join(" · ") || "—"}</span><small>{characters[char]?.definition || "Open character details"}</small><ChevronRight size={14}/></button>)}</div></div>
+      <span className="section-number">{item.entries.length > 1 ? "03" : "02"}</span><div><h3>Character building blocks</h3><div className="character-blocks">{chars.map((char) => <button key={char} onClick={() => onOpenCharacter(char)}><strong>{char}</strong><span>{characters[char]?.pinyin.join(" · ") || "—"}</span><small>{characters[char]?.definition || "Open character details"}{characters[char]?.etymology?.hint ? ` · ${characters[char].etymology.hint}` : ""}</small><ChevronRight size={14}/></button>)}</div></div>
     </section>}
 
     {examples.length > 0 && <section className="study-section full-study-section">
