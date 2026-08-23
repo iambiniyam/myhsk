@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "voice": "CosyVoice2 zh-female-studio (remote sentence pack); device/Edge TTS fallback for words",
+  "voice": "zh-CN-XiaoxiaoNeural",
   "source": "Natural Mandarin audio is static-first. CosyVoice studio sentences are preferred; ranked device neural voices fill missing clips.",
-  "generatedAt": "2026-07-28",
+  "generatedAt": "2026-08-22T11:53:41.700714+00:00",
   "clips": {
     "sentence:老师，您好！": {
       "normal": "https://huggingface.co/datasets/no7z/hsk-sentences-audio/resolve/main/audio/hsk1-0001.mp3",
@@ -17399,6 +17399,1930 @@
     "sentence:她跳民族舞蹈。": {
       "normal": "https://huggingface.co/datasets/no7z/hsk-sentences-audio/resolve/main/audio/hsk6-1042.mp3",
       "slow": "https://huggingface.co/datasets/no7z/hsk-sentences-audio/resolve/main/audio/hsk6-1042_slow.mp3"
+    },
+    "sentence:今天早上，我发烧了，就去了医院。我坐在医院的椅子上，等医生看病。": {
+      "normal": "audio/clips/47e79b6de139c2eaf1-normal.mp3",
+      "slow": "audio/clips/7a1f35301f0fb35a84-slow.mp3"
+    },
+    "sentence:有一个奶奶问我，是不是自己来的医院？我说：“是的。”": {
+      "normal": "audio/clips/4174f1e59b974b4249-normal.mp3",
+      "slow": "audio/clips/0220d9d59854f493e4-slow.mp3"
+    },
+    "sentence:她就给了我面包和一杯水。": {
+      "normal": "audio/clips/ee0e5b424d8cb53bcf-normal.mp3",
+      "slow": "audio/clips/0facf86d1ebbefed5a-slow.mp3"
+    },
+    "sentence:我真感动啊！": {
+      "normal": "audio/clips/e3c2f74d62cd0fb2e2-normal.mp3",
+      "slow": "audio/clips/89438d4d673f9558f6-slow.mp3"
+    },
+    "sentence:妈妈：你回来了，我好想你！真开心啊。": {
+      "normal": "audio/clips/aa96cd0cd7d8ba3c26-normal.mp3",
+      "slow": "audio/clips/d994eb1f2edcce00f6-slow.mp3"
+    },
+    "sentence:我：是啊妈妈，我也很想你。": {
+      "normal": "audio/clips/688c8f221350c3b271-normal.mp3",
+      "slow": "audio/clips/63b27eb43f4c4b1144-slow.mp3"
+    },
+    "sentence:妈妈：你想吃什么？我去给你做饭。": {
+      "normal": "audio/clips/d462de8c4f660e8d3a-normal.mp3",
+      "slow": "audio/clips/6acc086cd67216d26e-slow.mp3"
+    },
+    "sentence:我：都可以，妈妈做的我都爱吃。妈妈，房间脏了，我扫一下地。": {
+      "normal": "audio/clips/a4551852830fa53987-normal.mp3",
+      "slow": "audio/clips/9f6d2567ab12ae0803-slow.mp3"
+    },
+    "sentence:妈妈：你刚回家，太累了，不用扫地，快去休息吧。": {
+      "normal": "audio/clips/131fbe982ac89095f2-normal.mp3",
+      "slow": "audio/clips/7588d98b96aa164bbb-slow.mp3"
+    },
+    "sentence:小红：小明，你在家会干什么？": {
+      "normal": "audio/clips/8779c6099804802333-normal.mp3",
+      "slow": "audio/clips/9e51b1bab559744578-slow.mp3"
+    },
+    "sentence:小明：我会在家玩电脑游戏，你呢？": {
+      "normal": "audio/clips/f80102dd10c759e0c9-normal.mp3",
+      "slow": "audio/clips/846e2243b24c610bf6-slow.mp3"
+    },
+    "sentence:小红：我喜欢在家看电视。": {
+      "normal": "audio/clips/8286cf6b388cffc657-normal.mp3",
+      "slow": "audio/clips/e6cac827b3cd56ebba-slow.mp3"
+    },
+    "sentence:小明：你喜欢看什么节目？": {
+      "normal": "audio/clips/097738b86d1fbbbeb1-normal.mp3",
+      "slow": "audio/clips/b24b65d129c348f34a-slow.mp3"
+    },
+    "sentence:小红：我喜欢看体育比赛。我最喜欢看篮球比赛了！": {
+      "normal": "audio/clips/203e9f861941be93d1-normal.mp3",
+      "slow": "audio/clips/8a858b29b33d1dca04-slow.mp3"
+    },
+    "sentence:小明：那周末我们一起看吧！": {
+      "normal": "audio/clips/d2b79a19a500df2c16-normal.mp3",
+      "slow": "audio/clips/4bef7d3a15932192cf-slow.mp3"
+    },
+    "sentence:儿子：爸爸，我想去北京。": {
+      "normal": "audio/clips/97c30c1bd12adfc6d6-normal.mp3",
+      "slow": "audio/clips/546cf85add2b59eebe-slow.mp3"
+    },
+    "sentence:爸爸：为什么呢？": {
+      "normal": "audio/clips/69b08fca523433dd4f-normal.mp3",
+      "slow": "audio/clips/64bdd791c6cbf0c4cf-slow.mp3"
+    },
+    "sentence:儿子：因为北京很好玩儿，我爱北京。": {
+      "normal": "audio/clips/5a85b09f29465c3b12-normal.mp3",
+      "slow": "audio/clips/679598edd8dcf45483-slow.mp3"
+    },
+    "sentence:爸爸：那我们现在就坐出租车去机场吧！": {
+      "normal": "audio/clips/d5186ff49371804b62-normal.mp3",
+      "slow": "audio/clips/4736665a825636e348-slow.mp3"
+    },
+    "sentence:儿子：爸爸真好！谢谢爸爸！": {
+      "normal": "audio/clips/538438cfc9f776e287-normal.mp3",
+      "slow": "audio/clips/85e5ce272202bfb4a1-slow.mp3"
+    },
+    "sentence:爸爸：不客气。": {
+      "normal": "audio/clips/595da21ce1d3c4cfbc-normal.mp3",
+      "slow": "audio/clips/aeebbbdc0f1f14069c-slow.mp3"
+    },
+    "sentence:今天我很高兴，因为我的好朋友送给我一个礼物。": {
+      "normal": "audio/clips/6f2d1f121f210c1224-normal.mp3",
+      "slow": "audio/clips/73698480d261016391-slow.mp3"
+    },
+    "sentence:当我回家的时候我会打开这个礼物。": {
+      "normal": "audio/clips/058b72c3b005e5d3dd-normal.mp3",
+      "slow": "audio/clips/1a2fc3672b1eef2aca-slow.mp3"
+    },
+    "sentence:我很想知道里面有什么！": {
+      "normal": "audio/clips/b33fc4c4afcf2a3846-normal.mp3",
+      "slow": "audio/clips/b715eaf5718ce870a5-slow.mp3"
+    },
+    "sentence:我的朋友为什么给我一个礼物呢？因为今天是我的生日！": {
+      "normal": "audio/clips/489c2c0ffb280523e2-normal.mp3",
+      "slow": "audio/clips/f31da61be75b3d6769-slow.mp3"
+    },
+    "sentence:布朗先生住在一个漂亮的房子里。从周一到周五，他在自己家附近的一间办公室里工作。周末的时候，他不需要工作。": {
+      "normal": "audio/clips/01a06fd7594ad20ccd-normal.mp3",
+      "slow": "audio/clips/13a289c3d009f7dd26-slow.mp3"
+    },
+    "sentence:他还有一个漂亮的花园，他会在花园里种些植物。他很享受在花园里忙碌的时光，那是他最开心的时候。": {
+      "normal": "audio/clips/26c0ad048b8726995d-normal.mp3",
+      "slow": "audio/clips/02cddee2ddc1749ac0-slow.mp3"
+    },
+    "sentence:今天我七点醒了。然后，我穿好衣服了。": {
+      "normal": "audio/clips/60e532b2d51a221045-normal.mp3",
+      "slow": "audio/clips/716a05f07d3dadf350-slow.mp3"
+    },
+    "sentence:我八点半走路去上学。我不骑自行车，因为车子坏了。我不坐公共汽车，因为公交车车票太贵了。": {
+      "normal": "audio/clips/e2b257f110f98ebc6d-normal.mp3",
+      "slow": "audio/clips/44025bab8cd2c57561-slow.mp3"
+    },
+    "sentence:走路的时候突然下雨了，我讨厌下雨。我喜欢晴天。": {
+      "normal": "audio/clips/3211abcf8ae61752fc-normal.mp3",
+      "slow": "audio/clips/0a6a519bfe554af9d1-slow.mp3"
+    },
+    "sentence:明天我会去北京动物园。我会玩的开心。": {
+      "normal": "audio/clips/cefff23f40dd0bd1e1-normal.mp3",
+      "slow": "audio/clips/34f1ba936fb185c88b-slow.mp3"
+    },
+    "sentence:我会跟我妈妈和妹妹一起去。": {
+      "normal": "audio/clips/54db6d5be2abd233bc-normal.mp3",
+      "slow": "audio/clips/9c973498cf39bcccc4-slow.mp3"
+    },
+    "sentence:我想看狮子，我妈妈想看猴子。我们都想看大熊猫。大熊猫很可爱！": {
+      "normal": "audio/clips/75d640cb9457d44c49-normal.mp3",
+      "slow": "audio/clips/7f07eeeda05ca4b331-slow.mp3"
+    },
+    "sentence:你喜欢大熊猫吗？": {
+      "normal": "audio/clips/e05acd9530d095f267-normal.mp3",
+      "slow": "audio/clips/d9198acf8e699ee19f-slow.mp3"
+    },
+    "sentence:小明：今天天气怎么样？": {
+      "normal": "audio/clips/967231a73bb6d9833b-normal.mp3",
+      "slow": "audio/clips/39d427a9c6a2e00f5d-slow.mp3"
+    },
+    "sentence:小刚：今天天气很好，阳光很好。": {
+      "normal": "audio/clips/012d526a2ec533e159-normal.mp3",
+      "slow": "audio/clips/2fab668928806d7710-slow.mp3"
+    },
+    "sentence:小明：我们一起去放风筝吧！": {
+      "normal": "audio/clips/fd8ed71237b31cf44e-normal.mp3",
+      "slow": "audio/clips/3a5808a67fb79f14e0-slow.mp3"
+    },
+    "sentence:小刚：太好了！": {
+      "normal": "audio/clips/f94eba0143f0ad224f-normal.mp3",
+      "slow": "audio/clips/fb911d17cf46c739e4-slow.mp3"
+    },
+    "sentence:小明：小红，你最喜欢什么动物？": {
+      "normal": "audio/clips/19092db76fbb081c84-normal.mp3",
+      "slow": "audio/clips/4745e4b0745e82e9da-slow.mp3"
+    },
+    "sentence:小红：最喜欢狗，你呢？": {
+      "normal": "audio/clips/9310c63c1eaaa41906-normal.mp3",
+      "slow": "audio/clips/19e8c30b7dc2cb9771-slow.mp3"
+    },
+    "sentence:小明：猫，我想养一只猫。": {
+      "normal": "audio/clips/8798fad9b30b3c6aca-normal.mp3",
+      "slow": "audio/clips/5d15d939d707b086d6-slow.mp3"
+    },
+    "sentence:小红：你可以养啊，你自己住吗？": {
+      "normal": "audio/clips/42aea12f771c714fed-normal.mp3",
+      "slow": "audio/clips/921a2ddef54ef58ce3-slow.mp3"
+    },
+    "sentence:小明：是的，我自己住。你下午跟我一起去宠物店，可以吗？": {
+      "normal": "audio/clips/46dcbaf81156bccb5f-normal.mp3",
+      "slow": "audio/clips/1998f298a2dbcaa8f4-slow.mp3"
+    },
+    "sentence:小红：好的！": {
+      "normal": "audio/clips/8294a543002e8ecd8f-normal.mp3",
+      "slow": "audio/clips/14b1efd3bdc811e7f3-slow.mp3"
+    },
+    "sentence:小明：小红，你星期六想去玩儿吗？还是你想在学校学习？": {
+      "normal": "audio/clips/c7046b8809758f5c87-normal.mp3",
+      "slow": "audio/clips/d5ae4303f60dd023ac-slow.mp3"
+    },
+    "sentence:小红：你想去哪里？": {
+      "normal": "audio/clips/94e722462e13c2bd3a-normal.mp3",
+      "slow": "audio/clips/2b9c463f301aed85fa-slow.mp3"
+    },
+    "sentence:小明：星期六我们去公园吧，夏天来了，我们可以去游泳。": {
+      "normal": "audio/clips/d557ab76705b07d09c-normal.mp3",
+      "slow": "audio/clips/7d5e5bfca9625cef2c-slow.mp3"
+    },
+    "sentence:小红：好啊！": {
+      "normal": "audio/clips/915adc2f7b930d25c3-normal.mp3",
+      "slow": "audio/clips/b8b58c199e4a9d1823-slow.mp3"
+    },
+    "sentence:小明：那星期六早上九点，我在学校门口等你。": {
+      "normal": "audio/clips/3be83a90fb3506e5da-normal.mp3",
+      "slow": "audio/clips/a6ed1bc1de09a97e9d-slow.mp3"
+    },
+    "sentence:送餐员：您好，我是美团外卖送餐员。不好意思，您的外卖可能会晚到一会，饭店在用餐的顾客太多了。": {
+      "normal": "audio/clips/89f0c5048954f1ab6f-normal.mp3",
+      "slow": "audio/clips/eba834ed5cfe3f3c67-slow.mp3"
+    },
+    "sentence:我：好，我可以等一会。": {
+      "normal": "audio/clips/39cd57e0a21f12d0fc-normal.mp3",
+      "slow": "audio/clips/76c9c6ce2863c5758c-slow.mp3"
+    },
+    "sentence:送餐员：谢谢，我会尽快送到的。": {
+      "normal": "audio/clips/7c8bad4e23461d972a-normal.mp3",
+      "slow": "audio/clips/9cfc6a7c4778e0a8dd-slow.mp3"
+    },
+    "sentence:十分钟以后。。。": {
+      "normal": "audio/clips/9963bd7286f7eaef9d-normal.mp3",
+      "slow": "audio/clips/ad089dfc8f35689220-slow.mp3"
+    },
+    "sentence:送餐员：您好，这是您的外卖。": {
+      "normal": "audio/clips/819bb0d8765be789d1-normal.mp3",
+      "slow": "audio/clips/fbb171f9e2b0107b3b-slow.mp3"
+    },
+    "sentence:我：谢谢你。": {
+      "normal": "audio/clips/d52b4536a9b236152d-normal.mp3",
+      "slow": "audio/clips/016247fd1ad999d66f-slow.mp3"
+    },
+    "sentence:送餐员：如果您对我的服务满意的话，请稍后给我一个五星好评可以吗？": {
+      "normal": "audio/clips/5e48c653b2e844e0ab-normal.mp3",
+      "slow": "audio/clips/914828bf8e50192f4b-slow.mp3"
+    },
+    "sentence:我：没问题!": {
+      "normal": "audio/clips/f5890965dab3963df5-normal.mp3",
+      "slow": "audio/clips/d3f40f6f2a5bdee01a-slow.mp3"
+    },
+    "sentence:莉莉：艾玛，我有个大麻烦。": {
+      "normal": "audio/clips/39365f3047d42360a7-normal.mp3",
+      "slow": "audio/clips/0bee4620c7343df1a9-slow.mp3"
+    },
+    "sentence:艾玛：什么事？": {
+      "normal": "audio/clips/37d3b5506d2b4a3a36-normal.mp3",
+      "slow": "audio/clips/5619311befd6beee8a-slow.mp3"
+    },
+    "sentence:莉莉：明天是我妈妈的生日，但是我还没有买礼物。": {
+      "normal": "audio/clips/facbb0b3eb31d5f91e-normal.mp3",
+      "slow": "audio/clips/2bb0e35326c8de28d1-slow.mp3"
+    },
+    "sentence:艾玛：你为什么没有买礼物？": {
+      "normal": "audio/clips/c3a1a9302aa3e3b15e-normal.mp3",
+      "slow": "audio/clips/29bfdf1e181945f99c-slow.mp3"
+    },
+    "sentence:莉莉：说实话，我忘了。": {
+      "normal": "audio/clips/dbbe95812ecc6d4072-normal.mp3",
+      "slow": "audio/clips/2804a9b7dd20b0955d-slow.mp3"
+    },
+    "sentence:艾玛：那你马上出去买礼物！": {
+      "normal": "audio/clips/8a9e5a58b227eb4749-normal.mp3",
+      "slow": "audio/clips/546aaf874b9ac89f1a-slow.mp3"
+    },
+    "sentence:莉莉：我不知道我应该给她买什么。": {
+      "normal": "audio/clips/40a788ba88bedcb668-normal.mp3",
+      "slow": "audio/clips/cc2167dea668f5b362-slow.mp3"
+    },
+    "sentence:艾玛：我跟你去商场吧，我可以帮你选一个合适的礼物。": {
+      "normal": "audio/clips/1422092804f84e7799-normal.mp3",
+      "slow": "audio/clips/4f5fae343ad9f741e1-slow.mp3"
+    },
+    "sentence:莉莉：好的，谢谢。": {
+      "normal": "audio/clips/d2c8ea4af7498fa629-normal.mp3",
+      "slow": "audio/clips/feb57f4cfaf89a3f7d-slow.mp3"
+    },
+    "sentence:兔子和乌龟在夏天比赛跑步。": {
+      "normal": "audio/clips/f0a939e0fe07007539-normal.mp3",
+      "slow": "audio/clips/a3f55491ad6f2b4b35-slow.mp3"
+    },
+    "sentence:兔子跑得很快，她看见乌龟还在慢慢地走，就先在树下睡觉了。": {
+      "normal": "audio/clips/d4bf935e7d802b13d5-normal.mp3",
+      "slow": "audio/clips/c6d45c57a1f1e7b4ef-slow.mp3"
+    },
+    "sentence:乌龟虽然走得很慢，但是他没有停下，一直走。": {
+      "normal": "audio/clips/c4627acda0c2c8c3da-normal.mp3",
+      "slow": "audio/clips/5c393e8fe6d002ce55-slow.mp3"
+    },
+    "sentence:兔子睡醒的时候，乌龟已经赢了。": {
+      "normal": "audio/clips/5d53f35f3cfc9fa0ed-normal.mp3",
+      "slow": "audio/clips/6f9231b88007b60994-slow.mp3"
+    },
+    "sentence:这个故事告诉我们不要放弃，坚持就会有结果。": {
+      "normal": "audio/clips/d6738472066db06d0e-normal.mp3",
+      "slow": "audio/clips/280ffb3bf2c70b83fe-slow.mp3"
+    },
+    "sentence:小明：你觉得当老师好吗？": {
+      "normal": "audio/clips/1886b69603ba26e3be-normal.mp3",
+      "slow": "audio/clips/d99f9aa659cee3f271-slow.mp3"
+    },
+    "sentence:小红：很好，老师可以跟小孩玩。": {
+      "normal": "audio/clips/138579f7a7c2aab8f3-normal.mp3",
+      "slow": "audio/clips/803664a1f5a34644a7-slow.mp3"
+    },
+    "sentence:小明：我觉得当老师不太好。": {
+      "normal": "audio/clips/d039090baec3d6953e-normal.mp3",
+      "slow": "audio/clips/92a3c819ea6f47cb56-slow.mp3"
+    },
+    "sentence:小红：为什么？": {
+      "normal": "audio/clips/faa865af0f18dfd179-normal.mp3",
+      "slow": "audio/clips/aa4042ae1608dbc1dd-slow.mp3"
+    },
+    "sentence:小明：因为当老师要讲课，还要改作业，很累，所以我觉得当老师不太好。": {
+      "normal": "audio/clips/5c5ff80e90b68f7e6d-normal.mp3",
+      "slow": "audio/clips/141cc8cc69e3457151-slow.mp3"
+    },
+    "sentence:小红：话是这么说，我还是喜欢当老师。": {
+      "normal": "audio/clips/ea0fab44c46454e18a-normal.mp3",
+      "slow": "audio/clips/e5d338c37be400a78f-slow.mp3"
+    },
+    "sentence:小明：老板，请问桃子怎么卖？": {
+      "normal": "audio/clips/dbb415077855bcc6a6-normal.mp3",
+      "slow": "audio/clips/fb31a2c0d466203fc3-slow.mp3"
+    },
+    "sentence:老板：桃子18块一斤。": {
+      "normal": "audio/clips/458f7046063409718f-normal.mp3",
+      "slow": "audio/clips/707931c9ce9f053f23-slow.mp3"
+    },
+    "sentence:小明：桃子新鲜吗？": {
+      "normal": "audio/clips/8d7bb5307c59001731-normal.mp3",
+      "slow": "audio/clips/c1e23fa43f34b9385a-slow.mp3"
+    },
+    "sentence:老板：刚从树上摘下来的，很新鲜，很甜。": {
+      "normal": "audio/clips/e7d7bf79e73059891d-normal.mp3",
+      "slow": "audio/clips/acfff6b71c6c035b11-slow.mp3"
+    },
+    "sentence:小明：那我要这些，您看多少钱？": {
+      "normal": "audio/clips/23cbf56ca5469dae05-normal.mp3",
+      "slow": "audio/clips/eaaeb6688775abea6c-slow.mp3"
+    },
+    "sentence:老板：26块。": {
+      "normal": "audio/clips/67dcfc121a67fcee9a-normal.mp3",
+      "slow": "audio/clips/b4b1c985a2e5d961df-slow.mp3"
+    },
+    "sentence:小明：给您30。": {
+      "normal": "audio/clips/5b594962566501f7ab-normal.mp3",
+      "slow": "audio/clips/f9ccee9d8b09d675d7-slow.mp3"
+    },
+    "sentence:老板：好的，找你四块钱。": {
+      "normal": "audio/clips/7e786a65a5d046407f-normal.mp3",
+      "slow": "audio/clips/256a03f517b3a45b13-slow.mp3"
+    },
+    "sentence:姐姐：妹妹，你的生日快到了。": {
+      "normal": "audio/clips/d197a1600a123d5cb6-normal.mp3",
+      "slow": "audio/clips/a3a1e03f998789b5c6-slow.mp3"
+    },
+    "sentence:妹妹：对！是后天，我想要生日礼物！": {
+      "normal": "audio/clips/368e0657bf44cadcc4-normal.mp3",
+      "slow": "audio/clips/8ee569fe4113493603-slow.mp3"
+    },
+    "sentence:姐姐：你想要什么？手表吗？": {
+      "normal": "audio/clips/40f60a18465d9f6457-normal.mp3",
+      "slow": "audio/clips/8d4b95c5c7e7a1a720-slow.mp3"
+    },
+    "sentence:妹妹：不是，你再猜。": {
+      "normal": "audio/clips/4b293b912415e7de7e-normal.mp3",
+      "slow": "audio/clips/6af76b3c68341a0204-slow.mp3"
+    },
+    "sentence:姐姐：是自行车吗？": {
+      "normal": "audio/clips/18984941bbc6903c4e-normal.mp3",
+      "slow": "audio/clips/79a292684308bddaff-slow.mp3"
+    },
+    "sentence:妹妹：对！我想要一辆黑色的自行车。": {
+      "normal": "audio/clips/e1850132f62ba2c0fa-normal.mp3",
+      "slow": "audio/clips/09425c72de66573db5-slow.mp3"
+    },
+    "sentence:姐姐：好的，我给你买。": {
+      "normal": "audio/clips/605abc0e082a4e49b5-normal.mp3",
+      "slow": "audio/clips/b6145be4cc8087656b-slow.mp3"
+    },
+    "sentence:古代有一个叫叶公的画家，他喜欢龙，在家里画了很多。他希望真的龙会出现。龙知道了，就飞来他的家里。": {
+      "normal": "audio/clips/7b00f7ff5785516c73-normal.mp3",
+      "slow": "audio/clips/88b8e40846b59a6361-slow.mp3"
+    },
+    "sentence:他看见真的龙，很害怕，就跑了。": {
+      "normal": "audio/clips/a460cb6c11c508abfc-normal.mp3",
+      "slow": "audio/clips/a07392fd18ab82a9bd-slow.mp3"
+    },
+    "sentence:这个成语的意思是，他自己说喜欢那个东西，但其实不是真的喜欢。": {
+      "normal": "audio/clips/8a44bdd36b381efa2a-normal.mp3",
+      "slow": "audio/clips/8a59142e3354d30ab5-slow.mp3"
+    },
+    "sentence:小明：您好，我要买手表，这个多少钱？": {
+      "normal": "audio/clips/10174c65b758ec0c9f-normal.mp3",
+      "slow": "audio/clips/ec2e93258ab648bc84-slow.mp3"
+    },
+    "sentence:服务员：500元。": {
+      "normal": "audio/clips/db0b79e68de8e390a3-normal.mp3",
+      "slow": "audio/clips/2eeca516aa00f0de00-slow.mp3"
+    },
+    "sentence:小明：这个手表太贵了，有便宜点儿的吗？": {
+      "normal": "audio/clips/cac8e678469a52eb76-normal.mp3",
+      "slow": "audio/clips/8d9ded428fcb32e11f-slow.mp3"
+    },
+    "sentence:服务员：您看这个黑色的，200元。": {
+      "normal": "audio/clips/cdfaeafcb9a9a2b3f0-normal.mp3",
+      "slow": "audio/clips/061679fe476aa64182-slow.mp3"
+    },
+    "sentence:小明：还有其他颜色吗？": {
+      "normal": "audio/clips/2fab765a52c02e0569-normal.mp3",
+      "slow": "audio/clips/13ab236b5e6586fa9d-slow.mp3"
+    },
+    "sentence:服务员：红色。": {
+      "normal": "audio/clips/68e597e7d80ec16ce5-normal.mp3",
+      "slow": "audio/clips/8f304ea2c8c507292a-slow.mp3"
+    },
+    "sentence:小明：那我买这个红色的手表吧。": {
+      "normal": "audio/clips/172efef3fb1896539c-normal.mp3",
+      "slow": "audio/clips/ff7c5e5001df074735-slow.mp3"
+    },
+    "sentence:小红:小明，你的理想是什么？": {
+      "normal": "audio/clips/45da05a61b520dbfc5-normal.mp3",
+      "slow": "audio/clips/69701e10475f53bfd0-slow.mp3"
+    },
+    "sentence:小明:我想当一名探险家，去发现世界上别人不知道的地方。你呢？": {
+      "normal": "audio/clips/486dc6bf1f5adf18a0-normal.mp3",
+      "slow": "audio/clips/a4ef4b3821173cdc6d-slow.mp3"
+    },
+    "sentence:小红:我想当一名医生。别人生病的时候，我就可以帮助他们，让他们不再痛苦。": {
+      "normal": "audio/clips/39d8a7c79d7eec832c-normal.mp3",
+      "slow": "audio/clips/05df4b2ec2bd147fc8-slow.mp3"
+    },
+    "sentence:小明:你真善良!": {
+      "normal": "audio/clips/9ed5b6dd21a1d50c5a-normal.mp3",
+      "slow": "audio/clips/9c612b680e30f345e6-slow.mp3"
+    },
+    "sentence:小红:我当医生以后，一定要研究出不苦的药。这样小朋友们就会不讨厌吃药了。": {
+      "normal": "audio/clips/15e61c90aac8aa65fe-normal.mp3",
+      "slow": "audio/clips/ccfc111092c5a94dd7-slow.mp3"
+    },
+    "sentence:小明:太好了。": {
+      "normal": "audio/clips/5b623a57e273c41382-normal.mp3",
+      "slow": "audio/clips/582b760cebabc9a3c0-slow.mp3"
+    },
+    "sentence:艾玛：你在什么学校上学？": {
+      "normal": "audio/clips/25b0417168959b5e95-normal.mp3",
+      "slow": "audio/clips/c0143a4ff31806c679-slow.mp3"
+    },
+    "sentence:莉莉：我在阳光中学上学。": {
+      "normal": "audio/clips/7797902089a6d7973e-normal.mp3",
+      "slow": "audio/clips/e6b9553c891a5d374b-slow.mp3"
+    },
+    "sentence:艾玛：你喜欢你的学校吗？": {
+      "normal": "audio/clips/a524de47e279a4d415-normal.mp3",
+      "slow": "audio/clips/21eac0117c9e5b0623-slow.mp3"
+    },
+    "sentence:莉莉：我很喜欢。": {
+      "normal": "audio/clips/2a7604d74b6672205b-normal.mp3",
+      "slow": "audio/clips/114f5b04a740545efa-slow.mp3"
+    },
+    "sentence:艾玛：你为什么喜欢你的学校？": {
+      "normal": "audio/clips/ceab326914e07d5ab0-normal.mp3",
+      "slow": "audio/clips/c12c3a974273463af4-slow.mp3"
+    },
+    "sentence:莉莉：因为我的老师很善良。": {
+      "normal": "audio/clips/5632a0a77ab9dd70b1-normal.mp3",
+      "slow": "audio/clips/4c80395b21d84e9b00-slow.mp3"
+    },
+    "sentence:艾玛：你最喜欢的科目是什么？": {
+      "normal": "audio/clips/edd423bbd600689539-normal.mp3",
+      "slow": "audio/clips/38e6f1f9e6a73251e8-slow.mp3"
+    },
+    "sentence:莉莉：我最喜欢的科目是地理。": {
+      "normal": "audio/clips/3b64800b94d7162bda-normal.mp3",
+      "slow": "audio/clips/ef0916ea9fd92a7f73-slow.mp3"
+    },
+    "sentence:艾玛：为什么？": {
+      "normal": "audio/clips/77f0c17aa76c3d6742-normal.mp3",
+      "slow": "audio/clips/987d442190ec821965-slow.mp3"
+    },
+    "sentence:莉莉：因为我觉得地理很有意思。我可以学习其他国家的文化。": {
+      "normal": "audio/clips/c47b8f2657734f412d-normal.mp3",
+      "slow": "audio/clips/8c13ca03f3f726c288-slow.mp3"
+    },
+    "sentence:小明：你看，下雪了！": {
+      "normal": "audio/clips/d43e97148e9c99e86c-normal.mp3",
+      "slow": "audio/clips/a36c2b3670f834d41f-slow.mp3"
+    },
+    "sentence:小红：我们一起去堆雪人吧。": {
+      "normal": "audio/clips/70680702369e69d60d-normal.mp3",
+      "slow": "audio/clips/c33ddb07824db5da66-slow.mp3"
+    },
+    "sentence:小明：雪人想要什么颜色的眼睛呢？": {
+      "normal": "audio/clips/347c7958f83f8bf220-normal.mp3",
+      "slow": "audio/clips/e0cf53914d8bb6c392-slow.mp3"
+    },
+    "sentence:小红：黑色！": {
+      "normal": "audio/clips/c7381452a75cc4ed63-normal.mp3",
+      "slow": "audio/clips/b43511284e3a440fa5-slow.mp3"
+    },
+    "sentence:小明：那鼻子呢？": {
+      "normal": "audio/clips/8f464bebaa980d7e0f-normal.mp3",
+      "slow": "audio/clips/ce9f8a0e1a88251ca8-slow.mp3"
+    },
+    "sentence:小红：红色！": {
+      "normal": "audio/clips/cea6b84450b400c069-normal.mp3",
+      "slow": "audio/clips/83a1b032bac4b146e9-slow.mp3"
+    },
+    "sentence:小明：好的，那我先回家给雪人找黑色的眼睛和红色的鼻子。": {
+      "normal": "audio/clips/30e1b6d3296983428b-normal.mp3",
+      "slow": "audio/clips/aedc73aab690895da2-slow.mp3"
+    },
+    "sentence:饺子是中国最重要的食物。": {
+      "normal": "audio/clips/3a7b7fe8399fd2a4c2-normal.mp3",
+      "slow": "audio/clips/96cd71bff898f1df9b-slow.mp3"
+    },
+    "sentence:中国人常常吃饺子，早饭、午饭或者晚饭；也会在重要的节日吃饺子，比如春节。": {
+      "normal": "audio/clips/ed8b70606d3d2c0f2a-normal.mp3",
+      "slow": "audio/clips/eefe26d24fca7790f6-slow.mp3"
+    },
+    "sentence:饺子的皮是用面粉做的，里面包着不同的食物，肉、菜什么的，很好吃。": {
+      "normal": "audio/clips/11683bc53cfb3d27bb-normal.mp3",
+      "slow": "audio/clips/96fc1abdcc861a7561-slow.mp3"
+    },
+    "sentence:今天晚上妈妈对我说：“我要上班了，你得自己去爷爷家吃饭。”我正想对妈妈说我从来没有独自去过爷爷家。可是，我的话还没说出口，妈妈就跑的无影无踪了。所以，我只能硬着头皮，穿过黑黑的街道，走到爷爷家。": {
+      "normal": "audio/clips/677a4bfac86852979c-normal.mp3",
+      "slow": "audio/clips/be66fd1e946119372f-slow.mp3"
+    },
+    "sentence:我很害怕，所以走的特别快，见到邻居也没有打招呼。直到看到爷爷，我才放松下来。": {
+      "normal": "audio/clips/d464b34409eeb30140-normal.mp3",
+      "slow": "audio/clips/eacec0816ed9461468-slow.mp3"
+    },
+    "sentence:小明：我想租房子。": {
+      "normal": "audio/clips/51d9b24b8becb62aae-normal.mp3",
+      "slow": "audio/clips/f052dbeb12499b45be-slow.mp3"
+    },
+    "sentence:小红：你看好房子了吗？": {
+      "normal": "audio/clips/0a1c389ec7df9e0184-normal.mp3",
+      "slow": "audio/clips/246c400ac2db7bed7d-slow.mp3"
+    },
+    "sentence:小明：看好了，在学校北门附近。房子有一间卧室、一间客厅和一个厨房，挺好的。": {
+      "normal": "audio/clips/34b144ddfedae1b581-normal.mp3",
+      "slow": "audio/clips/21d44d7fce1133d5ef-slow.mp3"
+    },
+    "sentence:小红：那你为什么不租？": {
+      "normal": "audio/clips/754e4a9ec85c083323-normal.mp3",
+      "slow": "audio/clips/aad03632afb55df292-slow.mp3"
+    },
+    "sentence:小明：因为租金有点儿贵，1000块一个月。": {
+      "normal": "audio/clips/ee036ccfca3aaeed4b-normal.mp3",
+      "slow": "audio/clips/ac3b585b3c5edaf069-slow.mp3"
+    },
+    "sentence:小红：那是有点儿贵了，我们可以再看看。": {
+      "normal": "audio/clips/1689ae11f9de150116-normal.mp3",
+      "slow": "audio/clips/da1f7fd2bd31910bad-slow.mp3"
+    },
+    "sentence:今天早上，我去机场接我的女朋友，但是她的航班晚点了，我等了她两个小时。": {
+      "normal": "audio/clips/554c25d09c874db45f-normal.mp3",
+      "slow": "audio/clips/d214f6bb05fe63e736-slow.mp3"
+    },
+    "sentence:中午的时候，她感冒了，不舒服，所以我们去超市买新鲜的菜，回家自己煮饭。": {
+      "normal": "audio/clips/31a0cc53fad1f3c701-normal.mp3",
+      "slow": "audio/clips/45da1e34688f17e290-slow.mp3"
+    },
+    "sentence:晚上，她感觉好点儿了，我们就一起打游戏和听音乐。我们的一天太快乐了！": {
+      "normal": "audio/clips/7b8ab06690d4d849c2-normal.mp3",
+      "slow": "audio/clips/4559779c7a8ac9e4e6-slow.mp3"
+    },
+    "sentence:从前有个人养了很多羊，但是没有给羊建一个羊圈。": {
+      "normal": "audio/clips/917d6e92ae03d9fab2-normal.mp3",
+      "slow": "audio/clips/ddc3e3ab78212f3214-slow.mp3"
+    },
+    "sentence:有一天晚上，从山上跑下来很多狼，吃掉了他十只羊。他很后悔，他应该给羊建一个好的羊圈。在羊被吃掉了以后，他才给羊建了一个羊圈。": {
+      "normal": "audio/clips/2c382c3b9cd6172028-normal.mp3",
+      "slow": "audio/clips/31c436a400f0b44191-slow.mp3"
+    },
+    "sentence:这个成语的意思是，事情已经发生了，才补救。": {
+      "normal": "audio/clips/da1459ee34d1426827-normal.mp3",
+      "slow": "audio/clips/668d5c4b108563f959-slow.mp3"
+    },
+    "sentence:三个盲人想知道大象长什么样子，就摸一头大象。": {
+      "normal": "audio/clips/3774ef8b94078d3466-normal.mp3",
+      "slow": "audio/clips/f9978b00d6c3b7d085-slow.mp3"
+    },
+    "sentence:第一个盲人摸到象腿，他说大象像一根大棍子；": {
+      "normal": "audio/clips/919bbef07a5561d379-normal.mp3",
+      "slow": "audio/clips/e6cebb35d9934b08ce-slow.mp3"
+    },
+    "sentence:第二个摸到象尾巴，他说大象像一条绳子；": {
+      "normal": "audio/clips/2af578edd1217121d2-normal.mp3",
+      "slow": "audio/clips/a73dc3835fd0aa1729-slow.mp3"
+    },
+    "sentence:第三个摸到象牙，他说大象像一个大萝卜。": {
+      "normal": "audio/clips/159d154eeaaf1f4ad5-normal.mp3",
+      "slow": "audio/clips/c3d016278c3ee47d89-slow.mp3"
+    },
+    "sentence:这个成语告诉我们，看到的是事情的一部分，不是全部。": {
+      "normal": "audio/clips/9ed78de915eb69cb14-normal.mp3",
+      "slow": "audio/clips/ac63b72ceca3023889-slow.mp3"
+    },
+    "sentence:妈妈：你每天都在家干什么？也不出去跟朋友玩。": {
+      "normal": "audio/clips/d418b16aed275e72b7-normal.mp3",
+      "slow": "audio/clips/c860a6f4240fa3675d-slow.mp3"
+    },
+    "sentence:我：不是您让我在家陪你们的吗？": {
+      "normal": "audio/clips/e031fdd40decc293f9-normal.mp3",
+      "slow": "audio/clips/44669d9b5332727d36-slow.mp3"
+    },
+    "sentence:妈妈：那你也不能每天都在家啊！你要和别人沟通，交流。每天在家就知道玩游戏。": {
+      "normal": "audio/clips/7cee28e6c553499177-normal.mp3",
+      "slow": "audio/clips/7d1d69c6d748b8d748-slow.mp3"
+    },
+    "sentence:我：我知道了。": {
+      "normal": "audio/clips/df76e5c47b39d7331e-normal.mp3",
+      "slow": "audio/clips/2f0e149b7ac38ec7a1-slow.mp3"
+    },
+    "sentence:妈妈：你知道你为什么会感冒吗？就是因为在家玩手机玩太多了。现在就去跑步吧。": {
+      "normal": "audio/clips/a3467cd122daa8a141-normal.mp3",
+      "slow": "audio/clips/0f3c1b3c5cb9b75038-slow.mp3"
+    },
+    "sentence:我：那好吧。": {
+      "normal": "audio/clips/47276abb2f223156ab-normal.mp3",
+      "slow": "audio/clips/2a3e19fdcc0046d470-slow.mp3"
+    },
+    "sentence:今天是我的生日，早上，妈妈给我煮了一碗面条，因为在中国北方，生日的时候吃的面条，有身体健康的意思。": {
+      "normal": "audio/clips/27c3174413bd685f36-normal.mp3",
+      "slow": "audio/clips/a825cf14ada8a4edfb-slow.mp3"
+    },
+    "sentence:晚上，我和家人，朋友一起吃了蛋糕。": {
+      "normal": "audio/clips/49a54bd34ee6c589c5-normal.mp3",
+      "slow": "audio/clips/560ae77c78123ade98-slow.mp3"
+    },
+    "sentence:回家以后，爸爸妈妈还送了生日礼物给我，是蓝色的手表，我好开心！": {
+      "normal": "audio/clips/04ca5d75d8d7aa623d-normal.mp3",
+      "slow": "audio/clips/ace4075fcc9a8af2b4-slow.mp3"
+    },
+    "sentence:我的好朋友是一个女孩。她个子不高，长得很可爱。": {
+      "normal": "audio/clips/113992d127499e46a4-normal.mp3",
+      "slow": "audio/clips/e47b2ab1fda55bca92-slow.mp3"
+    },
+    "sentence:她不但聪明，而且认真，她喜欢去图书馆学习，所以每次考试成绩都很好。": {
+      "normal": "audio/clips/31c8f55671d265d197-normal.mp3",
+      "slow": "audio/clips/5cde7ea3f37707e10b-slow.mp3"
+    },
+    "sentence:她很热情，总是关心别人，如果别人有困难，她一定会帮助别人解决问题。": {
+      "normal": "audio/clips/d91abc8c4fc365420c-normal.mp3",
+      "slow": "audio/clips/517a09cf937feaaa01-slow.mp3"
+    },
+    "sentence:她有很多爱好，比如踢足球、爬山。": {
+      "normal": "audio/clips/70aa7c7cf5f8f497f8-normal.mp3",
+      "slow": "audio/clips/ef0b2cc7479a6bc8da-slow.mp3"
+    },
+    "sentence:中国古代有一个画家，他的龙画得非常好。有一天，他在墙上画了四条龙。人们看见龙，觉得很美丽，但是没有眼睛。": {
+      "normal": "audio/clips/cb012fd0fb394b5737-normal.mp3",
+      "slow": "audio/clips/c7abb77817e8e595fe-slow.mp3"
+    },
+    "sentence:画家说：“画上眼睛，龙就会飞走。”大家不相信，他就给龙画上了眼睛，龙真的飞走了。": {
+      "normal": "audio/clips/ccc1e95bd3645a575e-normal.mp3",
+      "slow": "audio/clips/af460eb27941ff9129-slow.mp3"
+    },
+    "sentence:这个成语的意思是，写文章时在重要的地方加上一些话，会让文章更好。": {
+      "normal": "audio/clips/fd9117db79ee3181b4-normal.mp3",
+      "slow": "audio/clips/8bb195fe20931f6524-slow.mp3"
+    },
+    "sentence:今天我看到一副很有趣的图片，图片当中有三只动物在运木头。一只猴子，一只灰熊和一头猪。": {
+      "normal": "audio/clips/8c852460e21f6b6d5b-normal.mp3",
+      "slow": "audio/clips/6359250853bd8d353f-slow.mp3"
+    },
+    "sentence:猴子把木头放在水里让木头乘着水流流动，手里牵着拴到木头的绳子。": {
+      "normal": "audio/clips/7bc607afffd07d5c17-normal.mp3",
+      "slow": "audio/clips/5644e03e5e086e78be-slow.mp3"
+    },
+    "sentence:强壮的灰熊把木头高高地举起来。": {
+      "normal": "audio/clips/ca61ee7ba3892a4e86-normal.mp3",
+      "slow": "audio/clips/d8c7c3fb5a438f130a-slow.mp3"
+    },
+    "sentence:小猪用腿踢着木头向前挪动。": {
+      "normal": "audio/clips/442eb9b3691c2b64a1-normal.mp3",
+      "slow": "audio/clips/98533adeec0fca03e9-slow.mp3"
+    },
+    "sentence:你觉得哪一个动物的方式更加聪明呢？": {
+      "normal": "audio/clips/c38beeda90dbf8e116-normal.mp3",
+      "slow": "audio/clips/c3c425a8e9e2804da1-slow.mp3"
+    },
+    "sentence:我的男朋友姓刘，他很高，长得也很帅。我们在一起的日子，每天都特别开心。我很爱他。但是，有一点，我特别讨厌他。那就是玩游戏。": {
+      "normal": "audio/clips/af149bc6807bed1f8c-normal.mp3",
+      "slow": "audio/clips/1cc3dfbe322ba26cf7-slow.mp3"
+    },
+    "sentence:他每天晚上下班以后，都会花好几个小时的时间来玩游戏，坐在椅子上一动不动，盯着电脑屏幕。我和他说话的时候，他也是爱搭不理。而且，他会花很多钱，用来买游戏的装备等等。": {
+      "normal": "audio/clips/f0e161f268d7e3ada7-normal.mp3",
+      "slow": "audio/clips/f89544da686c0f50e4-slow.mp3"
+    },
+    "sentence:我十分讨厌这一点。": {
+      "normal": "audio/clips/1e03dbbfd884e508ac-normal.mp3",
+      "slow": "audio/clips/d19357e32532f8fad3-slow.mp3"
+    },
+    "sentence:小明六点起床，六点半之前洗漱，六点半吃早饭。": {
+      "normal": "audio/clips/f577d62eb9c7b01e6e-normal.mp3",
+      "slow": "audio/clips/0112e8ee4725399504-slow.mp3"
+    },
+    "sentence:七点钟的时候，他会准时离开家，小明经常骑车子去上学，大约二十分钟以后他会到达学校，": {
+      "normal": "audio/clips/63fc33a377df19f88b-normal.mp3",
+      "slow": "audio/clips/ca9395e36024ca5570-slow.mp3"
+    },
+    "sentence:从周一到周五，每天早晨他有四节课。他特别擅长学习英语。": {
+      "normal": "audio/clips/48efcb6d879ffb4185-normal.mp3",
+      "slow": "audio/clips/f3f9a56ff66af0eecb-slow.mp3"
+    },
+    "sentence:他长大以后，想要当一名英语老师，所以高中的时候，他会去英国留学。": {
+      "normal": "audio/clips/ce57e1d8aad756f23e-normal.mp3",
+      "slow": "audio/clips/2b72057ffd3eba4095-slow.mp3"
+    },
+    "sentence:小明：小红，你的汉语真好，你能告诉我怎么学好汉语吗？": {
+      "normal": "audio/clips/0f250013c0b3a6e130-normal.mp3",
+      "slow": "audio/clips/7457c29d0cb2ca0a22-slow.mp3"
+    },
+    "sentence:小红：第一，最重要的是你要勇敢开口说汉语！": {
+      "normal": "audio/clips/98e5f24466f743307c-normal.mp3",
+      "slow": "audio/clips/7cc2d49a16bd2ace55-slow.mp3"
+    },
+    "sentence:小明：还有吗？": {
+      "normal": "audio/clips/ffee2028548c72d994-normal.mp3",
+      "slow": "audio/clips/e1e1b9732719470cc7-slow.mp3"
+    },
+    "sentence:小红：上课的时候要认真听课。": {
+      "normal": "audio/clips/168536e8292dfd9446-normal.mp3",
+      "slow": "audio/clips/5de5d3851dd2034221-slow.mp3"
+    },
+    "sentence:小明：遇到不懂的单词怎么办？": {
+      "normal": "audio/clips/6d5132837685867511-normal.mp3",
+      "slow": "audio/clips/4f4d5af56659c9ec96-slow.mp3"
+    },
+    "sentence:小红：你可以查词典，然后写下来，有空的时候多看几次。": {
+      "normal": "audio/clips/2d11c4a09c6743bf33-normal.mp3",
+      "slow": "audio/clips/5899110091090613f2-slow.mp3"
+    },
+    "sentence:小明：在中国，给钱很少用现金了。": {
+      "normal": "audio/clips/40164c29cd123fbfdb-normal.mp3",
+      "slow": "audio/clips/5dfd91df2d54113661-slow.mp3"
+    },
+    "sentence:小红：那去中国怎么买东西？": {
+      "normal": "audio/clips/4b1b529942ca4a07fa-normal.mp3",
+      "slow": "audio/clips/b32952a403328a9e22-slow.mp3"
+    },
+    "sentence:小明：用一个手机软件，叫支付宝，从网上给钱。": {
+      "normal": "audio/clips/99898a66e2a44bf6ce-normal.mp3",
+      "slow": "audio/clips/9b96da302884eb1145-slow.mp3"
+    },
+    "sentence:小红：很多人用这个软件吗？": {
+      "normal": "audio/clips/c5d1f8f04366c4da22-normal.mp3",
+      "slow": "audio/clips/8b56b16255c9af43c9-slow.mp3"
+    },
+    "sentence:小明：是的！无论你是去商店还是菜市场，差不多所有地方都可以用支付宝给钱。": {
+      "normal": "audio/clips/a34e0ab5e5fe1b1d83-normal.mp3",
+      "slow": "audio/clips/540f7c0a0041607ed7-slow.mp3"
+    },
+    "sentence:小红：那真是太方便了！出门只用带手机就可以了。": {
+      "normal": "audio/clips/c4ad130133dece247f-normal.mp3",
+      "slow": "audio/clips/6689f1a2ad96372cd2-slow.mp3"
+    },
+    "sentence:老板:小王，你来我办公室一趟。": {
+      "normal": "audio/clips/854ba62f0d580fe369-normal.mp3",
+      "slow": "audio/clips/24ab633b374eec4c29-slow.mp3"
+    },
+    "sentence:小王:您好，老板。": {
+      "normal": "audio/clips/83e4351061bae92957-normal.mp3",
+      "slow": "audio/clips/f2dad40f830ff12408-slow.mp3"
+    },
+    "sentence:老板:最近，你所在的项目组完成工作进度太慢了，不能按照计划完成任务，已经导致其他项目组工作的滞后。": {
+      "normal": "audio/clips/01aca067bcdbc8a884-normal.mp3",
+      "slow": "audio/clips/4004879ddff1fc9d3f-slow.mp3"
+    },
+    "sentence:小王:老板，情况的确如您所说的那样。但是进度慢的原因是项目在开展过程中，人手不足。咱们公司裁员了不少。": {
+      "normal": "audio/clips/ec47a6e2c1edb154ac-normal.mp3",
+      "slow": "audio/clips/6b9fe2e098b41df952-slow.mp3"
+    },
+    "sentence:老板:这个问题的确存在。但是还是希望你们能够提高工作效率，不要拖公司后退。": {
+      "normal": "audio/clips/d6bca57c08292b8c2a-normal.mp3",
+      "slow": "audio/clips/217e9bd8b7c124627d-slow.mp3"
+    },
+    "sentence:每年的3月12日是植树节。这一天小区的工作人员号召我们在小区里植树。": {
+      "normal": "audio/clips/47d55614eac6d99a65-normal.mp3",
+      "slow": "audio/clips/cc16c99850bcf0eb1b-slow.mp3"
+    },
+    "sentence:早晨，我很兴奋的起床，早早的来到小区的花园里。爸爸帮我扶着一棵小树苗，我用尽全身的力气把土盖在树苗的根上，然后妈妈在旁边帮我浇水。之后我在这棵小树苗上拴上了一条绳子，用来标记这是我种的树。": {
+      "normal": "audio/clips/f1ae5dd9b9c46d2acd-normal.mp3",
+      "slow": "audio/clips/6a485d566045d1e030-slow.mp3"
+    },
+    "sentence:希望有一天这颗小树苗能够长成参天大树，希望我们的环境能够变得越来越好！今天真是开心的一天。": {
+      "normal": "audio/clips/61a74960679b5a144d-normal.mp3",
+      "slow": "audio/clips/d4b96b281dc427d55d-slow.mp3"
+    },
+    "sentence:学生们期盼已久的寒假终于来到了。结束了紧张的期末考试，中国学生将会有大约一个月的寒假时间。这段时间，学生们可以自由玩耍，让他们拥有充沛的精力，活跃的思维。": {
+      "normal": "audio/clips/c862c09074211e7f34-normal.mp3",
+      "slow": "audio/clips/e46827d47d46ce53ba-slow.mp3"
+    },
+    "sentence:当然了，寒假当中老师也会布置一部分作业，需要同学们认真完成。": {
+      "normal": "audio/clips/e95118abd6eb564519-normal.mp3",
+      "slow": "audio/clips/8201bc2f92f27cb4b0-slow.mp3"
+    },
+    "sentence:在寒假里，中国学生会度过中国的传统节日——春节。那一天，各地的家人会回到家里与大家团聚。": {
+      "normal": "audio/clips/364797b00f15fb9e2b-normal.mp3",
+      "slow": "audio/clips/55c40c3ccf0c6d8bac-slow.mp3"
+    },
+    "sentence:寒假真是一段兴奋的时光!": {
+      "normal": "audio/clips/9a94a7cff7a72032fe-normal.mp3",
+      "slow": "audio/clips/51e2797d68eb21d9a7-slow.mp3"
+    },
+    "sentence:李明和李强是双胞胎兄弟，他们都十二岁了。他们看起来真像。但他们有不同的爱好。": {
+      "normal": "audio/clips/9053fdf14e90fdc021-normal.mp3",
+      "slow": "audio/clips/292402e4a4e481dc4f-slow.mp3"
+    },
+    "sentence:李明喜欢邮票。他收集了许多漂亮的邮票。但是李强不喜欢收集邮票，他喜欢赛车，喜欢发牢骚。他们两个人都喜欢看科学书。": {
+      "normal": "audio/clips/070ebcf059891513b5-normal.mp3",
+      "slow": "audio/clips/88f599440be3e85b64-slow.mp3"
+    },
+    "sentence:星期天，他们通常骑自行车去读书。他们在那里和朋友一起玩。然后一起回家写作业。他们在同一所学校上学，很多老师和学生会把他们两个人弄混。我知道怎么区分他们两个，但是我不会告诉老师们！": {
+      "normal": "audio/clips/095ad641ab8f97c8c3-normal.mp3",
+      "slow": "audio/clips/422ac78e2a81a6acde-slow.mp3"
+    },
+    "sentence:人工智能是当代社会最有益的助手之一。": {
+      "normal": "audio/clips/e12752448e11987432-normal.mp3",
+      "slow": "audio/clips/7883ca608915de7760-slow.mp3"
+    },
+    "sentence:可能你对这个名词还不是很理解，或者觉得这个名词高大上。我给你举个最简单的例子，你可以随时对着自己的智能水壶说，为我煮咖啡。它就会开始为你准备咖啡了。": {
+      "normal": "audio/clips/2909d347fe80aaaa9c-normal.mp3",
+      "slow": "audio/clips/9f9604a27fe82b8c3b-slow.mp3"
+    },
+    "sentence:科技真是为人们的生活带来了很大帮助。": {
+      "normal": "audio/clips/efe5aa2477c3f4f07a-normal.mp3",
+      "slow": "audio/clips/69a9197126e3fddd52-slow.mp3"
+    },
+    "sentence:健康对任何人来说都是很重要的，尤其是孩子和老年人。因此，在选择食物的时候，人们会区分什么样的食物是健康的，什么样的食物是不健康的。": {
+      "normal": "audio/clips/07edb3d378daf8418a-normal.mp3",
+      "slow": "audio/clips/5cb57ed9e4917b73c1-slow.mp3"
+    },
+    "sentence:在一般人看来，水果和新鲜的蔬菜对身体是有帮助的。但是在快餐店里卖的食物，比如，汉堡，薯条，大家认为是不健康的。所以要少吃。": {
+      "normal": "audio/clips/0476c51ad79eca192a-normal.mp3",
+      "slow": "audio/clips/bffb24af9bdac5c323-slow.mp3"
+    },
+    "sentence:可是，在现代人的生活中，不健康的食物又随处可见，能够比较方便的购买到。尤其是上班族，他们没有时间自己做饭，只能去快餐店里购买食物。": {
+      "normal": "audio/clips/17a3ca35b0f1569ae5-normal.mp3",
+      "slow": "audio/clips/304f6c54e02c49fdf3-slow.mp3"
+    },
+    "sentence:时间过的真快啊，转眼2018年就要过去了。": {
+      "normal": "audio/clips/62a3e6d65c2104faa5-normal.mp3",
+      "slow": "audio/clips/82b1018b9bb810678f-slow.mp3"
+    },
+    "sentence:在这一年里，我实现了从学校毕业到参加工作的转变。在学校的时候可以见到很多亲切的老师和一起玩的同学。工作以后，遇见的是严厉的领导和忙碌的同事。": {
+      "normal": "audio/clips/aa8a501d05429cf042-normal.mp3",
+      "slow": "audio/clips/5fffb1e0512b1bc95c-slow.mp3"
+    },
+    "sentence:我上大学的时候，住在宿舍，虽然有点拥挤，但是很温馨。": {
+      "normal": "audio/clips/6cb66c907590a04bb9-normal.mp3",
+      "slow": "audio/clips/f2e779e60da0323c3f-slow.mp3"
+    },
+    "sentence:现在住在自己租的房子里，很简单很贵。可是，人都要不断向前的，希望2019年，大家可以一起加油!": {
+      "normal": "audio/clips/17218a05dbe65a8d38-normal.mp3",
+      "slow": "audio/clips/943c7f05627b3e101d-slow.mp3"
+    },
+    "sentence:做老虎不容易。": {
+      "normal": "audio/clips/5358e6c70453871028-normal.mp3",
+      "slow": "audio/clips/04f364e4adedb8f1cb-slow.mp3"
+    },
+    "sentence:是的，老虎很美，也很凶。": {
+      "normal": "audio/clips/172e23770f9d2d8bb8-normal.mp3",
+      "slow": "audio/clips/2458aab780295fa110-slow.mp3"
+    },
+    "sentence:但是老虎也又大又重。": {
+      "normal": "audio/clips/5b030afb92554f6934-normal.mp3",
+      "slow": "audio/clips/3d3075b69a804d900f-slow.mp3"
+    },
+    "sentence:因为这样，他们寻找食物很困难。": {
+      "normal": "audio/clips/2c6ee9d87542f8b4d9-normal.mp3",
+      "slow": "audio/clips/e7a37817f0949330da-slow.mp3"
+    },
+    "sentence:老虎每20次捕猎，": {
+      "normal": "audio/clips/8877a01620457b4f55-normal.mp3",
+      "slow": "audio/clips/271fb8855c52e7ef30-slow.mp3"
+    },
+    "sentence:只能吃一次。": {
+      "normal": "audio/clips/5354f8c41a436c4e24-normal.mp3",
+      "slow": "audio/clips/a1b6bbe3d3c7cb4da9-slow.mp3"
+    },
+    "sentence:老虎穿过森林时，": {
+      "normal": "audio/clips/577d7e6136ee0470e0-normal.mp3",
+      "slow": "audio/clips/ff8afd2ec156b9745a-slow.mp3"
+    },
+    "sentence:轰！啪！砰！": {
+      "normal": "audio/clips/01d8bb1366480b8681-normal.mp3",
+      "slow": "audio/clips/11498e067c47586f95-slow.mp3"
+    },
+    "sentence:猴子的叫声，就像一个老人在咳嗽！": {
+      "normal": "audio/clips/83c7b9afe3985e3734-normal.mp3",
+      "slow": "audio/clips/19fdff2abeb26df385-slow.mp3"
+    },
+    "sentence:嚎！嚎！": {
+      "normal": "audio/clips/a24e57095237c053ca-normal.mp3",
+      "slow": "audio/clips/ad14bcb5b47f0ff83f-slow.mp3"
+    },
+    "sentence:吠叫鹿的叫声，像一只害怕的狗！": {
+      "normal": "audio/clips/aa41b1781338bf46b9-normal.mp3",
+      "slow": "audio/clips/bb3f3eb96c3dc21df6-slow.mp3"
+    },
+    "sentence:喔！喔！喔！": {
+      "normal": "audio/clips/722699c318229b766f-normal.mp3",
+      "slow": "audio/clips/e5f5ca59593745e08b-slow.mp3"
+    },
+    "sentence:斑点鹿的叫声，像一只小鸟！": {
+      "normal": "audio/clips/bb0dc121f0eee59e9f-normal.mp3",
+      "slow": "audio/clips/9ea57e1fcbc8ae55e8-slow.mp3"
+    },
+    "sentence:整片森林都知道老虎已经来了！": {
+      "normal": "audio/clips/2a2a575d31c74dc2de-normal.mp3",
+      "slow": "audio/clips/b1e3762230814da3b5-slow.mp3"
+    },
+    "sentence:吼？吼？": {
+      "normal": "audio/clips/fda125bb7d1e00ba4c-normal.mp3",
+      "slow": "audio/clips/49132c5dd136391dfc-slow.mp3"
+    },
+    "sentence:老虎想知道，大家都去了哪里？": {
+      "normal": "audio/clips/b1252122db23bbf26e-normal.mp3",
+      "slow": "audio/clips/f0c4d4bf2732d73dbe-slow.mp3"
+    },
+    "sentence:小乔种了一颗星星。": {
+      "normal": "audio/clips/745da562d94c7ff70c-normal.mp3",
+      "slow": "audio/clips/8e09907ab65174b707-slow.mp3"
+    },
+    "sentence:他给它浇水。一些叶子冒了出来，但是星星呢？": {
+      "normal": "audio/clips/cd9f0ec7dbe7931f56-normal.mp3",
+      "slow": "audio/clips/f6bc247905846589ed-slow.mp3"
+    },
+    "sentence:很快，绿色卷叶长出来了。": {
+      "normal": "audio/clips/9c441c873e490c4e75-normal.mp3",
+      "slow": "audio/clips/b2d6b4a52ca0b1900f-slow.mp3"
+    },
+    "sentence:但还是没有星星。": {
+      "normal": "audio/clips/4f62f2dca755a90eea-normal.mp3",
+      "slow": "audio/clips/d1c568626ae026239e-slow.mp3"
+    },
+    "sentence:一天，小乔发现了一些小花蕾…": {
+      "normal": "audio/clips/8b2578a57d072b2ebd-normal.mp3",
+      "slow": "audio/clips/9799f3193a66a57bc0-slow.mp3"
+    },
+    "sentence:哇，这么多星星！": {
+      "normal": "audio/clips/1559340c3eef3e4ee6-normal.mp3",
+      "slow": "audio/clips/6d9f3c13635179c4fc-slow.mp3"
+    },
+    "sentence:我问奶奶，“我可以吃糖果吗？”": {
+      "normal": "audio/clips/7cbee97cef001ae4a0-normal.mp3",
+      "slow": "audio/clips/88ed755e721dd5180a-slow.mp3"
+    },
+    "sentence:奶奶说：“现在不行，贝塔，也许明天。”": {
+      "normal": "audio/clips/6842834c4687cd9b6f-normal.mp3",
+      "slow": "audio/clips/258147daa9d297d7e0-slow.mp3"
+    },
+    "sentence:可是我不想等到明天。": {
+      "normal": "audio/clips/79a49425fbb4980bc5-normal.mp3",
+      "slow": "audio/clips/621c0d961c717fbc65-slow.mp3"
+    },
+    "sentence:我问爷爷，“我可以和朋友出去玩吗？”": {
+      "normal": "audio/clips/97b9d83de70d2ed416-normal.mp3",
+      "slow": "audio/clips/ef425bf7aa67764e90-slow.mp3"
+    },
+    "sentence:爷爷说，“现在不行，贝塔，也许午觉以后？”": {
+      "normal": "audio/clips/052ca3dda7eed7f71a-normal.mp3",
+      "slow": "audio/clips/e0c0c240a74304a925-slow.mp3"
+    },
+    "sentence:可是我不想等到午觉以后。": {
+      "normal": "audio/clips/60fd9425939dae784d-normal.mp3",
+      "slow": "audio/clips/3baa32e27f378c1e2e-slow.mp3"
+    },
+    "sentence:我问妈妈，“我可以穿新衣裳吗？”": {
+      "normal": "audio/clips/45f9a982aa79d0b36e-normal.mp3",
+      "slow": "audio/clips/fc1152973897e8344d-slow.mp3"
+    },
+    "sentence:妈妈说，“现在不行，贝塔，我们出门的时候你就可以穿它们了。”": {
+      "normal": "audio/clips/4fe2b7843f41824a82-normal.mp3",
+      "slow": "audio/clips/277a1d206a8e85892c-slow.mp3"
+    },
+    "sentence:可是我不想等到我们出门。": {
+      "normal": "audio/clips/30854326187a1c5ad6-normal.mp3",
+      "slow": "audio/clips/f0e28476b7465f736c-slow.mp3"
+    },
+    "sentence:我问爸爸：“我可以打开这个漂亮的盒子吗？”": {
+      "normal": "audio/clips/2950870ca4b8cf6cc5-normal.mp3",
+      "slow": "audio/clips/469c0ce4b147f41f2b-slow.mp3"
+    },
+    "sentence:爸爸说，“现在不行，你得等等。”": {
+      "normal": "audio/clips/6b0af68adebcc0d93c-normal.mp3",
+      "slow": "audio/clips/18f3fd314793a507e9-slow.mp3"
+    },
+    "sentence:可是我不想再等了。": {
+      "normal": "audio/clips/0f04a95eccfb693d34-normal.mp3",
+      "slow": "audio/clips/e93e57e1a9da892e9d-slow.mp3"
+    },
+    "sentence:为什么大人们总是说，“现在不行，现在不行。”": {
+      "normal": "audio/clips/67433d36ae8b77e8b3-normal.mp3",
+      "slow": "audio/clips/fde4d22a78ad56d90b-slow.mp3"
+    },
+    "sentence:那天晚上，我睡觉的时候很生气。": {
+      "normal": "audio/clips/b6ba20653005b85472-normal.mp3",
+      "slow": "audio/clips/d1044ba132fb5856cc-slow.mp3"
+    },
+    "sentence:第二天，我早早地醒来走进厨房。": {
+      "normal": "audio/clips/ec1933a15e5f997019-normal.mp3",
+      "slow": "audio/clips/34a0e03324ed2ecd7a-slow.mp3"
+    },
+    "sentence:奶奶说，“你可以吃这些糖果了”。": {
+      "normal": "audio/clips/f63ef99f6298f5ad49-normal.mp3",
+      "slow": "audio/clips/08bc0fe181aff20616-slow.mp3"
+    },
+    "sentence:爷爷说：“你可以出去玩了。”": {
+      "normal": "audio/clips/b49f5dceb511130351-normal.mp3",
+      "slow": "audio/clips/6cef98085d19d2a6e4-slow.mp3"
+    },
+    "sentence:妈妈说：“你可以穿新衣服了。”": {
+      "normal": "audio/clips/056be4867c184588d9-normal.mp3",
+      "slow": "audio/clips/bfb7c9eca374632dbb-slow.mp3"
+    },
+    "sentence:爸爸说：“你可以打开这个盒子了。”": {
+      "normal": "audio/clips/63ce1ad7af464a6c4e-normal.mp3",
+      "slow": "audio/clips/80f8b46468ae8483e9-slow.mp3"
+    },
+    "sentence:然后他们一起对我说：“生日快乐！”": {
+      "normal": "audio/clips/036364832e3fdefb6a-normal.mp3",
+      "slow": "audio/clips/cb568b41b22244b00e-slow.mp3"
+    },
+    "sentence:妈妈说：“沙努，你太大了，我抱不动你了！”": {
+      "normal": "audio/clips/2a51b109b3ca516ebd-normal.mp3",
+      "slow": "audio/clips/ea2528bd562c461ac0-slow.mp3"
+    },
+    "sentence:爸爸说：“沙努，你太小了，不能自己走路去学校！”": {
+      "normal": "audio/clips/28195bc6242bbb0363-normal.mp3",
+      "slow": "audio/clips/1b3bda759d420d9e15-slow.mp3"
+    },
+    "sentence:爷爷说：“沙努，你太大了，不能睡在弟弟的婴儿床里了！”": {
+      "normal": "audio/clips/9d24d67fe2893d4826-normal.mp3",
+      "slow": "audio/clips/749850d24c517b3563-slow.mp3"
+    },
+    "sentence:奶奶说：“沙努，你不能自己抱着弟弟去公园，你太小了！”": {
+      "normal": "audio/clips/d785344c424fa6eae4-normal.mp3",
+      "slow": "audio/clips/cdb5312e1373999acc-slow.mp3"
+    },
+    "sentence:沙努觉得好奇怪": {
+      "normal": "audio/clips/285a4663b8048462a6-normal.mp3",
+      "slow": "audio/clips/aa3a53567ee7143349-slow.mp3"
+    },
+    "sentence:太大了？": {
+      "normal": "audio/clips/09eb3eb444c96db75d-normal.mp3",
+      "slow": "audio/clips/3326a475287f0bde95-slow.mp3"
+    },
+    "sentence:太小了？": {
+      "normal": "audio/clips/460411e9332559a946-normal.mp3",
+      "slow": "audio/clips/48f5f92ef3f8888ad3-slow.mp3"
+    },
+    "sentence:我怎么会又太大又太小呢？": {
+      "normal": "audio/clips/8ee0c2f9cbc9f34c7d-normal.mp3",
+      "slow": "audio/clips/da7bb33a30dc04dfdc-slow.mp3"
+    },
+    "sentence:我太大了": {
+      "normal": "audio/clips/b4eca4f7475fb65394-normal.mp3",
+      "slow": "audio/clips/6b0d56f88cf317c94b-slow.mp3"
+    },
+    "sentence:穿不上这条粉色公主裙了": {
+      "normal": "audio/clips/9707b01a11c4b836bc-normal.mp3",
+      "slow": "audio/clips/1ce9e9f09c72b80000-slow.mp3"
+    },
+    "sentence:我太小了不能像妈妈一样做烙饼": {
+      "normal": "audio/clips/58b006511e2883d9e1-normal.mp3",
+      "slow": "audio/clips/4c7b1773ae2762a42e-slow.mp3"
+    },
+    "sentence:不能让爷爷背着我": {
+      "normal": "audio/clips/42eef985402e188493-normal.mp3",
+      "slow": "audio/clips/19728f3969540afb3d-slow.mp3"
+    },
+    "sentence:我太小了": {
+      "normal": "audio/clips/2bffc48acf7f163429-normal.mp3",
+      "slow": "audio/clips/f74ca9df29ec7a7013-slow.mp3"
+    },
+    "sentence:不能背着弟弟": {
+      "normal": "audio/clips/5806afb7b2b6404196-normal.mp3",
+      "slow": "audio/clips/b925e88f63991b25d5-slow.mp3"
+    },
+    "sentence:我到底是太大呢，还是太小呢？": {
+      "normal": "audio/clips/2759333203744007d8-normal.mp3",
+      "slow": "audio/clips/f4e151ca62e869b78a-slow.mp3"
+    },
+    "sentence:妈妈笑着说：“你长大了，可以去上学啦。”": {
+      "normal": "audio/clips/8581c4e176e3e8de54-normal.mp3",
+      "slow": "audio/clips/540d4e025b3d7d1b76-slow.mp3"
+    },
+    "sentence:爸爸说：“可是你还是小小的，我能背得动你。”": {
+      "normal": "audio/clips/c487f54e021e80ed0b-normal.mp3",
+      "slow": "audio/clips/98f4adee7eb217db6a-slow.mp3"
+    },
+    "sentence:爷爷说：“你长大啦，可以陪我一起晨练去。”": {
+      "normal": "audio/clips/1e3a47d4f159e39a99-normal.mp3",
+      "slow": "audio/clips/11e0dc149a4a469560-slow.mp3"
+    },
+    "sentence:奶奶说：“你还小，坐好，我来给你讲故事吧。”": {
+      "normal": "audio/clips/463ae3351f92720305-normal.mp3",
+      "slow": "audio/clips/b2161e4767021c2c0f-slow.mp3"
+    },
+    "sentence:大伙儿抱着沙努说：“你不大不小刚刚好，我们都爱你！”": {
+      "normal": "audio/clips/26f5f67c47734d70cd-normal.mp3",
+      "slow": "audio/clips/7921011465fc0af157-slow.mp3"
+    },
+    "sentence:这是胖国王。": {
+      "normal": "audio/clips/882b79a49282d6a223-normal.mp3",
+      "slow": "audio/clips/6ad394b8483dca7326-slow.mp3"
+    },
+    "sentence:胖国王有一只很瘦的狗。": {
+      "normal": "audio/clips/c886e67b890eeffd6a-normal.mp3",
+      "slow": "audio/clips/840113979fcef10252-slow.mp3"
+    },
+    "sentence:胖国王和他的瘦狗出门散步。": {
+      "normal": "audio/clips/c301b6b46b2a883b77-normal.mp3",
+      "slow": "audio/clips/525038b718a695da1d-slow.mp3"
+    },
+    "sentence:狗看到一只鸟。": {
+      "normal": "audio/clips/655deb5388ffabcf7b-normal.mp3",
+      "slow": "audio/clips/e692704684313e6426-slow.mp3"
+    },
+    "sentence:狗追着鸟跑。": {
+      "normal": "audio/clips/c1f10d6466bfd3a928-normal.mp3",
+      "slow": "audio/clips/175d27558b01254e34-slow.mp3"
+    },
+    "sentence:国王追着狗跑。": {
+      "normal": "audio/clips/9c862c3a46b58ff284-normal.mp3",
+      "slow": "audio/clips/118bf30d51babdad19-slow.mp3"
+    },
+    "sentence:跑啊跑，跑啊跑，跑了好几天。": {
+      "normal": "audio/clips/1eb912aaee9ca8df3a-normal.mp3",
+      "slow": "audio/clips/36a1ad69e6dee704d6-slow.mp3"
+    },
+    "sentence:国王终于抓住了他的狗。": {
+      "normal": "audio/clips/11a6818b2b2c54c9ca-normal.mp3",
+      "slow": "audio/clips/cb4c26d456baacf68a-slow.mp3"
+    },
+    "sentence:现在国王变瘦了。": {
+      "normal": "audio/clips/115c10b8dcd4765375-normal.mp3",
+      "slow": "audio/clips/cebdc3755e34c466af-slow.mp3"
+    },
+    "sentence:两只瓢虫总共有多少条腿呢？": {
+      "normal": "audio/clips/a6ddfe149be741f980-normal.mp3",
+      "slow": "audio/clips/e268ebee5ef89e547c-slow.mp3"
+    },
+    "sentence:四只小鸟有多少对翅膀呢？": {
+      "normal": "audio/clips/ba1aa8d50197714cbf-normal.mp3",
+      "slow": "audio/clips/9db693b0489912eab5-slow.mp3"
+    },
+    "sentence:三头犀牛会有多少个角呢？": {
+      "normal": "audio/clips/bc70a85c6530c2f337-normal.mp3",
+      "slow": "audio/clips/75581ac73b0d3dbcee-slow.mp3"
+    },
+    "sentence:5只大象又有多少条长长的鼻子呢？": {
+      "normal": "audio/clips/325e141416c922c208-normal.mp3",
+      "slow": "audio/clips/95bc19447e9bb47882-slow.mp3"
+    },
+    "sentence:7只狗有多少只耳朵呢？": {
+      "normal": "audio/clips/70024b4cb040897175-normal.mp3",
+      "slow": "audio/clips/cfe2dc2f454ab2f363-slow.mp3"
+    },
+    "sentence:3只猴子有多少条尾巴呢": {
+      "normal": "audio/clips/e9074e88ed058676fb-normal.mp3",
+      "slow": "audio/clips/0b64d0ac85c194e8dc-slow.mp3"
+    },
+    "sentence:6只猫有多少只眼睛呢？": {
+      "normal": "audio/clips/4622640ef31e0c84f9-normal.mp3",
+      "slow": "audio/clips/c9f8c6cbcd69623496-slow.mp3"
+    },
+    "sentence:那么请问，这条虫宝宝又有多少条腿呢？哈哈！": {
+      "normal": "audio/clips/75e8e02646b38140c6-normal.mp3",
+      "slow": "audio/clips/aef3a09a1104d47331-slow.mp3"
+    },
+    "sentence:我有一个朋友，她住在我家。": {
+      "normal": "audio/clips/620afcd8ffcbb9ed13-normal.mp3",
+      "slow": "audio/clips/15d6fd3eef64ba497b-slow.mp3"
+    },
+    "sentence:我开心，她也跟着我开心。": {
+      "normal": "audio/clips/7039aa5332087defb1-normal.mp3",
+      "slow": "audio/clips/04e33bb557285b3a23-slow.mp3"
+    },
+    "sentence:我不开心，她也跟着不开心。": {
+      "normal": "audio/clips/d39f19b1072c0c1752-normal.mp3",
+      "slow": "audio/clips/7ab9d90d463cd42288-slow.mp3"
+    },
+    "sentence:但是，我听不到她的声音。因为她在镜子里。": {
+      "normal": "audio/clips/3344b459d905fbc094-normal.mp3",
+      "slow": "audio/clips/7d54c96d5b5d321681-slow.mp3"
+    },
+    "sentence:“出来啊！”，我说，“我们一起玩！。”但是，她不肯出来。": {
+      "normal": "audio/clips/3c76ce9ba5ab1bc620-normal.mp3",
+      "slow": "audio/clips/4faeb495aed965f4fa-slow.mp3"
+    },
+    "sentence:我不开心。我要睡了。": {
+      "normal": "audio/clips/694b8211d9574c5009-normal.mp3",
+      "slow": "audio/clips/2e279830f010f493ed-slow.mp3"
+    },
+    "sentence:她在我的梦里出现了。我们一起玩的很开心。": {
+      "normal": "audio/clips/358d19cfffddf20f93-normal.mp3",
+      "slow": "audio/clips/3e2d4a8564e5540e6b-slow.mp3"
+    },
+    "sentence:我们一起玩，我们一起呐喊，一起叫。": {
+      "normal": "audio/clips/4c56b1242fd86ec7f1-normal.mp3",
+      "slow": "audio/clips/d6686ac402a2e03060-slow.mp3"
+    },
+    "sentence:当我跟她说话时，她也跟我说话。": {
+      "normal": "audio/clips/2b642591f0cdae968c-normal.mp3",
+      "slow": "audio/clips/607fceacee0524a38f-slow.mp3"
+    },
+    "sentence:但是，第二天来了，我的朋友就会回到镜子里。": {
+      "normal": "audio/clips/912562bda28ad13b3e-normal.mp3",
+      "slow": "audio/clips/2fa28196f4a163b4f9-slow.mp3"
+    },
+    "sentence:没关系，我们在梦里相见！": {
+      "normal": "audio/clips/ea6c22227f5fe05bee-normal.mp3",
+      "slow": "audio/clips/aa362ff9555de3548d-slow.mp3"
+    },
+    "sentence:你好，我是这条队伍里的第四个。你能看到我吗？": {
+      "normal": "audio/clips/4ce7e3e408e230327b-normal.mp3",
+      "slow": "audio/clips/4e130113f24048a7d3-slow.mp3"
+    },
+    "sentence:左，右，左，右。我们安安静静地排成一条线走。": {
+      "normal": "audio/clips/79027ed8ddee01ebd9-normal.mp3",
+      "slow": "audio/clips/63fe7e79798e0cce02-slow.mp3"
+    },
+    "sentence:啊，我有个好主意！我去找一对轮子，就可以走得更快了！": {
+      "normal": "audio/clips/b70d114bc524c74a8c-normal.mp3",
+      "slow": "audio/clips/cbe334596797073513-slow.mp3"
+    },
+    "sentence:我们和其他动物不一样，我们一点也不吵闹。我们的语言是气味。": {
+      "normal": "audio/clips/470b0b4d140e54542c-normal.mp3",
+      "slow": "audio/clips/fe57a592388c73086b-slow.mp3"
+    },
+    "sentence:一种气味在说：“跟我这边走，有大餐！”": {
+      "normal": "audio/clips/08ae1f897aefb35a45-normal.mp3",
+      "slow": "audio/clips/a90529c46820061809-slow.mp3"
+    },
+    "sentence:另一种气味代表：“危险！别去那里！”": {
+      "normal": "audio/clips/5ff9ab155dfec6b5c8-normal.mp3",
+      "slow": "audio/clips/d8d2aac8c038f5da26-slow.mp3"
+    },
+    "sentence:我喜欢蛋糕和各种甜点，就跟你一样。": {
+      "normal": "audio/clips/b97f212cb9a8b2ea89-normal.mp3",
+      "slow": "audio/clips/c24925a84458c37218-slow.mp3"
+    },
+    "sentence:你想看我的肌肉工作吗？我也许看着很渺小，可是我很强壮！": {
+      "normal": "audio/clips/b53ae79f539edfdc8f-normal.mp3",
+      "slow": "audio/clips/844033d9f1ca36873f-slow.mp3"
+    },
+    "sentence:就算门是关着的也没关系，我可以从最小的缝隙里钻过。": {
+      "normal": "audio/clips/348e3f398f320e7fae-normal.mp3",
+      "slow": "audio/clips/f8c7aa568455a3b3c9-slow.mp3"
+    },
+    "sentence:不管你信不信，我们是群居动物，成百上千个我们快乐地生活在一起。": {
+      "normal": "audio/clips/2bf86d3b73d31663d9-normal.mp3",
+      "slow": "audio/clips/14e8b3f5d65869167a-slow.mp3"
+    },
+    "sentence:让我们学一些新词：": {
+      "normal": "audio/clips/6251375b8ba352816c-normal.mp3",
+      "slow": "audio/clips/753298b4170c2bb6f4-slow.mp3"
+    },
+    "sentence:小-大": {
+      "normal": "audio/clips/8fbb1219a4e95c8b18-normal.mp3",
+      "slow": "audio/clips/7222ac10263e26f8b6-slow.mp3"
+    },
+    "sentence:慢-快": {
+      "normal": "audio/clips/6316b7d00a97fd339a-normal.mp3",
+      "slow": "audio/clips/abbae166fbad0b1b7a-slow.mp3"
+    },
+    "sentence:矮-高": {
+      "normal": "audio/clips/c0154c15e8338ffbe7-normal.mp3",
+      "slow": "audio/clips/0eabd4d1b462853cbc-slow.mp3"
+    },
+    "sentence:瘦-胖": {
+      "normal": "audio/clips/233712cd785467effa-normal.mp3",
+      "slow": "audio/clips/560d7427fad704d7d4-slow.mp3"
+    },
+    "sentence:硬-软": {
+      "normal": "audio/clips/b7fb129d31c3117e4a-normal.mp3",
+      "slow": "audio/clips/daf3ad61d31ccd54f2-slow.mp3"
+    },
+    "sentence:吵-静": {
+      "normal": "audio/clips/c16af5211dad3e8d14-normal.mp3",
+      "slow": "audio/clips/d6cc43ddc3b42b6441-slow.mp3"
+    },
+    "sentence:这里是一些反义词对子，你可以用每一对反义词造个句子吗？": {
+      "normal": "audio/clips/5ae35f346227481197-normal.mp3",
+      "slow": "audio/clips/8744d12d74c8cf732d-slow.mp3"
+    },
+    "sentence:比如说，蚂蚁很小，大象很大。": {
+      "normal": "audio/clips/44979e3414ce1cee08-normal.mp3",
+      "slow": "audio/clips/a605d7ab4191dff227-slow.mp3"
+    },
+    "sentence:“像蚂蚁一样忙碌”，常常用来形容一个辛勤工作的人。": {
+      "normal": "audio/clips/587a0fffef57ce2a02-normal.mp3",
+      "slow": "audio/clips/e111da4c504f737fed-slow.mp3"
+    },
+    "sentence:爸爸的爱好…": {
+      "normal": "audio/clips/95908cc79cd889704c-normal.mp3",
+      "slow": "audio/clips/ab1614556f0f72cbe3-slow.mp3"
+    },
+    "sentence:…就是去巴刹": {
+      "normal": "audio/clips/7e053c7fb8c638ba8e-normal.mp3",
+      "slow": "audio/clips/9351d87531170cb0d1-slow.mp3"
+    },
+    "sentence:买水果！": {
+      "normal": "audio/clips/ba577eea4b0e58fbe3-normal.mp3",
+      "slow": "audio/clips/6247e0f1db10574476-slow.mp3"
+    },
+    "sentence:龙眼": {
+      "normal": "audio/clips/c261544e47feba56ac-normal.mp3",
+      "slow": "audio/clips/c776e03658071c7a2e-slow.mp3"
+    },
+    "sentence:红毛丹": {
+      "normal": "audio/clips/fd5038c25ceea569ac-normal.mp3",
+      "slow": "audio/clips/35303ca8f64ab0a481-slow.mp3"
+    },
+    "sentence:芒果": {
+      "normal": "audio/clips/2364843ec7c18ea5b1-normal.mp3",
+      "slow": "audio/clips/71ee1e982576644be7-slow.mp3"
+    },
+    "sentence:杜古": {
+      "normal": "audio/clips/6bb973c259030f1725-normal.mp3",
+      "slow": "audio/clips/51f25cec863882ea94-slow.mp3"
+    },
+    "sentence:菠萝蜜": {
+      "normal": "audio/clips/3a118c4142630c5b2a-normal.mp3",
+      "slow": "audio/clips/e08a8317b5abbb7349-slow.mp3"
+    },
+    "sentence:番石榴": {
+      "normal": "audio/clips/07afc6255ce3a125c5-normal.mp3",
+      "slow": "audio/clips/5f0e011e7c7fa91fbe-slow.mp3"
+    },
+    "sentence:榴莲": {
+      "normal": "audio/clips/94e8fdcbbd6e6902d3-normal.mp3",
+      "slow": "audio/clips/96ab77e9c1430f62d0-slow.mp3"
+    },
+    "sentence:龙珠果": {
+      "normal": "audio/clips/3645083d09609b92ac-normal.mp3",
+      "slow": "audio/clips/aa1bb9a2d5b6472b64-slow.mp3"
+    },
+    "sentence:山竹": {
+      "normal": "audio/clips/50b9ea90ecfe915816-normal.mp3",
+      "slow": "audio/clips/4f77033d3b09ee5439-slow.mp3"
+    },
+    "sentence:我们的爱好就是吃爸爸买回来的水果！": {
+      "normal": "audio/clips/806386b69bed274dda-normal.mp3",
+      "slow": "audio/clips/691cfb7f9347680445-slow.mp3"
+    },
+    "sentence:呼呼": {
+      "normal": "audio/clips/25905cb08076b316a3-normal.mp3",
+      "slow": "audio/clips/d535670b28982fb2c7-slow.mp3"
+    },
+    "sentence:呼呼...呼噜噜": {
+      "normal": "audio/clips/6425ba53f5afffd4d9-normal.mp3",
+      "slow": "audio/clips/e50074ec2d99c6a034-slow.mp3"
+    },
+    "sentence:咕咕": {
+      "normal": "audio/clips/89621cedd6f6d19364-normal.mp3",
+      "slow": "audio/clips/9d0094826f24bc4fbd-slow.mp3"
+    },
+    "sentence:咕咕...呼噜噜": {
+      "normal": "audio/clips/7c88f25f8cb54c418b-normal.mp3",
+      "slow": "audio/clips/749aeee2887698c2c2-slow.mp3"
+    },
+    "sentence:呼哧": {
+      "normal": "audio/clips/b66c86c4add59cf583-normal.mp3",
+      "slow": "audio/clips/f343b05ccdc2681c0e-slow.mp3"
+    },
+    "sentence:呼哧...呼噜噜": {
+      "normal": "audio/clips/bf66a4587b3c659aa9-normal.mp3",
+      "slow": "audio/clips/9dfa96034e96a8c7f4-slow.mp3"
+    },
+    "sentence:嗡嗡": {
+      "normal": "audio/clips/e99bbab8b7b2ec1c79-normal.mp3",
+      "slow": "audio/clips/3b134a64cc69a2518e-slow.mp3"
+    },
+    "sentence:嗡嗡...呼噜噜": {
+      "normal": "audio/clips/de1df34808317603d7-normal.mp3",
+      "slow": "audio/clips/e0789595580f511c28-slow.mp3"
+    },
+    "sentence:咕噜": {
+      "normal": "audio/clips/0a16c5b8ffb3317bef-normal.mp3",
+      "slow": "audio/clips/2f4f4ec9cb6a132af1-slow.mp3"
+    },
+    "sentence:咕噜...呼噜噜": {
+      "normal": "audio/clips/0619b782fc18ae8403-normal.mp3",
+      "slow": "audio/clips/d03d9224138dad0aef-slow.mp3"
+    },
+    "sentence:打个大哈欠...": {
+      "normal": "audio/clips/5987c3f0096dedff93-normal.mp3",
+      "slow": "audio/clips/941ab7b1602ea96e46-slow.mp3"
+    },
+    "sentence:晚安！": {
+      "normal": "audio/clips/ef8dd5f838069b9d73-normal.mp3",
+      "slow": "audio/clips/406663bf294038a253-slow.mp3"
+    },
+    "sentence:小猪胖果果爱睡觉。有时候，她没日没夜地睡着。": {
+      "normal": "audio/clips/249d555cae3b01b67d-normal.mp3",
+      "slow": "audio/clips/e9f7a54fb171dc8f84-slow.mp3"
+    },
+    "sentence:怪不得她的尾巴常常感觉很无聊。": {
+      "normal": "audio/clips/1d26e6efbe9e1fe56d-normal.mp3",
+      "slow": "audio/clips/68cbf020115d68b1a3-slow.mp3"
+    },
+    "sentence:有一天，胖果果睡完了一个午觉，发现她的尾巴到处都找不到。她的尾巴离开了她、已经远走。": {
+      "normal": "audio/clips/a9378b21d2e3edb11b-normal.mp3",
+      "slow": "audio/clips/dee6d4fc3869416498-slow.mp3"
+    },
+    "sentence:没了尾巴，显得傻里傻气的。于是，她决定出门找回她的尾巴。": {
+      "normal": "audio/clips/5545b731ffd95c68f5-normal.mp3",
+      "slow": "audio/clips/cd03b3758847ec09c5-slow.mp3"
+    },
+    "sentence:哧溜！“这片森林乱糟糟！”胖果果说道。": {
+      "normal": "audio/clips/da7896fbf0fc9d5924-normal.mp3",
+      "slow": "audio/clips/0583544790dbbbca5f-slow.mp3"
+    },
+    "sentence:哎！她滑了一跤。": {
+      "normal": "audio/clips/0426cb61cf54e62047-normal.mp3",
+      "slow": "audio/clips/bc152f53aaf8bd686b-slow.mp3"
+    },
+    "sentence:哐！她摔进了灌木丛。": {
+      "normal": "audio/clips/5ce6addf586d89b60a-normal.mp3",
+      "slow": "audio/clips/18b6f6d7be346a8425-slow.mp3"
+    },
+    "sentence:“有谁见过我的尾巴吗？”胖果果问道。": {
+      "normal": "audio/clips/91bf00cce9f52ce303-normal.mp3",
+      "slow": "audio/clips/915b469a7ae8e65ccd-slow.mp3"
+    },
+    "sentence:“为什么不试一试换一条蘑菇尾巴呢？”叶猴答道。": {
+      "normal": "audio/clips/587ac059db962f71b2-normal.mp3",
+      "slow": "audio/clips/8cd5d97d2f9833d0e4-slow.mp3"
+    },
+    "sentence:“哼！”胖果果说，“我还是要我自己的那条尾巴。”": {
+      "normal": "audio/clips/36cb45cb77b4e78869-normal.mp3",
+      "slow": "audio/clips/82afbd86b64635d303-slow.mp3"
+    },
+    "sentence:她去其他地方找一找。": {
+      "normal": "audio/clips/0f8b679e15e10a25c4-normal.mp3",
+      "slow": "audio/clips/5d1c74121eba4a4928-slow.mp3"
+    },
+    "sentence:哎呦我的妈呀！“这座城市乱哄哄！”胖果果说道。": {
+      "normal": "audio/clips/f4f48b7edb3d311b09-normal.mp3",
+      "slow": "audio/clips/54ca0fe51d9c0adbf2-slow.mp3"
+    },
+    "sentence:哔哔-哔哔！她躲过横冲直撞的三轮摩托车。": {
+      "normal": "audio/clips/3a6dcd889b2b21fbcb-normal.mp3",
+      "slow": "audio/clips/6d21ac2a6ab96597b2-slow.mp3"
+    },
+    "sentence:叮铃-叮铃！她试着缩成一团钻过自行车的轱辘。": {
+      "normal": "audio/clips/01c169b8efc326d99a-normal.mp3",
+      "slow": "audio/clips/da29bd028c7b03d504-slow.mp3"
+    },
+    "sentence:“为什么不试一试换一条气球尾巴呢？”乌鸦答道。": {
+      "normal": "audio/clips/c31de1b8006c60ff1f-normal.mp3",
+      "slow": "audio/clips/cd28d18b98aa683f83-slow.mp3"
+    },
+    "sentence:“怕怕！”胖果果说，“我还是要我自己的那条尾巴。”她去其他地方找一找。": {
+      "normal": "audio/clips/b24246ddd993475bcb-normal.mp3",
+      "slow": "audio/clips/1b2e7cbc0077d09009-slow.mp3"
+    },
+    "sentence:咯噔！“这个山洞黑布隆冬！”胖果果说道。": {
+      "normal": "audio/clips/9e27a7e1fbad24da6f-normal.mp3",
+      "slow": "audio/clips/2d82fef073f1ac796c-slow.mp3"
+    },
+    "sentence:沙沙-沙沙！她小心地挪着脚向前走。": {
+      "normal": "audio/clips/0390f3cb77e038dc0e-normal.mp3",
+      "slow": "audio/clips/1e53f5dcecaf350f84-slow.mp3"
+    },
+    "sentence:咻！她绊到一堆碎石子。": {
+      "normal": "audio/clips/88df44720fc7c85c32-normal.mp3",
+      "slow": "audio/clips/9dbd086a3382818f01-slow.mp3"
+    },
+    "sentence:“为什么不试一试换一条石笋尾巴呢？”蝙蝠答道。": {
+      "normal": "audio/clips/cf9b40bcab55e9397e-normal.mp3",
+      "slow": "audio/clips/1a1cc902debe662042-slow.mp3"
+    },
+    "sentence:“硌得慌！”胖果果说，“我还是要我自己的那条尾巴。”她去其他地方找一找。": {
+      "normal": "audio/clips/eaf872f8024b7b9811-normal.mp3",
+      "slow": "audio/clips/8abb98f210d103f2dd-slow.mp3"
+    },
+    "sentence:咕咚咚-咕噜噜！“海底到处湿漉漉！”胖果果说道。": {
+      "normal": "audio/clips/2af0790cd582ba24a5-normal.mp3",
+      "slow": "audio/clips/56e51530905b81f685-slow.mp3"
+    },
+    "sentence:噗啪-噗啪！几条彩色的小鱼请胖果果一起跳支舞。": {
+      "normal": "audio/clips/0e88941d446b1aadee-normal.mp3",
+      "slow": "audio/clips/679059aa183f505002-slow.mp3"
+    },
+    "sentence:“为什么不试一试换一条海带尾巴呢？”海龟答道。": {
+      "normal": "audio/clips/a56107f57c1816430b-normal.mp3",
+      "slow": "audio/clips/639fcf889d0947ced8-slow.mp3"
+    },
+    "sentence:“呃——”胖果果说，“我还是要我自己的那条尾巴。”她去其他地方找一找。": {
+      "normal": "audio/clips/0a4633720c65166a60-normal.mp3",
+      "slow": "audio/clips/a03f30dffaf67de160-slow.mp3"
+    },
+    "sentence:扑通！“沙漠到处热辣辣！”胖果果说道。": {
+      "normal": "audio/clips/e472817fb178936474-normal.mp3",
+      "slow": "audio/clips/107863a367d5db52ce-slow.mp3"
+    },
+    "sentence:呼哧！她还不知道自己正趴在一座沙丘上。": {
+      "normal": "audio/clips/46d158cd51226751ec-normal.mp3",
+      "slow": "audio/clips/95ce5055d1ee5e3882-slow.mp3"
+    },
+    "sentence:哎呦！她一股脑地滚到沙坑中。": {
+      "normal": "audio/clips/2c7e31e59fa7b360e4-normal.mp3",
+      "slow": "audio/clips/aad4293822f4ff9273-slow.mp3"
+    },
+    "sentence:“为什么不试一试换一条仙人掌尾巴呢？”骆驼答道。": {
+      "normal": "audio/clips/2939a716866be39188-normal.mp3",
+      "slow": "audio/clips/7df331564325c7ea1b-slow.mp3"
+    },
+    "sentence:“嗷呜！”胖果果尖叫道，“我还是要我自己的那条尾巴。”她去其他地方找一找。": {
+      "normal": "audio/clips/a9b157b2b208b64863-normal.mp3",
+      "slow": "audio/clips/c6d3de1cf8421a8b20-slow.mp3"
+    },
+    "sentence:呼咧咧！“山顶到处冷飕飕！”胖果果说道。": {
+      "normal": "audio/clips/ba9b5eb20aa68a7fbb-normal.mp3",
+      "slow": "audio/clips/434ca01d8cf3191f30-slow.mp3"
+    },
+    "sentence:呵！地上的风景尽收眼底。": {
+      "normal": "audio/clips/49dd8459a47a47cca0-normal.mp3",
+      "slow": "audio/clips/650b631723073b368c-slow.mp3"
+    },
+    "sentence:嘘嘘-嘘嘘！她打了个趔趄、一阵晕眩。": {
+      "normal": "audio/clips/4674b37ad752124d9f-normal.mp3",
+      "slow": "audio/clips/10a1505874dfa8e34d-slow.mp3"
+    },
+    "sentence:“为什么不试一试换一条毛袜子尾巴呢？”牦牛答道。": {
+      "normal": "audio/clips/a3927b64f46e20471f-normal.mp3",
+      "slow": "audio/clips/a7b9267111901bd218-slow.mp3"
+    },
+    "sentence:胖果果盯着她的新尾巴看了看。": {
+      "normal": "audio/clips/38256ef016e77a0a97-normal.mp3",
+      "slow": "audio/clips/5669674116f2ec855f-slow.mp3"
+    },
+    "sentence:“这条尾巴棒极了，”胖果果说道。她回想着曾经试过的所有尾巴。": {
+      "normal": "audio/clips/dbf27fe66bd1dce27a-normal.mp3",
+      "slow": "audio/clips/4e4a615139e7037888-slow.mp3"
+    },
+    "sentence:啊哈！“我可绝不想要再试一试仙人掌尾巴了！”": {
+      "normal": "audio/clips/55a9e87c1c1e37bfda-normal.mp3",
+      "slow": "audio/clips/bbbdb44b870fc20047-slow.mp3"
+    },
+    "sentence:能够有各种各样的尾巴是一件多么有趣的事情呀！她突然想起来，其他人通常只有一种尾巴呀。": {
+      "normal": "audio/clips/0dba0ae8097d6e5218-normal.mp3",
+      "slow": "audio/clips/29ebec6e2db2e66483-slow.mp3"
+    },
+    "sentence:胖果果决定了。随她原来的尾巴到处逛吧。小猪要和她的新尾巴、一起回家。": {
+      "normal": "audio/clips/48072571be4ccf1a99-normal.mp3",
+      "slow": "audio/clips/1f97ced3c12df1bbf3-slow.mp3"
+    },
+    "sentence:有一天，爷爷给了弟弟和我一些钱。": {
+      "normal": "audio/clips/88bf05adfb3bf00968-normal.mp3",
+      "slow": "audio/clips/a9c9e654c9503f4a1b-slow.mp3"
+    },
+    "sentence:“去买几本书吧。”他说。": {
+      "normal": "audio/clips/195a2a57a474422156-normal.mp3",
+      "slow": "audio/clips/3cf0ef450b99585f06-slow.mp3"
+    },
+    "sentence:弟弟和我都非常开心。我们俩都很喜欢读书。": {
+      "normal": "audio/clips/eb612f98da88c10ec5-normal.mp3",
+      "slow": "audio/clips/5852b0d8f0dce68f14-slow.mp3"
+    },
+    "sentence:我们应该现在去吗？还是待会再去？": {
+      "normal": "audio/clips/70b1613308998c86c6-normal.mp3",
+      "slow": "audio/clips/ebc6b83d0b3cb57347-slow.mp3"
+    },
+    "sentence:我们应该今天去吗？还是明天去呢？": {
+      "normal": "audio/clips/3520581e04fec8457f-normal.mp3",
+      "slow": "audio/clips/5ad5dcda78d9ca7b34-slow.mp3"
+    },
+    "sentence:我们决定现在就去。": {
+      "normal": "audio/clips/eafe0288f296b5c1eb-normal.mp3",
+      "slow": "audio/clips/a46689241543dd46cc-slow.mp3"
+    },
+    "sentence:我们应该去大书城吗？还是去小书店呢？": {
+      "normal": "audio/clips/15c82e3a3ce337be1c-normal.mp3",
+      "slow": "audio/clips/8498d366d8a8c3b077-slow.mp3"
+    },
+    "sentence:我们应该叫上谁一起去吗？还是我们自己去呢？": {
+      "normal": "audio/clips/1a792f561c3fc64976-normal.mp3",
+      "slow": "audio/clips/3f049f8dfd3b955947-slow.mp3"
+    },
+    "sentence:我们决定去小书店，就我们两个人。": {
+      "normal": "audio/clips/d138c1dbba760b0efc-normal.mp3",
+      "slow": "audio/clips/f8d75c58752cc11120-slow.mp3"
+    },
+    "sentence:我们喜欢这家小书店。书店很小，但有很多书。": {
+      "normal": "audio/clips/6dcbcc08537c0a535f-normal.mp3",
+      "slow": "audio/clips/12b3cee478f299f25e-slow.mp3"
+    },
+    "sentence:管理书店的人喜欢我们。他总是提供给我们帮助。": {
+      "normal": "audio/clips/a345d9e0690f436b1b-normal.mp3",
+      "slow": "audio/clips/296676bc58302e372f-slow.mp3"
+    },
+    "sentence:我应该买一本有很多图画的书吗？": {
+      "normal": "audio/clips/b3f8f4b807650eb441-normal.mp3",
+      "slow": "audio/clips/0c24d91e7da32dfed8-slow.mp3"
+    },
+    "sentence:我应该买一本有很多故事的书吗？": {
+      "normal": "audio/clips/6c9599b6eaabc5ff4c-normal.mp3",
+      "slow": "audio/clips/d281f7eb8e34650065-slow.mp3"
+    },
+    "sentence:我应该买一本薄薄的书吗？": {
+      "normal": "audio/clips/c1bf4af627e8598bb0-normal.mp3",
+      "slow": "audio/clips/08a79d96eedd39bf16-slow.mp3"
+    },
+    "sentence:我决定不了。": {
+      "normal": "audio/clips/a2189d78de16ae481e-normal.mp3",
+      "slow": "audio/clips/cf4b8b20e8a317c3a0-slow.mp3"
+    },
+    "sentence:我们不知道买哪本书。管书店的人对我们笑了笑。“放轻松，跟我来吧。”他说。“这些书是讲动物的。那些是讲机器的。那边那些是讲战争的。挑你们喜欢的吧。”": {
+      "normal": "audio/clips/b9d2427a6ed3737c9c-normal.mp3",
+      "slow": "audio/clips/7e9b1840617925221e-slow.mp3"
+    },
+    "sentence:我选了一些书。我弟弟也选了一些书。": {
+      "normal": "audio/clips/66900b95f4487ba453-normal.mp3",
+      "slow": "audio/clips/c0d4a489777c895266-slow.mp3"
+    },
+    "sentence:我坐在地上。他坐在椅子上。": {
+      "normal": "audio/clips/798aacd523304d9466-normal.mp3",
+      "slow": "audio/clips/87793601ba39e14e4c-slow.mp3"
+    },
+    "sentence:然后我们读呀读呀读呀。": {
+      "normal": "audio/clips/d39d5aad368e6b3bf2-normal.mp3",
+      "slow": "audio/clips/ec9b24b6bcc0656b86-slow.mp3"
+    },
+    "sentence:身边非常安静。一点声音也没有。": {
+      "normal": "audio/clips/1835e1db6740f63160-normal.mp3",
+      "slow": "audio/clips/70adf1f329978b4010-slow.mp3"
+    },
+    "sentence:一小时过去了。两小时过去了。": {
+      "normal": "audio/clips/b33fad87ec76bc41f0-normal.mp3",
+      "slow": "audio/clips/13f6f10b96cc4f5901-slow.mp3"
+    },
+    "sentence:终于，我们知道买哪些书了。": {
+      "normal": "audio/clips/9c572b6a8de9fedba7-normal.mp3",
+      "slow": "audio/clips/ced2df610ae6ef0f85-slow.mp3"
+    },
+    "sentence:管书店的人对我们笑。我拿了一本厚厚的故事书。我的弟弟拿了一本厚厚的图画书。": {
+      "normal": "audio/clips/114f1f4bedc44e46e6-normal.mp3",
+      "slow": "audio/clips/8df2954304173832a1-slow.mp3"
+    },
+    "sentence:我们回家找爷爷了。我们爬上他的床。": {
+      "normal": "audio/clips/64e2210ac90f88efe8-normal.mp3",
+      "slow": "audio/clips/49cd4648c5770c04ff-slow.mp3"
+    },
+    "sentence:他伸手揽过我们俩，然后我们读呀、读呀、读呀。": {
+      "normal": "audio/clips/9256c9fc00cf27b55f-normal.mp3",
+      "slow": "audio/clips/86f3ff4b3b7d97fd0d-slow.mp3"
+    },
+    "sentence:我的朋友为什么给我一个礼物呢？ 因为今天是我的生日！": {
+      "normal": "audio/clips/554e15938e5500b4f6-normal.mp3",
+      "slow": "audio/clips/a8223406f3064d6a44-slow.mp3"
+    },
+    "sentence:今天我七点醒了。 然后，我穿好衣服了。": {
+      "normal": "audio/clips/88e8b89ef25f604776-normal.mp3",
+      "slow": "audio/clips/a15ad3fe252edb45d3-slow.mp3"
+    },
+    "sentence:我八点半走路去上学。 我不骑自行车，因为车子坏了。 我不坐公共汽车，因为公交车车票太贵了。": {
+      "normal": "audio/clips/d9e90ecfe0a010c0ff-normal.mp3",
+      "slow": "audio/clips/0596613780637d75d4-slow.mp3"
+    },
+    "sentence:小明： 今天天气怎么样？": {
+      "normal": "audio/clips/c4b2a0dface9a2fe16-normal.mp3",
+      "slow": "audio/clips/177b1e5e3cf5da9139-slow.mp3"
+    },
+    "sentence:小刚： 今天天气很好，阳光很好。": {
+      "normal": "audio/clips/6950700f4e3f30939f-normal.mp3",
+      "slow": "audio/clips/1426b7440845e7d45c-slow.mp3"
+    },
+    "sentence:小刚： 太好了！": {
+      "normal": "audio/clips/dbd4f38fa22051d0c3-normal.mp3",
+      "slow": "audio/clips/81c2485644358d9bad-slow.mp3"
+    },
+    "sentence:小明： 你觉得当老师好吗 ？": {
+      "normal": "audio/clips/f886a789cb4d4c510f-normal.mp3",
+      "slow": "audio/clips/ff2209d43703519127-slow.mp3"
+    },
+    "sentence:小红： 话是这么说，我还是喜欢当老师。": {
+      "normal": "audio/clips/2606e975eeb8acd479-normal.mp3",
+      "slow": "audio/clips/6e6e7a45ef7603ea47-slow.mp3"
+    },
+    "sentence:小红: 小明，你的理想是什么？": {
+      "normal": "audio/clips/064ba27f97c9228f88-normal.mp3",
+      "slow": "audio/clips/ae9f33d6a30962257e-slow.mp3"
+    },
+    "sentence:小明: 我想当一名探险家，去发现世界上别人不知道的地方。你呢？": {
+      "normal": "audio/clips/5cbca7874ab5ae79bb-normal.mp3",
+      "slow": "audio/clips/737792e8f67370a4c7-slow.mp3"
+    },
+    "sentence:小红: 我想当一名医生。别人生病的时候，我就可以帮助他们，让他们不再痛苦。": {
+      "normal": "audio/clips/34308ea2e880996eea-normal.mp3",
+      "slow": "audio/clips/989cd7b3488a2d9e3a-slow.mp3"
+    },
+    "sentence:小明: 你真善良!": {
+      "normal": "audio/clips/077218168f88ad749d-normal.mp3",
+      "slow": "audio/clips/1fd2d43e06e28510a9-slow.mp3"
+    },
+    "sentence:小红: 我当医生以后，一定要研究出不苦的药。这样小朋友们就会不讨厌吃药了。": {
+      "normal": "audio/clips/20db7cbb00009ca438-normal.mp3",
+      "slow": "audio/clips/957bcf367d8f4781b4-slow.mp3"
+    },
+    "sentence:小明: 太好了。": {
+      "normal": "audio/clips/35c054c4b019a30978-normal.mp3",
+      "slow": "audio/clips/6e92077a98ce500b32-slow.mp3"
+    },
+    "sentence:今天晚上妈妈对我说：“我要上班了，你得自己去爷爷家吃饭。” 我正想对妈妈说我从来没有独自去过爷爷家。可是，我的话还没说出口，妈妈就跑的无影无踪了。所以，我只能硬着头皮，穿过黑黑的街道，走到爷爷家。": {
+      "normal": "audio/clips/3fcf89e4033cb66bc8-normal.mp3",
+      "slow": "audio/clips/0647f22ddb8b660e7d-slow.mp3"
+    },
+    "sentence:有一天晚上，从山上跑下来很多狼，吃掉了他十只羊。他很后悔，他应该给羊建一个好的羊圈。 在羊被吃掉了以后，他才给羊建了一个羊圈。": {
+      "normal": "audio/clips/494269b337842f612e-normal.mp3",
+      "slow": "audio/clips/5186a6beb27b95faa6-slow.mp3"
+    },
+    "sentence:七点钟的时候，他会准时离开家， 小明经常骑车子去上学，大约二十分钟以后他会到达学校，": {
+      "normal": "audio/clips/604b2d9d52c6ffe681-normal.mp3",
+      "slow": "audio/clips/193c78bd8c199420be-slow.mp3"
+    },
+    "sentence:老板: 小王，你来我办公室一趟。": {
+      "normal": "audio/clips/e69f19e3e0c8d00540-normal.mp3",
+      "slow": "audio/clips/6a75603c3f11d0afd4-slow.mp3"
+    },
+    "sentence:小王: 您好，老板。": {
+      "normal": "audio/clips/9ee14f7e563c1dab91-normal.mp3",
+      "slow": "audio/clips/ac2d566f73af62d901-slow.mp3"
+    },
+    "sentence:老板: 最近，你所在的项目组完成工作进度太慢了，不能按照计划完成任务，已经导致其他项目组工作的滞后。": {
+      "normal": "audio/clips/7131c59ee7f3b18363-normal.mp3",
+      "slow": "audio/clips/8ca1818dca767834ba-slow.mp3"
+    },
+    "sentence:小王: 老板，情况的确如您所说的那样。但是进度慢的原因是项目在开展过程中，人手不足。咱们公司裁员了不少。": {
+      "normal": "audio/clips/2fec313c51c73bd562-normal.mp3",
+      "slow": "audio/clips/cd8ba730fe7e29ba4c-slow.mp3"
+    },
+    "sentence:老板: 这个问题的确存在。但是还是希望你们能够提高工作效率，不要拖公司后退。": {
+      "normal": "audio/clips/930744f452d72c934a-normal.mp3",
+      "slow": "audio/clips/09691fb4705518cd41-slow.mp3"
+    },
+    "sentence:轰！ 啪！ 砰！": {
+      "normal": "audio/clips/e4877447d90861b3a7-normal.mp3",
+      "slow": "audio/clips/0f81f296507758c1d5-slow.mp3"
+    },
+    "sentence:嚎！ 嚎！": {
+      "normal": "audio/clips/9bddc1566f4edecc57-normal.mp3",
+      "slow": "audio/clips/80e8f445b8f5a7dff7-slow.mp3"
+    },
+    "sentence:喔！ 喔！ 喔！": {
+      "normal": "audio/clips/a61190b7f469c40db8-normal.mp3",
+      "slow": "audio/clips/dffcce6da0b2292fbd-slow.mp3"
+    },
+    "sentence:吼？ 吼？": {
+      "normal": "audio/clips/3d6e0a4f3ebe1a2522-normal.mp3",
+      "slow": "audio/clips/9c1f73f9e6710f5201-slow.mp3"
+    },
+    "sentence:穿不上这条 粉色公主裙了": {
+      "normal": "audio/clips/627e50f8637f685cca-normal.mp3",
+      "slow": "audio/clips/f8fdfacb1fcdce626b-slow.mp3"
+    },
+    "sentence:我太小了 不能像妈妈一样做烙饼": {
+      "normal": "audio/clips/ceecb965efd8c7b152-normal.mp3",
+      "slow": "audio/clips/cb4a97bc3dc8856977-slow.mp3"
+    },
+    "sentence:3 只猴子有多少条尾巴呢": {
+      "normal": "audio/clips/ee3e7313c7fea3689a-normal.mp3",
+      "slow": "audio/clips/50909c174fad647945-slow.mp3"
+    },
+    "sentence:那么请问，这条虫宝宝又有多少条腿呢？ 哈哈！": {
+      "normal": "audio/clips/335bf34fa954f24725-normal.mp3",
+      "slow": "audio/clips/53231f32df0d7a8909-slow.mp3"
+    },
+    "sentence:小 - 大": {
+      "normal": "audio/clips/325148ad78a7d3c991-normal.mp3",
+      "slow": "audio/clips/41db51df39e30597fa-slow.mp3"
+    },
+    "sentence:慢 - 快": {
+      "normal": "audio/clips/946d9dd3c3f38ad9a3-normal.mp3",
+      "slow": "audio/clips/2c4267bad63f1bf2b3-slow.mp3"
+    },
+    "sentence:矮 - 高": {
+      "normal": "audio/clips/f81fe96c17bc12bc4a-normal.mp3",
+      "slow": "audio/clips/78017a24e70b793ac5-slow.mp3"
+    },
+    "sentence:瘦 - 胖": {
+      "normal": "audio/clips/ae9513d2b61c66862a-normal.mp3",
+      "slow": "audio/clips/b7d2369eacf5eb55e5-slow.mp3"
+    },
+    "sentence:硬 - 软": {
+      "normal": "audio/clips/f42950d5ccbc343aef-normal.mp3",
+      "slow": "audio/clips/cc4df8de4f3a73b59f-slow.mp3"
+    },
+    "sentence:吵 - 静": {
+      "normal": "audio/clips/15b3ea549f43c047d8-normal.mp3",
+      "slow": "audio/clips/f59807ca8684174682-slow.mp3"
+    },
+    "sentence:… 就是去巴刹": {
+      "normal": "audio/clips/0d23b40fc44b405025-normal.mp3",
+      "slow": "audio/clips/6998fdea203fe4ab20-slow.mp3"
+    },
+    "sentence:呼呼... 呼噜噜": {
+      "normal": "audio/clips/25f06491c060341b21-normal.mp3",
+      "slow": "audio/clips/a67a12444db37aef08-slow.mp3"
+    },
+    "sentence:咕咕... 呼噜噜": {
+      "normal": "audio/clips/45019dcd4fc1ffc0ce-normal.mp3",
+      "slow": "audio/clips/1f74b2a7d757e951a4-slow.mp3"
+    },
+    "sentence:呼哧... 呼噜噜": {
+      "normal": "audio/clips/967e99aecd22e348e1-normal.mp3",
+      "slow": "audio/clips/7ed733a8d828d8b45d-slow.mp3"
+    },
+    "sentence:嗡嗡... 呼噜噜": {
+      "normal": "audio/clips/4b10bfd44d5eaa4548-normal.mp3",
+      "slow": "audio/clips/1070bc0d78dbd380a1-slow.mp3"
+    },
+    "sentence:咕噜... 呼噜噜": {
+      "normal": "audio/clips/a41a53c6b2d0299fce-normal.mp3",
+      "slow": "audio/clips/731b9019817f5519b2-slow.mp3"
+    },
+    "sentence:打个大哈欠 ...": {
+      "normal": "audio/clips/edd0a96d0d3c5121b5-normal.mp3",
+      "slow": "audio/clips/e6e51092a1621a4d1e-slow.mp3"
+    },
+    "sentence:哧溜！ “这片森林乱糟糟！” 胖果果说道。": {
+      "normal": "audio/clips/4d8be9e7e681ae6da2-normal.mp3",
+      "slow": "audio/clips/e5efced440c96ac489-slow.mp3"
+    },
+    "sentence:哎！ 她滑了一跤。": {
+      "normal": "audio/clips/1e5fd56e1f8665ec0a-normal.mp3",
+      "slow": "audio/clips/853673115e838f841d-slow.mp3"
+    },
+    "sentence:哐！ 她摔进了灌木丛。": {
+      "normal": "audio/clips/8abbb6ab21c9b16a34-normal.mp3",
+      "slow": "audio/clips/0af5491c11cefb3d70-slow.mp3"
+    },
+    "sentence:“ 哼！”胖果果说，“我还是要我自己的那条尾巴。”": {
+      "normal": "audio/clips/d113b4da5b8a38641c-normal.mp3",
+      "slow": "audio/clips/f81245ed191885abb7-slow.mp3"
+    },
+    "sentence:哎呦我的妈呀！ “这座城市乱哄哄！” 胖果果说道。": {
+      "normal": "audio/clips/d490d161362be205f8-normal.mp3",
+      "slow": "audio/clips/f5e88e60ecddc50f98-slow.mp3"
+    },
+    "sentence:哔哔-哔哔！ 她躲过横冲直撞的三轮摩托车。": {
+      "normal": "audio/clips/39ca343b9815ee001b-normal.mp3",
+      "slow": "audio/clips/9f0e147dfebde51f69-slow.mp3"
+    },
+    "sentence:叮铃-叮铃！ 她试着缩成一团钻过自行车的轱辘。": {
+      "normal": "audio/clips/1e0df5829681ae6d71-normal.mp3",
+      "slow": "audio/clips/76a36a06f4a2022fef-slow.mp3"
+    },
+    "sentence:“为什么不试一试换一条气球尾巴呢？” 乌鸦答道。": {
+      "normal": "audio/clips/ccbd4541092795c5f1-normal.mp3",
+      "slow": "audio/clips/142455a74da3e9540b-slow.mp3"
+    },
+    "sentence:“ 怕怕！”胖果果说，“我还是要我自己的那条尾巴。”她去其他地方找一找。": {
+      "normal": "audio/clips/eb20ed740152c37ec2-normal.mp3",
+      "slow": "audio/clips/794f2f55c89dcf55f4-slow.mp3"
+    },
+    "sentence:咯噔！ “这个山洞黑布隆冬！”胖果果说道。": {
+      "normal": "audio/clips/7039fb0235d0fb96e7-normal.mp3",
+      "slow": "audio/clips/76a0a24749c519f2ea-slow.mp3"
+    },
+    "sentence:沙沙-沙沙！ 她小心地挪着脚向前走。": {
+      "normal": "audio/clips/78edfa984e3d139690-normal.mp3",
+      "slow": "audio/clips/1c4e0e0a1c605c5e79-slow.mp3"
+    },
+    "sentence:咻！ 她绊到一堆碎石子。": {
+      "normal": "audio/clips/bf8d1062df8c07c2c4-normal.mp3",
+      "slow": "audio/clips/96f6cd0939af9431d0-slow.mp3"
+    },
+    "sentence:“ 硌得慌！”胖果果说，“我还是要我自己的那条尾巴。”她去其他地方找一找。": {
+      "normal": "audio/clips/4fe061fb9e4421e99d-normal.mp3",
+      "slow": "audio/clips/dc9b94bdabfc00bb41-slow.mp3"
+    },
+    "sentence:咕咚咚-咕噜噜！ “海底到处湿漉漉！”胖果果说道。": {
+      "normal": "audio/clips/a4755d467ae4f0e9c9-normal.mp3",
+      "slow": "audio/clips/b47fe5acd8c3d8af7b-slow.mp3"
+    },
+    "sentence:噗啪-噗啪！ 几条彩色的小鱼请胖果果一起跳支舞。": {
+      "normal": "audio/clips/694f53af1a49fa318f-normal.mp3",
+      "slow": "audio/clips/8044f14f134b7af55a-slow.mp3"
+    },
+    "sentence:“ 呃——”胖果果说，“我还是要我自己的那条尾巴。”她去其他地方找一找。": {
+      "normal": "audio/clips/ac81179629cc35c53d-normal.mp3",
+      "slow": "audio/clips/90f2d45673ba516c49-slow.mp3"
+    },
+    "sentence:扑通！ “沙漠到处热辣辣！”胖果果说道。": {
+      "normal": "audio/clips/2331c112a97f8ed3f4-normal.mp3",
+      "slow": "audio/clips/aedc3e5d3494b156b9-slow.mp3"
+    },
+    "sentence:呼哧！ 她还不知道自己正趴在一座沙丘上。": {
+      "normal": "audio/clips/1ff1f35cfcb6eccc18-normal.mp3",
+      "slow": "audio/clips/a07c373e5c3a083903-slow.mp3"
+    },
+    "sentence:哎呦！ 她一股脑地滚到沙坑中。": {
+      "normal": "audio/clips/d360a5630ba5b7e38f-normal.mp3",
+      "slow": "audio/clips/382c5447f131485ab8-slow.mp3"
+    },
+    "sentence:“为什么不试一试换一条仙人掌尾巴呢？” 骆驼答道。": {
+      "normal": "audio/clips/c566456c103c8c5316-normal.mp3",
+      "slow": "audio/clips/0a554104f501cf1f8a-slow.mp3"
+    },
+    "sentence:“ 嗷呜！”胖果果尖叫道，“我还是要我自己的那条尾巴。”她去其他地方找一找。": {
+      "normal": "audio/clips/ed18e7f0eff31b7f7c-normal.mp3",
+      "slow": "audio/clips/0f0b29967bd9cc7d4a-slow.mp3"
+    },
+    "sentence:呼咧咧！ “山顶到处冷飕飕！”胖果果说道。": {
+      "normal": "audio/clips/f8ece2c040881a08f1-normal.mp3",
+      "slow": "audio/clips/d8c0d96b03c9c6bec3-slow.mp3"
+    },
+    "sentence:呵！ 地上的风景尽收眼底。": {
+      "normal": "audio/clips/b2d1fa094a7cd9a2c2-normal.mp3",
+      "slow": "audio/clips/5e88b94dc503658fa6-slow.mp3"
+    },
+    "sentence:嘘嘘-嘘嘘！ 她打了个趔趄、一阵晕眩。": {
+      "normal": "audio/clips/0e33815e3ddde3868f-normal.mp3",
+      "slow": "audio/clips/9e97f8ad91bcb63919-slow.mp3"
+    },
+    "sentence:“为什么不试一试换一条毛袜子尾巴呢？” 牦牛答道。": {
+      "normal": "audio/clips/7dc1bbba78ccd161b6-normal.mp3",
+      "slow": "audio/clips/9af868e34f5ee29ff7-slow.mp3"
+    },
+    "sentence:啊哈！ “我可绝不想要再试一试仙人掌尾巴了！”": {
+      "normal": "audio/clips/4625227e4116f09633-normal.mp3",
+      "slow": "audio/clips/b036b021d8e45758af-slow.mp3"
+    },
+    "sentence:弟弟和我 都非常开心。我们俩都很喜欢读书。": {
+      "normal": "audio/clips/2b87c8755809a06b4d-normal.mp3",
+      "slow": "audio/clips/de5283d9887f695ed4-slow.mp3"
     }
   }
 }

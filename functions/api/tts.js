@@ -1,7 +1,6 @@
-// On-demand Mandarin neural audio. Prefers the most natural available model and falls
-// back automatically. Successful audio is cached immutably at the edge.
+// On-demand Mandarin neural audio fallback. Static Xiaoxiao clips cover almost all
+// traffic; this worker only serves uncached text. Successful audio is cached immutably.
 const MODELS = [
-  { name: "@cf/deepgram/aura-1", input: (text) => ({ text }), version: "aura-1" },
   { name: "@cf/myshell-ai/melotts", input: (text) => ({ prompt: text, lang: "zh" }), version: "melotts-zh-v2" },
 ];
 const MAX_TEXT_LENGTH = 180;

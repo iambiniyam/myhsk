@@ -1,6 +1,7 @@
-import type { CharacterCurriculumManifest, CharacterDetailData, CharacterEntry, CharacterFamiliesData, CharacterIndexEntry, CulturalTerm, HskLevel, HskManifest, NetworkData, PriorityFeatures, ReadingStory, SentenceEntry, SpokenSentenceEntry, WordDetailData, WordEntry } from "../types";
+import type { CharacterCurriculumManifest, CharacterDetailData, CharacterEntry, CourseData, CharacterFamiliesData, CharacterIndexEntry, CulturalTerm, HskLevel, HskManifest, NetworkData, PriorityFeatures, ReadingStory, SentenceEntry, SpokenSentenceEntry, WordDetailData, WordEntry } from "../types";
 
 let readingStoriesPromise: Promise<ReadingStory[]> | undefined;
+let storyweaverStoriesPromise: Promise<ReadingStory[]> | undefined;
 let networksPromise: Promise<NetworkData> | undefined;
 const wordPromises = new Map<HskLevel, Promise<WordEntry[]>>();
 let hskManifestPromise: Promise<HskManifest> | undefined;
@@ -225,6 +226,23 @@ export async function loadCharacterDetail(character: string): Promise<CharacterD
 export function loadReadingStories(): Promise<ReadingStory[]> {
   readingStoriesPromise ??= fetchJson<ReadingStory[]>("content/reading-stories.json");
   return readingStoriesPromise;
+}
+
+function loadStoryweaverStories(): Promise<ReadingStory[]> {
+  storyweaverStoriesPromise ??= fetchJson<ReadingStory[]>("content/storyweaver-stories.json").catch(() => []);
+  return storyweaverStoriesPromise;
+}
+
+export async function loadAllReadingStories(): Promise<ReadingStory[]> {
+  const [curated, storyweaver] = await Promise.all([loadReadingStories(), loadStoryweaverStories()]);
+  return [...curated, ...storyweaver];
+}
+
+let coursePromise: Promise<CourseData> | undefined;
+
+export function loadCourse(): Promise<CourseData> {
+  coursePromise ??= fetchJson<CourseData>("content/course.json");
+  return coursePromise;
 }
 
 export function loadNetworks(): Promise<NetworkData> {

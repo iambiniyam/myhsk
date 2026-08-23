@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { ArrowRight, BookOpenText, Check, Flame, GitBranch, Library, Shapes, Sparkles } from "lucide-react";
-import type { AppState, HskLevel, NetworkData, ReadingStory } from "../types";
-import { loadNetworks, loadReadingStories, loadWords } from "../lib/content";
-import { updatePreferences } from "../lib/storage";
+import type { AppState, HskLevel, LearningEngine, NetworkData, ReadingStory } from "../types";
+import { loadNetworks, loadReadingStories, loadWords, loadCourse } from "../lib/content";
+import type { CourseData } from "../types";
 import { readUiState } from "../lib/persistentUi";
+import { itemKey, updatePreferences } from "../lib/storage";
 import { buildCourseState, nextFamilySuggestion, nextLevel, type CourseState } from "../lib/course";
 
 export function CourseHome({ state, setState, onStartGroup, onOpenReading, onOpenCharacters }: {
@@ -16,12 +17,14 @@ export function CourseHome({ state, setState, onStartGroup, onOpenReading, onOpe
   const [levelWords, setLevelWords] = useState<string[]>([]);
   const [stories, setStories] = useState<ReadingStory[]>([]);
   const [networks, setNetworks] = useState<NetworkData>();
+  const [path, setPath] = useState<CourseData>();
 
   useEffect(() => {
     let cancelled = false;
     void loadWords(state.preferences.level).then((entries) => { if (!cancelled) setLevelWords(entries.map((entry) => entry.word)); });
     void loadReadingStories().then((list) => { if (!cancelled) setStories(list); });
     void loadNetworks().then((data) => { if (!cancelled) setNetworks(data); });
+    void loadCourse().then((data) => { if (!cancelled) setPath(data); });
     return () => { cancelled = true; };
   }, [state.preferences.level]);
 
@@ -42,6 +45,18 @@ export function CourseHome({ state, setState, onStartGroup, onOpenReading, onOpe
   const dueTotal = course.dueWords + course.dueCharacters;
   const percent = Math.round(course.levelProgress * 100);
   const shownSkills = ["recognition", "meaning", "sound", "context"] as const;
+  const drillCell = (engine: LearningEngine, networkId: string) => {
+    setState((current) => updatePreferences(current, { learningEngine: engine, selectedNetworkId: networkId }));
+    onStartGroup();
+  };
+
+  const chapterDone = (chapter: CourseData["chapters"][number]) => chapter.words.every((word) => (state.mastery[itemKey("word", word)]?.skills.meaning ?? 0) >= 0.72);
+  let currentChapterIndex = -1;
+  if (path) currentChapterIndex = path.chapters.findIndex((chapter) => !chapterDone(chapter));
+  const doneCount = currentChapterIndex === -1 ? path?.chapters.length ?? 0 : currentChapterIndex;
+  const doneWords = path ? path.chapters.slice(0, doneCount).reduce((total, chapter) => total + chapter.words.length, 0) : 0;
+  const nextMilestone = path?.milestones.find((milestone) => milestone.atWords > doneWords);
+  const upcoming = path && currentChapterIndex >= 0 ? path.chapters.slice(currentChapterIndex, currentChapterIndex + 3) : [];
 
   return <section className="course-home" aria-label="Your course">
     <div className="course-head">
@@ -66,6 +81,17 @@ export function CourseHome({ state, setState, onStartGroup, onOpenReading, onOpe
       {story && <button onClick={onOpenReading}><Library size={17}/><span><strong>{story.chineseTitle || story.title}</strong><small>HSK {story.hskLevel} story · {story.minutes} min</small></span><ArrowRight size={15}/></button>}
       <button onClick={onOpenCharacters}><Shapes size={17}/><span><strong>Character reading path</strong><small>Clue sets for the characters in your words</small></span><ArrowRight size={15}/></button>
     </div>
+
+    {path && upcoming.length > 0 && <div className="course-path" aria-label="Course chapter path">
+      <div className="course-path-head"><span className="eyebrow">CHAPTER PATH</span><strong>{doneCount}/{path.chapters.length} chapters · {doneWords} words</strong></div>
+      {upcoming.map((chapter, index) => <button key={chapter.id} className={index === 0 ? "current" : ""} onClick={() => drillCell(chapter.kind as LearningEngine, chapter.networkId)}>
+        <span className="path-index">{String(doneCount + index + 1).padStart(3, "0")}</span>
+        <span className="matrix-copy"><strong>{index === 0 ? "▸ " : ""}{chapter.title}</strong><small>{chapter.chineseTitle} · {chapter.words.length} words · HSK {chapter.minLevel}+</small></span>
+        <ArrowRight size={15}/>
+      </button>)}
+      {nextMilestone && <p className="path-milestone">🏁 At {nextMilestone.atWords} words: {nextMilestone.label}</p>}
+    </div>}
+
 
     <div className="course-week">
       <div><span>This week</span><strong>{course.weekWords} words</strong><small>last 7 days</small></div>

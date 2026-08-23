@@ -190,6 +190,26 @@ export interface ReadingStorySentence {
   grammar?: string;
 }
 
+export interface CourseChapter {
+  id: string;
+  kind: LearningEngine;
+  networkId: string;
+  title: string;
+  chineseTitle: string;
+  subtitle: string;
+  minLevel: number;
+  part: number;
+  phase: string;
+  words: string[];
+}
+
+export interface CourseData {
+  generatedAt: string;
+  wordTotal: number;
+  chapters: CourseChapter[];
+  milestones: Array<{ atWords: number; label: string }>;
+}
+
 export interface ReadingStory {
   id: string;
   hskLevel: number;

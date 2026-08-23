@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, BookOpenText, Check, ChevronRight, Clock3, Languages, X } from "lucide-react";
 import type { AppState, ReadingStory, ReadingStorySentence, Skill, WordEntry } from "../types";
-import { levelNumber, loadAllWords, loadOpenDictionaryWord, loadReadingStories } from "../lib/content";
+import { levelNumber, loadAllWords, loadAllReadingStories, loadOpenDictionaryWord } from "../lib/content";
 import { itemKey } from "../lib/storage";
 import { readUiState, writeUiState } from "../lib/persistentUi";
 import { useDialogFocus } from "../hooks/useDialogFocus";
@@ -31,7 +31,7 @@ export function ReadingStudio({ active, state, record }: {
 
   useEffect(() => {
     let cancelled = false;
-    void Promise.all([loadReadingStories(), loadAllWords()]).then(([loadedStories, hskWords]) => {
+    void Promise.all([loadAllReadingStories(), loadAllWords()]).then(([loadedStories, hskWords]) => {
       if (cancelled) return;
       setStories(loadedStories);
       // HSK entries load eagerly; the 23MB open dictionary is fetched per-word from shards

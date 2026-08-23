@@ -161,7 +161,7 @@ export default function App() {
       </header>
 
       <main id="main-content" className="main-content" tabIndex={-1}>
-        {visitedAreas.has("vocabulary") && <section hidden={learningArea !== "vocabulary"}><VocabularyPage
+                {visitedAreas.has("vocabulary") && <section hidden={learningArea !== "vocabulary"}><VocabularyPage
           active={learningArea === "vocabulary"}
           state={state}
           setState={setState}

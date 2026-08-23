@@ -44,18 +44,32 @@ async def main() -> None:
     parser.add_argument("--sentence-limit", type=int, default=300)
     parser.add_argument("--voice", default="zh-CN-XiaoxiaoNeural")
     parser.add_argument("--concurrency", type=int, default=4)
+    parser.add_argument("--stories", action="store_true", help="also render every graded-reading section")
     args = parser.parse_args()
 
-    words = []
-    for level in args.levels:
-        words.extend(json.loads((CONTENT / "hsk" / LEVEL_FILE[level]).read_text(encoding="utf8")))
-    sentences = json.loads((CONTENT / "sentences" / "hsk.json").read_text(encoding="utf8"))
-    max_level = max(7 if level == "7-9" else int(level) for level in args.levels)
-    sentences = [row for row in sentences if row["hskLevel"] <= max_level]
+    tasks = []
+    if args.word_limit > 0 or not args.stories:
+        words = []
+        for level in args.levels:
+            words.extend(json.loads((CONTENT / "hsk" / LEVEL_FILE[level]).read_text(encoding="utf8")))
+        sentences = json.loads((CONTENT / "sentences" / "hsk.json").read_text(encoding="utf8"))
+        max_level = max(7 if level == "7-9" else int(level) for level in args.levels)
+        sentences = [row for row in sentences if row["hskLevel"] <= max_level]
+        tasks += [("word", clean_text(row["word"])) for row in words[:args.word_limit]]
+        tasks += [("sentence", clean_text(row["chinese"])) for row in sentences[:args.sentence_limit]]
 
-    # Word-level context avoids ambiguous isolated-character pronunciation.
-    tasks = [("word", clean_text(row["word"])) for row in words[:args.word_limit]]
-    tasks += [("sentence", clean_text(row["chinese"])) for row in sentences[:args.sentence_limit]]
+    if args.stories:
+        for name in ("reading-stories.json", "storyweaver-stories.json"):
+            source = CONTENT / name
+            if not source.exists():
+                continue
+            for story in json.loads(source.read_text(encoding="utf8")):
+                for section in story.get("sentences", []):
+                    # Keys must match the client lookup verbatim: trim ends only,
+                    # never collapse internal spaces, or static clips will be missed.
+                    text = section.get("chinese", "").strip()
+                    if text:
+                        tasks.append(("sentence", text))
     seen = set(); tasks = [task for task in tasks if not (task in seen or seen.add(task))]
 
     manifest = {"version": 1, "voice": args.voice, "generatedAt": None, "clips": {}}

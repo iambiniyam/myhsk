@@ -2,7 +2,6 @@ import { lazy, Suspense, useEffect, useState } from "react";
 import { BookOpenText, GitBranch } from "lucide-react";
 import type { AppState, LearningBatch, Skill } from "../types";
 import { CurriculumPage } from "./CurriculumPage";
-import { CourseHome } from "./CourseHome";
 import { readUiState, writeUiState } from "../lib/persistentUi";
 
 const LearnPage = lazy(() => import("./LearnPage").then((module) => ({ default: module.LearnPage })));
@@ -35,7 +34,7 @@ export function VocabularyPage({ active, state, setState, batch, loading, record
   useEffect(() => { onGroupModeChange(active && mode === "groups"); }, [active, mode, onGroupModeChange]);
 
   return <>
-    <CourseHome state={state} setState={setState} onStartGroup={() => setMode("groups")} onOpenReading={onOpenReading} onOpenCharacters={onOpenCharacters}/>
+    <section className="compact-page-heading"><span className="eyebrow">WORD LIBRARY</span><h1>Find a word.<br/>Study its world.</h1></section>
     <nav className="vocab-mode-nav" aria-label="Vocabulary sections">
       <button aria-pressed={mode === "curriculum"} className={mode === "curriculum" ? "active" : ""} onClick={() => setMode("curriculum")}><BookOpenText size={17}/><span><strong>Word library</strong><small>Search every HSK word</small></span></button>
       <button aria-pressed={mode === "groups"} className={mode === "groups" ? "active" : ""} onClick={() => setMode("groups")}><GitBranch size={17}/><span><strong>Learn a group</strong><small>Families, scenes, contrasts</small></span></button>

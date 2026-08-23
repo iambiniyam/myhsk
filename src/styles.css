@@ -1598,6 +1598,21 @@ p { line-height: 1.6; }
 .course-next strong, .course-next small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .course-next strong { font-size: 11px; }
 .course-next small { margin-top: 2px; color: var(--muted, #8a8f88); font-size: 9px; }
+.course-path { margin-top: 14px; padding: 13px 15px 6px; border: 1px solid var(--line, #dedbd1); border-radius: 16px; background: rgba(255,253,248,.72); }
+.course-path > button { width: 100%; min-height: 54px; margin-bottom: 7px; padding: 8px 10px; display: grid; grid-template-columns: auto minmax(0,1fr) auto; align-items: center; gap: 11px; border: 0; border-radius: 12px; background: transparent; cursor: pointer; text-align: left; }
+.course-path > button:hover { background: white; }
+.course-path > button.current { background: rgba(36,106,80,.08); }
+/* Chapter path */
+.course-path-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-bottom: 9px; }
+.course-path-head strong { font-size: 12px; }
+.course-path > button { width: 100%; min-height: 54px; margin-bottom: 7px; padding: 8px 10px; display: grid; grid-template-columns: auto minmax(0,1fr) auto; align-items: center; gap: 11px; border: 0; border-radius: 12px; background: transparent; cursor: pointer; text-align: left; }
+.course-path > button:hover, .course-path > button.current { background: white; }
+.path-index { color: var(--muted, #687169); font: 700 10px/1 ui-monospace, monospace; letter-spacing: .04em; }
+.matrix-copy { min-width: 0; }
+.matrix-copy strong { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 11px; }
+.matrix-copy small { display: block; margin-top: 2px; color: var(--muted, #687169); font-size: 8px; }
+.path-milestone { margin: 4px 0 9px; padding-top: 8px; border-top: 1px dashed var(--line, #dedbd1); color: var(--jade, #246a50); font-size: 9px; }
+
 .course-week { margin-top: 12px; padding-top: 11px; border-top: 1px solid var(--line, #dedbd1); display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
 .course-week > div { display: flex; flex-direction: column; }
 .course-week span { color: var(--muted, #8a8f88); font-size: 8px; text-transform: uppercase; letter-spacing: .06em; }
@@ -1610,3 +1625,36 @@ p { line-height: 1.6; }
   .course-week { grid-template-columns: repeat(2, 1fr); gap: 9px; }
 }
 
+/* Course tab */
+.chapter-card { margin-top: 6px; padding: 20px; border: 1px solid rgba(36,106,80,.2); border-radius: 18px; background: var(--paper); box-shadow: 0 14px 40px rgba(33,49,40,.07); }
+.chapter-card > header strong { display: block; margin-top: 5px; font-size: 17px; }
+.chapter-card > header small { display: block; margin: 3px 0 0; color: var(--muted); font-size: 9px; }
+.chapter-words { margin: 15px 0 16px; display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 7px; }
+.chapter-words > div { position: relative; min-height: 74px; padding: 9px; display: grid; align-content: start; gap: 2px; border-radius: 11px; background: #f4f0e7; }
+.chapter-words > div.known { background: var(--jade-soft); }
+.chapter-words b { font: 700 21px "PingFang SC", sans-serif; }
+.chapter-words i { color: var(--jade); font-size: 8px; font-style: normal; }
+.chapter-words small { color: var(--muted); font-size: 8px; line-height: 1.35; }
+.chapter-words svg { position: absolute; top: 8px; right: 8px; color: var(--jade); }
+/* Mobile UX polish */
+@media (max-width: 700px) {
+  /* Nav never shrinks to unreadable: scroll instead of squeeze */
+  .product-switch { overflow-x: auto; scrollbar-width: none; }
+  .product-switch::-webkit-scrollbar { display: none; }
+  .product-switch > button { flex: none; min-height: 42px; padding: 0 13px; font-size: 11px; }
+  .topbar { grid-template-columns: auto 1fr auto; gap: 8px; }
+  .brand small { display: none; }
+  /* Comfortable touch targets everywhere */
+  button, [role="button"] { touch-action: manipulation; }
+  .icon-button, .audio-button { width: auto; min-width: 44px; min-height: 44px; }
+  /* Long CJK strings must wrap, not overflow */
+  h1, h2, strong { overflow-wrap: anywhere; }
+}
+@media (max-width: 380px) {
+  .product-switch > button { padding: 0 10px; font-size: 10px; letter-spacing: -.01em; }
+  .main-content { padding-left: 12px !important; padding-right: 12px !important; width: 100% !important; }
+}
+/* Smooth momentum scrollers & no horizontal jiggle anywhere */
+.studio-reader-layout, .book-reader, .modal-backdrop { -webkit-overflow-scrolling: touch; overscroll-behavior: contain; }
+html, body { max-width: 100%; overflow-x: clip; }
+img, svg, video { max-width: 100%; height: auto; }

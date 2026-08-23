@@ -15,7 +15,8 @@ interface StaticAudioManifest {
 const NEURAL_CACHE = "myhsk-neural-audio-v2";
 const NEURAL_ENDPOINT = assetPath("api/tts");
 const HUMAN_MANIFEST = assetPath("human-audio-v1.json");
-const STATIC_MANIFEST = assetPath("audio/manifest.json");
+// Bump ?v= whenever the clip manifest gains new keys so force-cache never serves a stale index.
+const STATIC_MANIFEST = assetPath("audio/manifest.json?v=2");
 // Remote hosts whose audio is proxied through the same origin so playback works in
 // regions where huggingface.co / tatoeba.org are unreachable without a VPN.
 const PROXY_ENDPOINT = assetPath("api/audio");
