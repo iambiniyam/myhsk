@@ -455,10 +455,6 @@ function WordStudy({ item, state, characters, examples, connection, relatedWords
 
     {masteryRecord && <section className="word-memory-map"><div><span>MEMORY MAP</span><strong>What is strong—and what needs another encounter</strong></div><div>{skillProfile.map(([label, value]) => <span key={label}><small>{label}</small><i><b style={{ width: `${Math.round(value * 100)}%` }}/></i><em>{value >= .72 ? "strong" : value > 0 ? "growing" : "not checked"}</em></span>)}</div></section>}
 
-    <section className="mastery-check">
-      <div><Target size={19}/><span><strong>Can you retrieve this word?</strong><small>{mastery >= .72 ? "Meaning is currently strong" : "Your answer shapes future learning groups."}</small></span></div>
-      <div><button onClick={() => { onSetStatus("learning"); record("word", item.word, "meaning", 1); }}>Still learning</button><button className={mastery >= .72 || listStatus === "known" ? "known" : ""} onClick={() => { onSetStatus("known"); record("word", item.word, "meaning", 3); }}><Check size={15}/> I know this</button></div>
-    </section>
   </div>;
 }
 
