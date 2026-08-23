@@ -1658,3 +1658,12 @@ p { line-height: 1.6; }
 .studio-reader-layout, .book-reader, .modal-backdrop { -webkit-overflow-scrolling: touch; overscroll-behavior: contain; }
 html, body { max-width: 100%; overflow-x: clip; }
 img, svg, video { max-width: 100%; height: auto; }
+/* Word library performance & feel */
+.catalog-row { content-visibility: auto; contain-intrinsic-size: auto 76px; }
+.catalog-list { contain: layout style; }
+.result-list, .character-result-grid { content-visibility: auto; contain-intrinsic-size: auto 64px; }
+@media (prefers-reduced-motion: no-preference) {
+  .catalog-row { transition: background-color .12s ease, border-color .12s ease; }
+}
+/* Sticky search stays usable; rows get full-width tap targets */
+.curriculum-search { backdrop-filter: blur(10px); }
