@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, BookOpenText, Check, ChevronRight, Clock3, Languages, X } from "lucide-react";
 import type { AppState, CharacterEntry, ReadingStory, ReadingStorySentence, Skill, WordEntry } from "../types";
 import { levelNumber, loadAllWords, loadCharacterIndex, loadAllReadingStories, loadOpenDictionaryWord } from "../lib/content";
+import { prefetchChinese } from "../lib/audio";
 import { itemKey } from "../lib/storage";
 import { readUiState, writeUiState } from "../lib/persistentUi";
 import { useDialogFocus } from "../hooks/useDialogFocus";
@@ -86,6 +87,15 @@ export function ReadingStudio({ active, state, record }: {
   const completedCount = stories.filter((item) => (progress[item.id] ?? 0) >= item.sentences.length).length;
   const selectedWord = resolvedWord;
   const activeSentence = story?.sentences[sentenceIndex];
+
+  // Warm current + next section audio so playback never waits on the network.
+  useEffect(() => {
+    if (!story || !activeSentence) return;
+    void prefetchChinese(activeSentence.chinese, "sentence");
+    const next = story.sentences[sentenceIndex + 1];
+    if (next) void prefetchChinese(next.chinese, "sentence");
+  }, [story, sentenceIndex, activeSentence]);
+
   const selectedMastery = selectedWord ? state.mastery[itemKey("word", selectedWord.word)]?.skills.context ?? 0 : 0;
 
   const openStory = (next: ReadingStory) => {

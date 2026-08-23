@@ -59,7 +59,7 @@ async def main() -> None:
         tasks += [("sentence", clean_text(row["chinese"])) for row in sentences[:args.sentence_limit]]
 
     if args.stories:
-        for name in ("reading-stories.json", "storyweaver-stories.json"):
+        for name in ("reading-stories.json", "storyweaver-stories.json", "everflow-stories.json"):
             source = CONTENT / name
             if not source.exists():
                 continue

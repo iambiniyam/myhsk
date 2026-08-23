@@ -2,6 +2,7 @@ import type { CharacterCurriculumManifest, CharacterDetailData, CharacterEntry, 
 
 let readingStoriesPromise: Promise<ReadingStory[]> | undefined;
 let storyweaverStoriesPromise: Promise<ReadingStory[]> | undefined;
+let everflowStoriesPromise: Promise<ReadingStory[]> | undefined;
 let networksPromise: Promise<NetworkData> | undefined;
 const wordPromises = new Map<HskLevel, Promise<WordEntry[]>>();
 let hskManifestPromise: Promise<HskManifest> | undefined;
@@ -233,9 +234,14 @@ function loadStoryweaverStories(): Promise<ReadingStory[]> {
   return storyweaverStoriesPromise;
 }
 
+function loadEverflowStories(): Promise<ReadingStory[]> {
+  everflowStoriesPromise ??= fetchJson<ReadingStory[]>("content/everflow-stories.json").catch(() => []);
+  return everflowStoriesPromise;
+}
+
 export async function loadAllReadingStories(): Promise<ReadingStory[]> {
-  const [curated, storyweaver] = await Promise.all([loadReadingStories(), loadStoryweaverStories()]);
-  return [...curated, ...storyweaver];
+  const [curated, storyweaver, everflow] = await Promise.all([loadReadingStories(), loadStoryweaverStories(), loadEverflowStories()]);
+  return [...curated, ...storyweaver, ...everflow];
 }
 
 let coursePromise: Promise<CourseData> | undefined;
